@@ -1,0 +1,29 @@
+#about_me {
+  white-space: pre-wrap;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+  color: black;
+  width: fit-content;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+#profile_picture {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px*1.06;
+}
