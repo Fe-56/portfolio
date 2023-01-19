@@ -11,7 +11,7 @@ import Hobbies from "./components/Hobbies/Hobbies";
 export default function App() {
   return (
     <div id="app">
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
       {/* <Projects /> */}
       {/* <Skills /> */}
