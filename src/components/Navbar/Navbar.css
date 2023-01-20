@@ -1,0 +1,29 @@
+.horizontal_gap {
+  width: 15px;
+}
+
+#fe56_logo {
+  margin-right: 5px;
+}
+
+#navbar_buttons {
+  max-width: 500px;
+}
+
+#navbar_nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(35px);
+  backdrop-filter: blur(35px);
+}
+
+.nav-link:hover {
+  color: black !important;
+  text-decoration: underline;
+  background-color: white;
+  text-decoration-color: black;
+}
+#logo:hover {
+  color: #CCFF00;
+}
