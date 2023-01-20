@@ -109,6 +109,8 @@ export default function About() {
   return (
     <div id="about" class="justify-content-center align-items-center container-fluid">
       <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
       <div class="container-fluid">
         <div class="d-flex row align-items-center">
           <div class="col-sm-6 text-end">
@@ -116,7 +118,7 @@ export default function About() {
             <h5 id="title">{title}</h5>
           </div>
           <div class="col-sm-6 text-start">
-            <img src={profilePicture} alt="Lim Fuo En profile picture" id="profile_picture"></img>
+            <img src={profilePicture} loading="lazy" alt="Lim Fuo En profile picture" id="profile_picture"></img>
           </div>
         </div>
       </div>
@@ -133,7 +135,6 @@ export default function About() {
       <div id="timeline">
         <h3><u>(Professional) Timeline</u></h3>
       </div>
-      {/* <div class="spacer"></div> */}
       <div id="hobbies">
         <h3><u>Hobbies</u></h3>
         <p id="hobbies_text" class="text-start">{hobbies}</p>
