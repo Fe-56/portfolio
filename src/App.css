@@ -15,9 +15,13 @@
 }
 
 #github_source:hover {
-  color: #ccff00;
+  color: #C007D9;
 }
 
 #footer {
   padding-bottom: 20px;
+}
+
+:root {
+  --black: #000;
 }

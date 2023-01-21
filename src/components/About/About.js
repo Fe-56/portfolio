@@ -126,7 +126,7 @@ export default function About() {
         <h3><u>About</u></h3>
         <p class="text-start" id="about_text">{about}</p>
         <a href="/portfolio/projects">
-          <button type="button" class="btn btn-light">
+          <button type="button" class="btn btn-light buttons">
             {"My Projects >"}
           </button>
         </a>

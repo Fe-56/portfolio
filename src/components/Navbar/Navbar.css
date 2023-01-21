@@ -19,11 +19,13 @@
 }
 
 .nav-link:hover {
-  color: black !important;
+  color: #1B1259 !important;
   text-decoration: underline;
-  background-color: white;
-  text-decoration-color: black;
+  background-color: #C007D9;
+  text-decoration-color: #1B1259;
 }
 #logo:hover {
-  color: #CCFF00;
+  color: #C007D9;
+  text-decoration: underline;
+  text-decoration-color: #C007D9;
 }

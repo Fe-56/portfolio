@@ -5,7 +5,7 @@
 }
 
 #name_and_photo {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 blockquote {
@@ -15,7 +15,7 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: #b7bec5;
+  background: #0CF2DB;
   border-radius: 5px;
   color: black;
   width: fit-content;
@@ -67,7 +67,7 @@ blockquote p::after {
 }
 
 .find_me_button:hover {
-  color: #ccff00;
+  color: #C007D9;
   text-decoration: none;
 }
 
@@ -85,4 +85,17 @@ blockquote p::after {
 
 #timeline {
   margin-bottom: 20px;
+}
+
+#name {
+  color: #0CF2DB;
+}
+
+h3 {
+  color: #0CF2DB;
+}
+
+.buttons:hover {
+  background-color: #C007D9;
+  border-color: #C007D9;
 }
