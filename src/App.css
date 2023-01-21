@@ -1,6 +1,23 @@
 #app {
   text-align: center;
   font-family: monospace;
-  background-color: #212529;
+  background-color: #0A0626;
+  color: white;
+}
+
+#github_icon {
+  margin-right: 10px;
+}
+
+#github_source {
+  color: white;
+  text-decoration: none;
+}
+
+#github_source:hover {
   color: #ccff00;
+}
+
+#footer {
+  padding-bottom: 20px;
 }

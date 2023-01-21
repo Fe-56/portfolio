@@ -1,18 +1,21 @@
 #about {
   max-width: 700px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
-#about_me {
-  white-space: pre-wrap;
+#name_and_photo {
+  margin-bottom: 40px;
 }
 
 blockquote {
   margin: 0;
+  margin-bottom: 40px;
 }
 
 blockquote p {
   padding: 15px;
-  background: #eee;
+  background: #b7bec5;
   border-radius: 5px;
   color: black;
   width: fit-content;
@@ -41,14 +44,11 @@ blockquote p::after {
   margin-right: 3px;
 }
 
-.spacer {
-  min-height: 30px;
-}
-
 #hobbies_text {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
+  margin-bottom: 20px;
 }
 
 .find_me_button_container {
@@ -62,11 +62,27 @@ blockquote p::after {
 }
 
 .find_me_button {
-  color:inherit;
+  color:white;
   text-decoration: none;
 }
 
 .find_me_button:hover {
-  color: white;
+  color: #ccff00;
   text-decoration: none;
+}
+
+#about_me {
+  margin-bottom: 40px;
+}
+
+#about_text {
+  margin-bottom: 20px;
+}
+
+#hobbies {
+  margin-bottom: 40px;
+}
+
+#timeline {
+  margin-bottom: 20px;
 }

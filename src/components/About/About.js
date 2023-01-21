@@ -21,12 +21,12 @@ const hobbies = "Road Cycling, Jamming on the Electric Guitar, Watching Anime, W
 
 export default function About() {
   useEffect(()=> {
-    let width = 700, height = 650, padding = 160;
-    let svg = d3.select("#timeline")
+    let width = 700, height = 700, padding = 120;
+    let svg = d3.select("#timeline_svg")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height)
-                .attr("id", "timeline");
+                .attr("id", "timeline_svg");
     let scale = d3.scaleTime()
                   .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
                   .range([0, height - padding]);
@@ -47,12 +47,12 @@ export default function About() {
         .attr("cy", (milestone) => {
           return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
         }) // align the circle on the correct position on the timeline
-        .attr("fill", "#CCFF00");
+        .attr("fill", "white");
     svg.selectAll("line") // renders the lines from the timeline to the year of each milestone
         .data(milestones)
         .enter()
         .append("line")
-        .style("stroke", "#CCFF00")
+        .style("stroke", "white")
         .style("stroke-width", 3)
         .attr("y1", (milestone) => {
           return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
@@ -108,10 +108,7 @@ export default function About() {
 
   return (
     <div id="about" class="justify-content-center align-items-center container-fluid">
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="container-fluid">
+      <div class="container-fluid" id="name_and_photo">
         <div class="d-flex row align-items-center">
           <div class="col-sm-6 text-end">
             <h1 id="name">{name}</h1>
@@ -122,24 +119,22 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div class="spacer"></div>
       <blockquote>
         <p id="quote">{quote}</p>
       </blockquote>
-      <div class="spacer"></div>
-      <div id="about">
+      <div id="about_me">
         <h3><u>About</u></h3>
-        <p class="text-start">{about}</p>
+        <p class="text-start" id="about_text">{about}</p>
+        <a href="/portfolio/projects">
+          <button type="button" class="btn btn-light">
+            {"My Projects >"}
+          </button>
+        </a>
       </div>
-      <div class="spacer"></div>
       <div id="timeline">
         <h3><u>(Professional) Timeline</u></h3>
+        <div id="timeline_svg"></div>
       </div>
-      <div id="hobbies">
-        <h3><u>Hobbies</u></h3>
-        <p id="hobbies_text" class="text-start">{hobbies}</p>
-      </div>
-      <div class="spacer"></div>
       <div id="find_me">
         <h3><u>Find me on the Web</u></h3>
         <div class="container">

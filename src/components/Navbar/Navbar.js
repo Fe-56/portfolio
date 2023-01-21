@@ -31,8 +31,8 @@ export default function Navbar() {
               </li>
               <div class="horizontal_gap"></div>
               <li class="nav-item active">
-                <a href="/portfolio/experience" class="nav-link active">
-                  Experience
+                <a href="/portfolio/experiences" class="nav-link active">
+                  Experiences
                 </a>
               </li>
               <div class="horizontal_gap"></div>
