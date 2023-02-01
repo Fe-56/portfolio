@@ -24,8 +24,16 @@
   background-color: var(--selected);
   text-decoration-color: var(--background);
 }
+
 #logo:hover {
   color: var(--selected);
   text-decoration: underline;
   text-decoration-color: var(--selected);
+}
+
+.selected {
+  color: var(--background) !important;
+  text-decoration: underline;
+  background-color: var(--selected);
+  text-decoration-color: var(--background);
 }

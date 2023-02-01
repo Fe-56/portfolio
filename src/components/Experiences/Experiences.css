@@ -2,3 +2,20 @@
   padding-top: 80px;
   padding-bottom: 30px;
 }
+
+#experiences_title {
+  color: var(--title);
+  margin-bottom: 30px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.location_and_title {
+  color: var(--quote)
+}
