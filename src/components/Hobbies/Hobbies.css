@@ -1,0 +1,38 @@
+#hobbies {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+#hobbies_title {
+  color: var(--title);
+  margin-bottom: 30px;
+}
+
+.hobby {
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--selected);
+}
+
+.image {
+  border-radius: 10%;
+  height: 400px;
+  width: auto;
+  margin: 10px;
+}
+
+#brad_delson_picture, #james_hetfield_and_kirk_hammet_picture, #bille_joe_armstrong_picture {
+  height: auto;
+  width: 350px;
+}
+
+.icon {
+  margin-right: 8px;
+}

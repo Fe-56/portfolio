@@ -26,7 +26,7 @@ export default function About() {
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height)
-                .attr("id", "timeline_svg");
+                .attr("id", "timeline_svg_actual");
     let scale = d3.scaleTime()
                   .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
                   .range([0, height - padding]);
@@ -47,12 +47,12 @@ export default function About() {
         .attr("cy", (milestone) => {
           return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
         }) // align the circle on the correct position on the timeline
-        .attr("fill", "white");
+        .attr("fill", "var(--selected)");
     svg.selectAll("line") // renders the lines from the timeline to the year of each milestone
         .data(milestones)
         .enter()
         .append("line")
-        .style("stroke", "white")
+        .style("stroke", "var(--selected)")
         .style("stroke-width", 3)
         .attr("y1", (milestone) => {
           return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
@@ -80,7 +80,7 @@ export default function About() {
                     .data(milestones)
                     .enter();
     texts.append("text") // renders the year of each milestone
-        .style("fill", "white")
+        .style("fill", "var(--text)")
         .style("font-size", "22px")
         .style("text-decoration", "underline")
         .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
@@ -93,7 +93,7 @@ export default function About() {
           return Object.keys(milestone)[0];
         });
     texts.append("text") // renders the description of each milestone
-        .style("fill", "white")
+        .style("fill", "var(--text)")
         .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
           return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline) : width/2 + distanceBetweenMilestoneAndTimeline + 40;
         })
@@ -107,14 +107,14 @@ export default function About() {
   });
 
   return (
-    <div id="about" class="justify-content-center align-items-center container-fluid">
+    <div id="about">
       <div class="container-fluid" id="name_and_photo">
         <div class="d-flex row align-items-center">
-          <div class="col-sm-6 text-end">
+          <div class="col-sm-7 text-end" id="name_and_title">
             <h1 id="name">{name}</h1>
             <h5 id="title">{title}</h5>
           </div>
-          <div class="col-sm-6 text-start">
+          <div class="col-sm-5 text-start">
             <img src={profilePicture} loading="lazy" alt="Lim Fuo En profile picture" id="profile_picture"></img>
           </div>
         </div>
@@ -125,9 +125,12 @@ export default function About() {
       <div id="about_me">
         <h3><u>About</u></h3>
         <p class="text-start" id="about_text">{about}</p>
-        <a href="/portfolio/projects">
+      </div>
+      <div id="resume">
+        <h3><u>Resume</u></h3>
+        <a href="https://www.linkedin.com/in/limfuoen/overlay/1635514689338/single-media-viewer/?profileId=ACoAADD-VuYBca5d6qkXKt8bojDxzttpnCt_s-M" target="_blank">
           <button type="button" class="btn btn-light buttons">
-            {"My Projects >"}
+            {"My Resume >"}
           </button>
         </a>
       </div>

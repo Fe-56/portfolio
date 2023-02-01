@@ -16,34 +16,34 @@ export default function Navbar() {
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_buttons" aria-controls="navbar_buttons" aria-expanded="false" aria-label="Toggle navigation bar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbar_buttons">
+          <div class="collapse navbar-collapse justify-content-center" id="navbar_buttons"> 
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a href="/portfolio/projects" class="nav-link active">
+                <a href="/portfolio/#/projects" class="nav-link active">
                   Projects
                 </a>
               </li>
               <div class="horizontal_gap"></div>
               <li class="nav-item active">
-                <a href="/portfolio/skills" class="nav-link active">
+                <a href="/portfolio/#/skills" class="nav-link active">
                   Skills
                 </a>
               </li>
               <div class="horizontal_gap"></div>
               <li class="nav-item active">
-                <a href="/portfolio/experiences" class="nav-link active">
+                <a href="/portfolio/#/experiences" class="nav-link active">
                   Experiences
                 </a>
               </li>
               <div class="horizontal_gap"></div>
               <li class="nav-item active">
-                <a href="/portfolio/hobbies" class="nav-link active">
+                <a href="/portfolio/#/hobbies" class="nav-link active">
                   Hobbies
                 </a>
               </li>
               <div class="horizontal_gap"></div>
               <li class="nav-item active">
-                <a href="/portfolio/contact" class="nav-link active">
+                <a href="/portfolio/#/contact" class="nav-link active">
                   Contact
                 </a>
               </li>

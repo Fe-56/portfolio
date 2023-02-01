@@ -1,19 +1,30 @@
 #contact {
   padding-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 #contact_me {
+  margin-bottom: 20px;
+  color: var(--title);
+}
+
+#looking_for_internship {
   margin-bottom: 40px;
 }
 
-#email_address {
+.contact_section {
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.contact_link {
   text-decoration: none;
-  color: white;
+  color: var(--text);
 }
 
-#email_address:hover {
-  /* color: #C007D9; */
-  color: var(--black);
+.contact_link:hover {
+  color: var(--selected);
 }
-

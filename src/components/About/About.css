@@ -1,7 +1,7 @@
 #about {
-  max-width: 700px;
   padding-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 #name_and_photo {
@@ -15,7 +15,7 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: #0CF2DB;
+  background: var(--quote);
   border-radius: 5px;
   color: black;
   width: fit-content;
@@ -37,13 +37,6 @@ blockquote p::after {
   width: 150px*1.06;
 }
 
-#bio div {
-  display: inline-block;
-  background: #4285F4;
-  width: 20px;
-  margin-right: 3px;
-}
-
 #hobbies_text {
   margin-left: auto;
   margin-right: auto;
@@ -62,12 +55,12 @@ blockquote p::after {
 }
 
 .find_me_button {
-  color:white;
+  color: var(--text);
   text-decoration: none;
 }
 
 .find_me_button:hover {
-  color: #C007D9;
+  color: var(--selected);
   text-decoration: none;
 }
 
@@ -79,7 +72,7 @@ blockquote p::after {
   margin-bottom: 20px;
 }
 
-#hobbies {
+#resume {
   margin-bottom: 40px;
 }
 
@@ -88,14 +81,14 @@ blockquote p::after {
 }
 
 #name {
-  color: #0CF2DB;
+  color: var(--title);
 }
 
 h3 {
-  color: #0CF2DB;
+  color: var(--title);
 }
 
 .buttons:hover {
-  background-color: #C007D9;
-  border-color: #C007D9;
+  background-color: var(--selected);
+  border-color: var(--selected);
 }

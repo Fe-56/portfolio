@@ -7,7 +7,7 @@
 }
 
 #navbar_buttons {
-  max-width: 500px;
+  max-width: 450px;
 }
 
 #navbar_nav {
@@ -19,13 +19,13 @@
 }
 
 .nav-link:hover {
-  color: #1B1259 !important;
+  color: var(--background) !important;
   text-decoration: underline;
-  background-color: #C007D9;
-  text-decoration-color: #1B1259;
+  background-color: var(--selected);
+  text-decoration-color: var(--background);
 }
 #logo:hover {
-  color: #C007D9;
+  color: var(--selected);
   text-decoration: underline;
-  text-decoration-color: #C007D9;
+  text-decoration-color: var(--selected);
 }

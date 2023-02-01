@@ -1,8 +1,9 @@
 #app {
   text-align: center;
-  font-family: monospace;
-  background-color: #0A0626;
-  color: white;
+  font-family: 'Atkinson Hyperlegible';
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 700px;
 }
 
 #github_icon {
@@ -10,48 +11,26 @@
 }
 
 #github_source {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
 #github_source:hover {
-  color: #C007D9;
+  color: var(--selected);
 }
 
 #footer {
   padding-bottom: 20px;
 }
 
-.fadeIn {
-  animation: 0.5s fadeIn forwards;
-}
-
-.fadeOut {
-  animation: 0.5s fadeOut forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate(-20px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-  to {
-    transform: translate(-20px, 0);
-    opacity: 0;
-  }
+#footnote {
+  margin-top: 5px;
 }
 
 :root {
-  --black: #000;
+  --background: #030301;
+  --title: #00d9c0;
+  --text: #fffff3;
+  --selected: #ff4365;
+  --quote: #b7ad99;
 }
