@@ -1,5 +1,5 @@
 import { React} from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -13,14 +13,12 @@ export default function App() {
   return (
     <div id="app" class="justify-content-center align-items-center container-fluid">
       <Navbar />
-      <Routes>
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/experiences" element={<Experiences />} />
-        <Route path="/hobbies" element={<Hobbies />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<About />} />
-      </Routes>
+        <Route exact path="/" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/experiences" component={Experiences} />
+        <Route path="/hobbies" component={Hobbies} />
+        <Route path="/contact" component={Contact} />
       <div id="footer">
         <a href="https://github.com/Fe-56/portfolio" target="_blank" id="github_source">
           <i class="fa-brands fa-github fa-xl" id="github_icon"></i>

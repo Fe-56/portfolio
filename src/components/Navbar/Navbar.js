@@ -1,5 +1,6 @@
 import React from "react";
 import './Navbar.css';
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 export default function Navbar() {
   return ( 
@@ -7,7 +8,7 @@ export default function Navbar() {
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar_nav">
         <div class="container-fluid justify-content-center">
           <div id="navbar_logo">
-            <a href="/portfolio" class="navbar-brand mb-0 mx-auto" id="logo">
+            <a href="/portfolio/#/" class="navbar-brand mb-0 mx-auto" id="logo">
               <img src="http://fe-56.github.io/portfolio/favicon.ico?v=2" width="30" height="30" class="d-inline-block align-top" id="fe56_logo"/>
               Fuo En Lim
             </a>
