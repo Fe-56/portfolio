@@ -1,27 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Contact.css';
 
 export default function Contact() {
+  useEffect(() => {
+    window.focus();
+    window.scrollTo(0, 0);
+    document.getElementById('nav_contact').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
+  });
+
   return (
     <div id="contact" class="container-fluid">
       <h1 id="contact_me">Contact Me</h1>
       <h5 id="looking_for_internship" class="text-start">
-        I am currently looking for web/mobile app developer internships from May to August 2023, preferably in Berkeley, or in the Bay Area
+        I am currently looking for web/mobile app developer internships from May to August 2023, preferably in Berkeley, or in the Bay Area.
         <br/><br/>
         If you are looking for an intern, and/or like what you see here, please contact me for a chat. Strictly for work-related purposes only, please!
       </h5>
-      <div id="email" class="contact_section">
-        <h3><u>Email</u></h3>
-        <a href="mailto:fuoen_lim@berkeley.edu" target="_blank" id="email_address" class="contact_link">
-          <i class="fa-solid fa-envelope icon"></i>
-          fuoen_lim@berkeley.edu
-        </a>
-      </div>
       <div id="linkedin" class="contact_section">
         <h3><u>LinkedIn</u></h3>
         <a href="https://www.linkedin.com/in/limfuoen/" target="_blank" id="linkedin" class="contact_link">
           <i class="fa-brands fa-linkedin icon"></i>
           Fuo En Lim's LinkedIn
+        </a>
+      </div>
+      <div id="email" class="contact_section">
+        <h3><u>Email</u></h3>
+        <a href="mailto:fuoen_lim@berkeley.edu" target="_blank" id="email_address" class="contact_link">
+          <i class="fa-solid fa-envelope icon"></i>
+          fuoen_lim@berkeley.edu
         </a>
       </div>
       <div id="telegram" class="contact_section">

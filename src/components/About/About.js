@@ -10,17 +10,18 @@ const about = "Fuo En was born in Singapore in 1999. Since young, he has an inte
 const milestoneCircleRadius = 10;
 const distanceBetweenMilestoneAndTimeline = 50;
 const milestones = [
-  {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards."},
-  {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt."},
-  {2020: "Matriculated at SUTD."},
-  {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern."},
-  {2022: "Completed Mobile application development internship at Housing & Development Board (HDB)."},
-  {2023: "Studying at UC Berkeley Extension."}
+  {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
+  {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
+  {2020: "Matriculated at SUTD"},
+  {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
+  {2022: "Completed Mobile application development internship at Housing & Development Board (HDB)"},
+  {2023: "Studying at UC Berkeley Extension"}
 ];
-const hobbies = "Road Cycling, Jamming on the Electric Guitar, Watching Anime, Watching Netflix, Building Cool Stuff with Code";
 
 export default function About() {
-  useEffect(()=> {
+  useEffect(() => {
+    window.focus();
+    window.scrollTo(0, 0);
     let width = 700, height = 700, padding = 120;
     let svg = d3.select("#timeline_svg")
                 .append("svg")
@@ -122,11 +123,11 @@ export default function About() {
       <blockquote>
         <p id="quote">{quote}</p>
       </blockquote>
-      <div id="about_me">
+      <div id="about_me" class="about_section">
         <h3><u>About</u></h3>
         <p class="text-start" id="about_text">{about}</p>
       </div>
-      <div id="resume">
+      <div id="resume" class="about_section">
         <h3><u>Resume</u></h3>
         <a href="https://www.linkedin.com/in/limfuoen/overlay/1635514689338/single-media-viewer/?profileId=ACoAADD-VuYBca5d6qkXKt8bojDxzttpnCt_s-M" target="_blank">
           <button type="button" class="btn btn-light buttons">
@@ -134,11 +135,11 @@ export default function About() {
           </button>
         </a>
       </div>
-      <div id="timeline">
+      <div id="timeline" class="about_section">
         <h3><u>(Professional) Timeline</u></h3>
         <div id="timeline_svg"></div>
       </div>
-      <div id="find_me">
+      <div id="find_me" class="about_section">
         <h3><u>Find me on the Web</u></h3>
         <div class="container">
           <div class="row">

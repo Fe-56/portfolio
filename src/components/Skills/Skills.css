@@ -2,3 +2,40 @@
   padding-top: 80px;
   padding-bottom: 30px;
 }
+
+#skills_title {
+  color: var(--title);
+  margin-bottom: 30px;
+}
+
+.skill_section {
+  margin-bottom: 30px;
+}
+
+#others {
+  margin-bottom: 0px;
+}
+
+.proficiency_level {
+  color: var(--quote);
+}
+
+.skill {
+  margin-bottom: 5px;
+}
+
+h5 {
+  color: var(--title)
+}
+
+.sub_skill {
+  margin-bottom: 5px;
+}
+
+#frameworks {
+  margin-bottom: 5px;
+}
+
+#tools {
+  margin-bottom: 0px;
+}

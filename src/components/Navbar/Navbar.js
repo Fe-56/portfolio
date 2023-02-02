@@ -85,6 +85,8 @@ function clickedContact(){
 }
 
 function removeSelected(){ // un-highlights the previously selected navbar item
+  window.focus();
+  window.scrollTo(0, 0);
   const currentPage = document.getElementsByClassName('selected');
   if (currentPage.length > 0){
     currentPage[0].classList.remove('selected');

@@ -9,13 +9,35 @@
 }
 
 .experience {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .icon {
   margin-right: 8px;
 }
 
-.location_and_title {
-  color: var(--quote)
+.info {
+  color: var(--title);
+}
+
+.logo {
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+}
+
+.experience_title_and_info {
+  margin-bottom: 20px;
+}
+
+.skills_title {
+  color: var(--title);
+}
+
+.hard_skills {
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 5px;
 }

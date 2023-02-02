@@ -9,7 +9,7 @@
 }
 
 .hobby {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 a {
@@ -22,7 +22,7 @@ a:hover {
 }
 
 .image {
-  border-radius: 10%;
+  border-radius: 15px;
   height: 400px;
   width: auto;
   margin: 10px;
@@ -35,4 +35,8 @@ a:hover {
 
 .icon {
   margin-right: 8px;
+}
+
+.description {
+  margin-bottom: 5px;
 }

@@ -64,20 +64,16 @@ blockquote p::after {
   text-decoration: none;
 }
 
-#about_me {
-  margin-bottom: 40px;
-}
-
-#about_text {
-  margin-bottom: 20px;
-}
-
-#resume {
-  margin-bottom: 40px;
-}
-
 #timeline {
   margin-bottom: 20px;
+}
+
+.about_section {
+  margin-bottom: 40px;
+}
+
+#find_me {
+  margin-bottom: 0px;
 }
 
 #name {
@@ -91,4 +87,8 @@ h3 {
 .buttons:hover {
   background-color: var(--selected);
   border-color: var(--selected);
+}
+
+#dbs {
+  margin-bottom: 0px;
 }

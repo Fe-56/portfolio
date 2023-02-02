@@ -10,10 +10,11 @@
 
 #looking_for_internship {
   margin-bottom: 40px;
+  color: var(--text);
 }
 
 .contact_section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .icon {
