@@ -12,7 +12,7 @@ export default function Navbar() {
               Fuo En Lim
             </a>
           </div>
-          <div class="horizontal_gap"></div>
+          {/* <div class="horizontal_gap"></div> */}
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_buttons" aria-controls="navbar_buttons" aria-expanded="false" aria-label="Toggle navigation bar">
             <span class="navbar-toggler-icon"></span>
           </button>

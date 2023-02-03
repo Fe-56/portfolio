@@ -25,14 +25,25 @@
   text-decoration-color: var(--background);
   border-radius: 15px;
   outline: none;
+  transition-duration: 0.2s;
+}
+
+.nav-link {
+  transition-duration: 0.2s;
+  border-radius: 15px;
 }
 
 #logo:hover {
   color: var(--selected);
-  text-decoration: underline;
-  text-decoration-color: var(--selected);
+  letter-spacing: 0.1em;
+  transition-duration: 0.2s;
 }
 
 #logo {
   outline: none;
+  transition-duration: 0.2s;
+}
+
+#navbar_logo {
+  width: 160px;
 }

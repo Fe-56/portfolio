@@ -10,6 +10,12 @@
 
 .experience {
   margin-bottom: 40px;
+  background-color: var(--quote);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 1px;
 }
 
 .icon {
@@ -28,6 +34,8 @@
 
 .experience_title_and_info {
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills_title {
@@ -40,4 +48,12 @@
 
 .description {
   margin-bottom: 5px;
+}
+
+a {
+  outline: none;
+}
+
+#dbs {
+  margin-bottom: 40px;
 }

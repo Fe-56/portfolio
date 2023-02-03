@@ -81,7 +81,7 @@ export default function About() {
                     .data(milestones)
                     .enter();
     texts.append("text") // renders the year of each milestone
-        .style("fill", "var(--text)")
+        .style("fill", "var(--selected )")
         .style("font-size", "22px")
         .style("text-decoration", "underline")
         .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
@@ -96,7 +96,7 @@ export default function About() {
     texts.append("text") // renders the description of each milestone
         .style("fill", "var(--text)")
         .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
-          return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline) : width/2 + distanceBetweenMilestoneAndTimeline + 40;
+          return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline): width/2 + distanceBetweenMilestoneAndTimeline + 40;
         })
         .attr("y", (milestone) => {
           return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;

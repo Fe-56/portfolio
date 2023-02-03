@@ -35,7 +35,7 @@ export default function Skills() {
         <p>
           <div class="skill">
             <i class="fa-brands fa-python icon fa-lg"></i>
-            Python <span class="proficiency_level">(intemediate)</span><br/>
+            Python <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-brands fa-java icon fa-lg"></i>
@@ -111,6 +111,10 @@ export default function Skills() {
                 <i class="fa-brands fa-node icon fa-lg"></i>
                 Node.js <span class="proficiency_level">(intermediate)</span><br/>
               </div>
+              <div class="skill">
+                <i class="fa-brands fa-google icon fa-lg"></i>
+                Google Firebase <span class="proficiency_level">(intermediate)</span><br/>
+              </div>
             </p>
           </div>
           <div id="mobile" class="sub_skill col-sm-4">
@@ -139,27 +143,23 @@ export default function Skills() {
         <p>
           <div class="skill">
             <i class="fa-brands fa-github icon fa-lg"></i>
-            GitHub <span class="proficiency_level">(intemediate)</span><br/>
+            GitHub <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-solid fa-v icon fa-lg"></i>
-            Visual Studio Code <span class="proficiency_level">(intemediate)</span><br/>
+            Visual Studio Code <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-brands fa-android icon fa-lg"></i>
-            Android Studio <span class="proficiency_level">(intemediate)</span><br/>
-          </div>
-          <div class="skill">
-            <i class="fa-brands fa-google icon fa-lg"></i>
-            Google Firebase <span class="proficiency_level">(intemediate)</span><br/>
+            Android Studio <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-brands fa-figma icon fa-lg"></i>
-            Figma <span class="proficiency_level">(intemediate)</span><br/>
+            Figma <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-solid fa-signs-post icon fa-lg"></i>
-            Postman <span class="proficiency_level">(intemediate)</span><br/>
+            Postman <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-solid fa-hammer fa-lg icon"></i>
@@ -168,6 +168,44 @@ export default function Skills() {
           <div class="skill">
             <i class="fa-brands fa-jira fa-lg icon"></i>
             Jira <span class="proficiency_level">(beginner)</span><br/>
+          </div>
+        </p>
+      </div>
+      <div id="certifications" class="skill_section">
+        <h3>
+          <i class="fa-solid fa-certificate icon"></i>
+          <u>Certifications</u>
+        </h3>
+        <p>
+          <div class="skill">
+            <a href="https://www.freecodecamp.org/certification/Fe-56/responsive-web-design" target="_blank">
+              <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+              Responsive Web Design
+            </a>
+          </div>
+          <div class="skill">
+            <a href="https://www.freecodecamp.org/certification/Fe-56/javascript-algorithms-and-data-structures" target="_blank">
+              <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+              JavaScript Algorithms and Data Structures
+            </a>
+          </div>
+          <div class="skill">
+            <a href="https://www.freecodecamp.org/certification/Fe-56/front-end-development-libraries" target="_blank">
+              <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+              Front End Development Libraries
+            </a>
+          </div>
+          <div class="skill">
+            <a href="https://www.freecodecamp.org/certification/Fe-56/data-visualization" target="_blank">
+              <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+              Data Visualization
+            </a>
+          </div>
+          <div class="skill">
+            <a href="https://www.freecodecamp.org/certification/Fe-56/back-end-development-and-apis" target="_blank">
+              <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+              Back End Development and APIs
+            </a>
           </div>
         </p>
       </div>

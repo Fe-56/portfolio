@@ -10,14 +10,18 @@
 
 .skill_section {
   margin-bottom: 30px;
-}
-
-#others {
-  margin-bottom: 0px;
+  background-color: var(--quote);
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  width: fit-content;
+  padding-inline: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .proficiency_level {
-  color: var(--quote);
+  color: var(--selected);
 }
 
 .skill {
@@ -32,10 +36,11 @@ h5 {
   margin-bottom: 5px;
 }
 
-#frameworks {
-  margin-bottom: 5px;
+a {
+  outline: none;
 }
 
-#tools {
-  margin-bottom: 0px;
+.col-sm-4 {
+  margin: 0px;
+  padding: 0px;
 }

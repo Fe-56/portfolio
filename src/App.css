@@ -13,6 +13,12 @@
 #github_source {
   color: var(--text);
   text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+#github_source:hover {
+  letter-spacing: 0.1em;
+  transition-duration: 0.2s;
 }
 
 #github_source:hover {
@@ -28,9 +34,9 @@
 }
 
 :root {
-  --background: #030301;
-  --title: #00d9c0;
-  --text: #fffff3;
-  --selected: #ff4365;
-  --quote: #b7ad99;
+  --background: #001011;
+  --title: #6CCFF6;
+  --text: #FFFFFC;
+  --selected: #98CE00;
+  --quote: #313235;
 }
