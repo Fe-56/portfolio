@@ -79,6 +79,10 @@ export default function Projects() {
             </p>
           </div>
         </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
+        </div>
       </div>
       <div id="lonely_no_longer" class="project">
         <div class="project_title_and_info">
@@ -130,6 +134,10 @@ export default function Projects() {
             </p>
           </div>
         </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
+        </div>
       </div>
       <div id="online_hate_speech_detection" class="project">
         <div class="project_title_and_info">
@@ -155,11 +163,15 @@ export default function Projects() {
             - Used machine learning techniques not taught in class to improve model performance<br/>
             - I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)
           </p>
-          <div class="project_extras">
-            <a href="https://www.kaggle.com/competitions/50007-2022" target="_blank">
+          <div class="project_extras d-flex row">
+            <a href="https://www.kaggle.com/competitions/50007-2022" target="_blank" class="project_link">
               <button type="button" class="btn btn-light buttons">
                 {"Project link >"}
               </button>
+            </a>
+            <a href="https://github.com/waishun78/hate-speech-classification" target="_blank" class="project_github">
+              <i class="fa-brands fa-github icon"></i>
+              Check out the project's GitHub!
             </a>
           </div>
           <div class="skills">
@@ -181,6 +193,10 @@ export default function Projects() {
               </div>
             </p>
           </div>
+        </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
         </div>
       </div>
       <div id="transferconnect" class="project">
@@ -233,6 +249,10 @@ export default function Projects() {
             </p>
           </div>
         </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
+        </div>
       </div>
       <div id="giglet" class="project">
         <div class="project_title_and_info d-flex row">
@@ -284,6 +304,10 @@ export default function Projects() {
               </div>
             </p>
           </div>
+        </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
         </div>
       </div>
       <div id="wordle" class="project">
@@ -342,6 +366,10 @@ export default function Projects() {
               </div>
             </p>
           </div>
+        </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
         </div>
       </div>
       <div id="feast" class="project">
@@ -402,6 +430,10 @@ export default function Projects() {
             </p>
           </div>
         </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
+        </div>
       </div>
       <div id="will_i_go_broke" class="project">
         <div class="project_title_and_info d-flex row">
@@ -451,6 +483,10 @@ export default function Projects() {
               </div>
             </p>
           </div>
+        </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
         </div>
       </div>
       <div id="pokemon_battle" class="project">
@@ -506,6 +542,10 @@ export default function Projects() {
             </p>
           </div>
         </div>
+        <div class="expand_collapse">
+          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
+          View more
+        </div>
       </div>
     </div>
   );
@@ -514,14 +554,17 @@ export default function Projects() {
 function projectClick(event) {
   const project = this;
   const projectContent = project.children[1]; // gets the project_content div within the project div
-  
-  // if a project link or project github or a hyperlink is clicked, don't collapse the project content
-  if (!(event.target.classList.contains("buttons") || event.target.classList.contains("project_github") || event.target.tagName === "A")){ 
-    if (projectContent.style.display === "" || projectContent.style.display === "none"){
-      projectContent.style.display = "block";
+  const expandCollapse = project.children[2];
+
+  if (event.target.classList.contains("expand_collapse") || event.target.classList.contains("expand_collapse_icon")){ // if the entire div that contains the up or down chevron is clicked, expand or collapse the project content accordingly
+    if (projectContent.style.maxHeight){ // if the project content is currently expanded, collapse it
+      expandCollapse.innerHTML = '<i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>\nView more';
+      projectContent.style.maxHeight = null;
+
     }
-    else{
-      projectContent.style.display = "none";
-    } 
+    else{ // if the project content is currently collapsed, expand it
+      expandCollapse.innerHTML = '<i class="fa solid fa-chevron-up fa-xl icon expand_collapse_icon"></i>\nView less';
+      projectContent.style.maxHeight = projectContent.scrollHeight + "px";
+    }
   }
 }

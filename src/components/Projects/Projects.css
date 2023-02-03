@@ -18,14 +18,11 @@
   padding-bottom: 1px;
 }
 
-.project:hover {
-  filter: brightness(90%);
-  cursor: pointer;
-}
-
 .project_content {
-  display: none;
   color: var(--text);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .project_extras {
@@ -68,7 +65,7 @@ a {
 
 .project_title_and_info {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -80,4 +77,14 @@ a {
 
 .project_link {
   margin-bottom: 10px;
+}
+
+.expand_collapse {
+  height: 25px;
+  margin-bottom: 10px; 
+}
+
+.expand_collapse:hover {
+  cursor: pointer;
+  color: var(--selected);
 }

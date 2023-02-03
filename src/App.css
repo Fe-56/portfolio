@@ -18,11 +18,8 @@
 
 #github_source:hover {
   letter-spacing: 0.1em;
-  transition-duration: 0.2s;
-}
-
-#github_source:hover {
   color: var(--selected);
+  transition-duration: 0.2s;
 }
 
 #footer {
