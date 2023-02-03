@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4bd61645.css",
-    "main.js": "/portfolio/static/js/main.9021f2fc.js",
+    "main.css": "/portfolio/static/css/main.d05be4f6.css",
+    "main.js": "/portfolio/static/js/main.0f4e5ea9.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
     "static/media/profile_picture_portfolio.jpg": "/portfolio/static/media/profile_picture_portfolio.aa9b313a7cdc9ef01271.jpg",
+    "static/media/wordle_logo.png": "/portfolio/static/media/wordle_logo.a39ba9873c82996fb59c.png",
+    "static/media/will_i_go_broke_logo.png": "/portfolio/static/media/will_i_go_broke_logo.eba00f9391cc088582ef.png",
     "static/media/hdb_logo.png": "/portfolio/static/media/hdb_logo.c8880cdd517a5525b99f.png",
+    "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
-    "main.4bd61645.css.map": "/portfolio/static/css/main.4bd61645.css.map",
-    "main.9021f2fc.js.map": "/portfolio/static/js/main.9021f2fc.js.map"
+    "main.d05be4f6.css.map": "/portfolio/static/css/main.d05be4f6.css.map",
+    "main.0f4e5ea9.js.map": "/portfolio/static/js/main.0f4e5ea9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bd61645.css",
-    "static/js/main.9021f2fc.js"
+    "static/css/main.d05be4f6.css",
+    "static/js/main.0f4e5ea9.js"
   ]
 }
