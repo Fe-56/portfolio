@@ -9,7 +9,7 @@
 }
 
 .experience {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: var(--quote);
   border-radius: 15px;
   margin-left: auto;
@@ -26,13 +26,14 @@
   color: var(--title);
 }
 
-.logo {
+.company_logo {
   border-radius: 15px;
   height: auto;
   width: 100%;
 }
 
 .experience_title_and_info {
+  margin-top: 10px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -46,12 +47,15 @@
   margin-bottom: 8px;
 }
 
-.description {
-  margin-bottom: 5px;
+.skills {
+  margin-bottom: 20px;
 }
 
-a {
-  outline: none;
+.experience_description {
+  margin-bottom: 15px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #dbs {

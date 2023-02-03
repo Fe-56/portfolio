@@ -21,7 +21,7 @@ const milestones = [
 export default function About() {
   useEffect(() => {
     window.focus();
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
     let width = 700, height = 700, padding = 120;
     let svg = d3.select("#timeline_svg")
                 .append("svg")

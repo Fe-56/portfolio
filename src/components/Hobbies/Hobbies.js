@@ -14,7 +14,7 @@ export default function Hobbies() {
     <div id="hobbies" class="container-fluid">
       <h1 id="hobbies_title">Hobbies</h1>
       <div id="road_cycling" class="hobby">
-        <h3>
+        <h3 class="hobby_title">
           <i class="fa-solid fa-person-biking icon"></i>
           <u>Road Cycling</u>
         </h3>
@@ -27,13 +27,15 @@ export default function Hobbies() {
           <img src={cycling_1} loading="lazy" alt="Cycling picture 1" id="cycling_picture_1" class="image"></img>
           <img src={cycling_2} loading="lazy" alt="Cycling picture 2" id="cycling_picture_2" class="image"></img>
         </div>
-        <a href="https://www.strava.com/athletes/33035635" target="_blank">
-          <i class="fa-brands fa-strava icon"></i>
-          Check out my Strava!
-        </a>
+        <div class="hobby_end">
+          <a href="https://www.strava.com/athletes/33035635" target="_blank">
+            <i class="fa-brands fa-strava icon"></i>
+            Check out my Strava!
+          </a>
+        </div>
       </div>
       <div id="electric_guitar" class="hobby">
-        <h3>
+        <h3 class="hobby_title">
           <i class="fa-solid fa-guitar icon"></i>
           <u>Electric Guitar</u>
         </h3>
@@ -49,13 +51,15 @@ export default function Hobbies() {
           <img src="https://cdn.mos.cms.futurecdn.net/rq8KkgPmJ3deSfWYPAUGrJ.jpg" loading="lazy" alt="James Hetfield and Kirk Hammet" id="james_hetfield_and_kirk_hammet_picture" class="image"></img>
           <img src="https://www.nme.com/wp-content/uploads/2016/09/2013GREENDAY_AB240813-1.jpg" loading="lazy" alt="Billie Joe Armstrong" id="bille_joe_armstrong_picture" class="image"></img>
         </div>
-        <a href="https://open.spotify.com/user/j3bhg792iv70buez0dn81gbih" target="_blank">
-          <i class="fa-brands fa-spotify icon"></i>
-          Check out my Spotify!
-        </a>
+        <div class="hobby_end">
+          <a href="https://open.spotify.com/user/j3bhg792iv70buez0dn81gbih" target="_blank">
+            <i class="fa-brands fa-spotify icon"></i>
+            Check out my Spotify!
+          </a>
+        </div>
       </div>
       <div id="netflix_and_anime" class="hobby">
-        <h3>
+        <h3 class="hobby_title">
           <i class="fa-solid fa-film icon"></i>
           <u>Netflix and Anime</u>
         </h3>
@@ -64,23 +68,25 @@ export default function Hobbies() {
           <br/><br/>
           I also love watching anime. I usually watch the longer-running and super popular ones. I especially love <a href="https://en.wikipedia.org/wiki/Dragon_Ball" target="_blank">Dragon Ball</a> and <a href="https://en.wikipedia.org/wiki/Naruto" target="_blank">Naruto</a>. My most favourite chracters from each of the anime are <a href="https://dragonball.fandom.com/wiki/Vegeta" target="_blank">Vegeta</a> and <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha" target="_blank">Itachi Uchiha</a> respectively.
         </p>
-        <div id="anime_images">
+        <div id="anime_images" class="hobby_end">
           <img src="https://w0.peakpx.com/wallpaper/387/534/HD-wallpaper-majin-vegeta-ball-dragonball-dragonball-z-dragon-anime.jpg" loading="lazy" alt="Vegeta" id="vegeta_picture" class="image"></img>
           <img src="https://mfiles.alphacoders.com/900/900540.jpg" loading="lazy" alt="Itachi Uchiha" id="itachi_uchiha_picture" class="image"></img>
         </div>
       </div>
       <div id="building_cool_stuff" class="hobby">
-        <h3>
+        <h3 class="hobby_title">
           <i class="fa-solid fa-code icon"></i>
           <u>Building Cool Stuff</u>
         </h3>
         <p class="text-start description">
           Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using
         </p>
-        <a href="https://github.com/Fe-56" target="_blank">
-          <i class="fa-brands fa-github icon"></i>
-          Check out my GitHub!
-        </a>
+        <div class="hobby_end">
+          <a href="https://github.com/Fe-56" target="_blank">
+            <i class="fa-brands fa-github icon"></i>
+            Check out my GitHub!
+          </a>
+        </div>
       </div>
     </div>
   );

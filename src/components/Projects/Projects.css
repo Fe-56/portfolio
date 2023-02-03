@@ -3,7 +3,81 @@
   padding-bottom: 30px;
 }
 
-a {
-  outline: none;
+#projects_title {
+  color: var(--title);
+  margin-bottom: 30px;
 }
 
+.project {
+  margin-bottom: 20px;
+  background-color: var(--quote);
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.project:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.project_content {
+  display: none;
+  color: var(--text);
+}
+
+.project_extras {
+  margin-bottom: 15px;
+}
+
+.project_logo {
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.info {
+  color: var(--title);
+}
+
+.project_description {
+  margin-bottom: 15px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.skills_title {
+  color: var(--title);
+}
+
+.hard_skills {
+  margin-bottom: 8px;
+}
+
+.project_title_and_info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons:hover {
+  background-color: var(--selected);
+  border-color: var(--selected);
+}
+
+.project_link {
+  margin-bottom: 10px;
+}

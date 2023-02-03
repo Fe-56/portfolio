@@ -19,8 +19,8 @@ export default function Experiences() {
           <h3>
             <u>Housing & Development Board</u>
           </h3>
-          <div class="company_image col-sm-6 d-flex align-items-center">
-            <img src={hdb_logo} loading="lazy" alt="HDB logo" id="hdb_logo" class="logo"></img>
+          <div class="company_image col-sm-6 d-flex align-items-center justify-content-end">
+            <img src={hdb_logo} loading="lazy" alt="HDB logo" id="hdb_logo" class="company_logo"></img>
           </div>
           <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
             <h6>
@@ -33,7 +33,7 @@ export default function Experiences() {
             </h6>
           </div>
         </div>
-        <p class="text-start description">
+        <p class="text-start experience_description">
           - My first ever development-related internship<br/>
           - Maintained the Android and iOS codebases of the Mobile@HDB application, in Java (Android Studio) and Swift (Xcode) respectively<br/>
           - Developed new features for the Mobile@HDB application<br/>
@@ -54,7 +54,7 @@ export default function Experiences() {
               <i class="fa-solid fa-k fa-lg icon"></i>
               Kotlin&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="fa-brands fa-github fa-lg icon"></i>
-              GitHub<br/>
+              GitHub
             </div>
             <div class="soft_skills">
               <i class="fa-solid fa-comments fa-lg icon"></i>
@@ -82,11 +82,11 @@ export default function Experiences() {
               January 2022 to September 2022
             </h6>
           </div>
-          <div class="company_image col-sm-6 d-flex align-items-center">
-            <img src={smiletutor_logo} loading="lazy" alt="SmileTutor logo" id="smiletutor_logo" class="logo"></img>
+          <div class="company_image col-sm-6 d-flex align-items-center justify-content-start">
+            <img src={smiletutor_logo} loading="lazy" alt="SmileTutor logo" id="smiletutor_logo" class="company_logo"></img>
           </div>
         </div>
-        <p class="text-start description">
+        <p class="text-start experience_description">
           - Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>
           - Conducted weekly one-on-one lessons at the student's residence<br/>
           - Clarified the student's doubts, went through their homework and exam papers with them<br/>
@@ -110,8 +110,8 @@ export default function Experiences() {
           <h3>
             <u>DBS Bank</u>
           </h3>
-          <div class="company_image col-sm-6 d-flex align-items-center">
-            <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="logo"></img>
+          <div class="company_image col-sm-6 d-flex align-items-center justify-content-end">
+            <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="company_logo"></img>
           </div>
           <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
             <h6>
@@ -124,7 +124,7 @@ export default function Experiences() {
             </h6>
           </div>
         </div>
-        <p class="text-start description">
+        <p class="text-start experience_description">
           - My first ever internship<br/>
           - Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems<br/>
           - Supported the project teams in developing presentation materials and in coordination of communications with the client<br/>
@@ -143,7 +143,7 @@ export default function Experiences() {
               <i class="fa-solid fa-signs-post fa-lg icon"></i>
               Postman&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="fa-solid fa-vials fa-lg icon"></i>
-              Systems testing<br/>
+              Systems testing
             </div>
             <div class="soft_skills">
               <i class="fa-solid fa-comments fa-lg icon"></i>

@@ -24,8 +24,12 @@ export default function App() {
           <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
           Github Source Code
         </a>
-        <p id="footnote">© 2023 Fuo En Lim. All Rights Reserved.</p>
+        <p id="footnote">© {getCurrentYear()} Fuo En Lim. All Rights Reserved.</p>
       </div>
     </div>
   );
+}
+
+function getCurrentYear() {
+  return new Date().getFullYear();
 }

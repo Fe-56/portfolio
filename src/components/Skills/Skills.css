@@ -9,7 +9,7 @@
 }
 
 .skill_section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: var(--quote);
   border-radius: 15px;
   padding-top: 15px;
@@ -34,10 +34,6 @@ h5 {
 
 .sub_skill {
   margin-bottom: 5px;
-}
-
-a {
-  outline: none;
 }
 
 .col-sm-4 {

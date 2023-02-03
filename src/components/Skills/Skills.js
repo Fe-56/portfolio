@@ -68,7 +68,7 @@ export default function Skills() {
           <div id="frontend" class="sub_skill col-sm-4">
             <h5>
               <i class="fa-solid fa-desktop icon"></i>
-              Front-end
+              Frontend
             </h5>
             <p>
               <div class="skill">
@@ -96,7 +96,7 @@ export default function Skills() {
           <div id="backend" class="sub_skill col-sm-4">
             <h5>
               <i class="fa-solid fa-database icon"></i>
-              Back-end
+              Backend
             </h5>
             <p>
               <div class="skill">

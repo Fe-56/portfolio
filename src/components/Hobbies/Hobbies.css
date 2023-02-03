@@ -9,13 +9,17 @@
 }
 
 .hobby {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: var(--quote);
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.hobby_title {
+  margin-top: 10px;
 }
 
 a {
@@ -50,6 +54,6 @@ a:hover {
   max-width: 95%;
 }
 
-a {
-  outline: none;
+.hobby_end {
+  margin-bottom: 15px;
 }
