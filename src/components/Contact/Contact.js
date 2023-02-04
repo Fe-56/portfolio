@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <div id="contact" class="container-fluid">
-      <h1 id="contact_me">Contact Me</h1>
+      <h1 id="contact_me">Contact</h1>
       <h5 id="looking_for_internship" class="text-start">
         I am currently looking for web/mobile app developer internships from May to August 2023, preferably in Berkeley, or in the Bay Area.
         <br/><br/>

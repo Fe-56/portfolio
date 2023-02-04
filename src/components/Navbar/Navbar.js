@@ -12,12 +12,12 @@ export default function Navbar() {
               Fuo En Lim
             </a>
           </div>
-          {/* <div class="horizontal_gap"></div> */}
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_buttons" aria-controls="navbar_buttons" aria-expanded="false" aria-label="Toggle navigation bar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbar_buttons"> 
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbar_buttons"> 
+            <ul class="navbar-nav ml-auto container-fluid">
+              <div class="horizontal_gap"></div>
               <li class="nav-item active">
                 <a href="/portfolio/#/projects" class="nav-link active" id="nav_projects" onClick={clickedProjects}>
                   Projects
@@ -57,30 +57,36 @@ export default function Navbar() {
 
 function clickedAbout(){
   removeSelected();
+  hideNavbarCollapse();
 }
 
 function clickedProjects(){
   removeSelected();
+  hideNavbarCollapse();
   document.getElementById('nav_projects').classList.add('selected');
 }
 
 function clickedSkills(){
   removeSelected();
+  hideNavbarCollapse();
   document.getElementById('nav_skills').classList.add('selected');
 }
 
 function clickedExperiences(){
   removeSelected();
+  hideNavbarCollapse();
   document.getElementById('nav_experiences').classList.add('selected');
 }
 
 function clickedHobbies(){
   removeSelected();
+  hideNavbarCollapse();
   document.getElementById('nav_hobbies').classList.add('selected');
 }
 
 function clickedContact(){
   removeSelected();
+  hideNavbarCollapse();
   document.getElementById('nav_contact').classList.add('selected');
 }
 
@@ -91,4 +97,9 @@ function removeSelected(){ // un-highlights the previously selected navbar item
   if (currentPage.length > 0){
     currentPage[0].classList.remove('selected');
   }
+}
+
+function hideNavbarCollapse(){ // hides the navbar collapse menu (on smaller screens/windows) when a navbar item has been clicked on
+  const navbarCollapse = Array.prototype.slice.call(document.getElementsByClassName('navbar-collapse'))[0];
+  navbarCollapse.classList.remove('show');
 }

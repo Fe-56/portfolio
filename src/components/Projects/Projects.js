@@ -11,6 +11,8 @@ export default function Projects() {
     pageLoad();
     document.getElementById('nav_projects').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
 
+    window.addEventListener('resize', projectSkillsResponsive);
+
     const projects = Array.prototype.slice.call(document.getElementsByClassName('project'));
     projects.map((project) => {
       project.addEventListener('click', projectClick);
@@ -259,10 +261,10 @@ export default function Projects() {
           <h3>
             <u>Giglet</u>
           </h3>
-          <div class="project_image col-sm-6 d-flex align-items-center justify-content-end">
+          <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
             <img src="https://media.licdn.com/dms/image/C5622AQHGmpxmKcPXGQ/feedshare-shrink_1280/0/1651318294045?e=1678320000&v=beta&t=HRCNtvvr1TzGyZa4ZVo2Q-p5C87EU4YB3xKlxktvVuY" loading="lazy" alt="Giglet team picture" id="hdb_logo" class="project_logo"></img>
           </div>
-          <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Developer<br/>
@@ -315,7 +317,7 @@ export default function Projects() {
           <h3>
             <u>Wordle</u>
           </h3>
-          <div class="info col-sm-6 text-end d-flex align-items-center justify-content-end">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Programmer<br/>
@@ -325,7 +327,7 @@ export default function Projects() {
               January 2022 to April 2022
             </h6>
           </div>
-          <div class="project_image col-sm-6 d-flex align-items-center justify-content-start">
+          <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
             <img src={wordle_logo} loading="lazy" alt="Wordle logo" id="hdb_logo" class="project_logo"></img>
           </div>
         </div>
@@ -377,10 +379,10 @@ export default function Projects() {
           <h3>
             <u>Food Establishment Autonomous Spatial Tracking (FEAST)</u>
           </h3>
-          <div class="project_image col-sm-6 d-flex align-items-center justify-content-end">
+          <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
             <img src={feast_logo} loading="lazy" alt="FEAST logo" id="hdb_logo" class="project_logo"></img>
           </div>
-          <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Frontend Lead<br/>
@@ -440,7 +442,7 @@ export default function Projects() {
           <h3>
             <u>Will I Go Broke?</u>
           </h3>
-          <div class="info col-sm-6 text-end d-flex align-items-center justify-content-end">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Developer<br/>
@@ -450,7 +452,7 @@ export default function Projects() {
               December 2021 to January 2022
             </h6>
           </div>
-          <div class="project_image col-sm-6 d-flex align-items-center justify-content-start">
+          <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
             <img src={will_i_go_broke_logo} loading="lazy" alt="Wordle logo" id="hdb_logo" class="project_logo"></img>
           </div>
         </div>
@@ -494,10 +496,10 @@ export default function Projects() {
           <h3>
             <u>Pokemon Battle</u>
           </h3>
-          <div class="project_image col-sm-6 d-flex align-items-center justify-content-end">
+          <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
             <img src={pokemon_battle_logo} loading="lazy" alt="Pokemon Battle logo" id="hdb_logo" class="project_logo"></img>
           </div>
-          <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Team Lead<br/>
@@ -559,12 +561,20 @@ function projectClick(event) {
   if (event.target.classList.contains("expand_collapse") || event.target.classList.contains("expand_collapse_icon")){ // if the entire div that contains the up or down chevron is clicked, expand or collapse the project content accordingly
     if (projectContent.style.maxHeight){ // if the project content is currently expanded, collapse it
       expandCollapse.innerHTML = '<i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>\nView more';
+      projectContent.classList.remove("expanded");
       projectContent.style.maxHeight = null;
-
     }
     else{ // if the project content is currently collapsed, expand it
       expandCollapse.innerHTML = '<i class="fa solid fa-chevron-up fa-xl icon expand_collapse_icon"></i>\nView less';
+      projectContent.classList.add("expanded");
       projectContent.style.maxHeight = projectContent.scrollHeight + "px";
     }
   }
+}
+
+function projectSkillsResponsive(){ // makes the skills section of each project responsive by adjusting the max height of the project content whenever the window is being resized
+  const expandedProjectContents = Array.prototype.slice.call(document.getElementsByClassName("expanded"));
+  expandedProjectContents.map((projectContent) => {
+    projectContent.style.maxHeight = projectContent.scrollHeight + "px";
+  });
 }

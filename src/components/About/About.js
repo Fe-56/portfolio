@@ -15,7 +15,7 @@ const milestones = [
   {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
   {2020: "Matriculated at SUTD"},
   {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
-  {2022: "Completed Mobile application development internship at Housing & Development Board (HDB)"},
+  {2022: "Completed mobile application development internship at Housing & Development Board (HDB)"},
   {2023: "Studying at UC Berkeley Extension"}
 ];
 
@@ -29,14 +29,14 @@ export default function About() {
   });
 
   return (
-    <div id="about">
+    <div id="about" class="container-fluid">
       <div class="container-fluid" id="name_and_photo">
-        <div class="d-flex row align-items-center">
-          <div class="col-sm-7 text-end" id="name_and_title">
+        <div class="row align-items-center">
+          <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 text-sm-end text-center" id="name_and_title">
             <h1 id="name">{name}</h1>
             <h5 id="title">{title}</h5>
           </div>
-          <div class="col-sm-5 text-start">
+          <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 text-sm-start text-center">
             <img src={profilePicture} loading="lazy" alt="Lim Fuo En profile picture" id="profile_picture"></img>
           </div>
         </div>
@@ -58,13 +58,13 @@ export default function About() {
       </div>
       <div id="timeline" class="about_section">
         <h3><u>(Professional) Timeline</u></h3>
-        <div id="timeline_svg"></div>
+        <div id="timeline_svg" class="container-fluid"></div>
       </div>
       <div id="find_me" class="about_section">
         <h3><u>Find me on the Web</u></h3>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="find_me_button_container">
                 <a href="https://github.com/Fe-56" target="_blank" class="find_me_button">
                   <i class="fa-brands fa-github fa-2xl"></i>
@@ -72,7 +72,7 @@ export default function About() {
                 </a>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="find_me_button_container">
                 <a href="https://www.linkedin.com/in/limfuoen/" target="_blank" class="find_me_button">
                   <i class="fa-brands fa-linkedin fa-2xl"></i>
@@ -88,12 +88,13 @@ export default function About() {
 }
 
 function addTimelineSVG(){
-  let width = 700, height = 700, padding = 120;
+  let width = 420, height = 700, padding = 120;
   let svg = d3.select("#timeline_svg")
               .append("svg")
               .attr("width", width)
               .attr("height", height)
-              .attr("id", "timeline_svg_actual");
+              .attr("id", "timeline_svg_actual")
+              .classed("svg-content-responsive", true);
   let scale = d3.scaleTime()
                 .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
                 .range([0, height - padding]);
@@ -127,20 +128,20 @@ function addTimelineSVG(){
       .attr("y2", (milestone) => {
         return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
       })
-      .attr("x1", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
+      .attr("x1", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is even, else, the line will be placed on the right
         if (index % 2 === 0){
-          return width/2 - distanceBetweenMilestoneAndTimeline - 40;
+          return width/2 - distanceBetweenMilestoneAndTimeline - 20;
         }
         else {
           return width/2;
         }
       })
-      .attr("x2", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
+      .attr("x2", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is even, else, the line will be placed on the right
         if (index % 2 === 0){
           return width/2;
         }
         else {
-          return width/2 + distanceBetweenMilestoneAndTimeline + 40;
+          return width/2 + distanceBetweenMilestoneAndTimeline + 20;
         }
       })
   let texts = svg.selectAll("text")
@@ -150,8 +151,8 @@ function addTimelineSVG(){
       .style("fill", "var(--selected )")
       .style("font-size", "22px")
       .style("text-decoration", "underline")
-      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
-        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - 40 - (width/5 + distanceBetweenMilestoneAndTimeline)/2 : width/2 + 40 + (width/5 + distanceBetweenMilestoneAndTimeline)/2
+      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is even, else, the text will be placed on the right
+        return index % 2 === 0 ? width/2 - (distanceBetweenMilestoneAndTimeline + width/5 + 40)/2 - 50 : width/2 + (width/5 + 40)/2 + 15;
       })
       .attr("y", (milestone) => {
         return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2;
@@ -161,8 +162,8 @@ function addTimelineSVG(){
       });
   texts.append("text") // renders the description of each milestone
       .style("fill", "var(--text)")
-      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
-        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline): width/2 + distanceBetweenMilestoneAndTimeline + 40;
+      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is even, else, the text will be placed on the right
+        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - width/5 - 40 : width/2 + distanceBetweenMilestoneAndTimeline;
       })
       .attr("y", (milestone) => {
         return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;
@@ -170,7 +171,7 @@ function addTimelineSVG(){
       .text((milestone) => {
         return Object.values(milestone)[0];
       })
-      .call(wrap, width/5 + distanceBetweenMilestoneAndTimeline);
+      .call(wrap, width/5 + 40);
 }
 
 // text-wrapping function from https://stackoverflow.com/questions/24784302/wrapping-text-in-d3

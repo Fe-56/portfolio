@@ -19,10 +19,10 @@ export default function Experiences() {
           <h3>
             <u>Housing & Development Board</u>
           </h3>
-          <div class="company_image col-sm-6 d-flex align-items-center justify-content-end">
+          <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
             <img src={hdb_logo} loading="lazy" alt="HDB logo" id="hdb_logo" class="company_logo"></img>
           </div>
-          <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Mobile Application Development Intern<br/>
@@ -72,7 +72,7 @@ export default function Experiences() {
           <h3>
             <u>SmileTutor</u>
           </h3>
-          <div class="info col-sm-6 text-end d-flex align-items-center justify-content-end">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-enter justify-content-sm-end justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Private Tutor (part-time)<br/>
@@ -82,7 +82,7 @@ export default function Experiences() {
               January 2022 to September 2022
             </h6>
           </div>
-          <div class="company_image col-sm-6 d-flex align-items-center justify-content-start">
+          <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-start">
             <img src={smiletutor_logo} loading="lazy" alt="SmileTutor logo" id="smiletutor_logo" class="company_logo"></img>
           </div>
         </div>
@@ -110,10 +110,10 @@ export default function Experiences() {
           <h3>
             <u>DBS Bank</u>
           </h3>
-          <div class="company_image col-sm-6 d-flex align-items-center justify-content-end">
+          <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-start">
             <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="company_logo"></img>
           </div>
-          <div class="info col-sm-6 text-start d-flex align-items-center justify-content-start">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Business Analyst Intern<br/>

@@ -72,6 +72,10 @@ blockquote p::after {
   margin-bottom: 20px;
 }
 
+#timeline_svg_actual {
+  width: fit-content;
+}
+
 .about_section {
   margin-bottom: 40px;
 }

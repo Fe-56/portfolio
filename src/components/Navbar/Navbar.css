@@ -42,8 +42,9 @@
 #logo {
   outline: none;
   transition-duration: 0.2s;
+  align-items: center;
 }
 
 #navbar_logo {
-  width: 160px;
+  width: 145px;
 }

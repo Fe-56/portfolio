@@ -14,7 +14,7 @@ export default function App() {
   let location = useLocation();
 
   return (
-    <div id="app" class="justify-content-center align-items-center container-fluid">
+    <div id="app" class="justify-content-center align-items-center container-lg">
       <Navbar />
       <TransitionGroup>
         <CSSTransition key={location.pathname} classNames="fade" timeout={0}>
