@@ -60,6 +60,11 @@ a {
   color: var(--title);
 }
 
+.skills {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .hard_skills {
   margin-bottom: 8px;
 }

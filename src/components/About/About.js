@@ -9,7 +9,7 @@ const title = "Aspiring Full-Stack Developer";
 const quote = "I love to build cool apps that bring value to the lives of others!";
 const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a visiting student at UC Berkeley Extension until May 2023.";
 const milestoneCircleRadius = 10;
-const distanceBetweenMilestoneAndTimeline = 50;
+const distanceBetweenMilestoneAndTimeline = 35;
 const milestones = [
   {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
   {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
@@ -88,7 +88,7 @@ export default function About() {
 }
 
 function addTimelineSVG(){
-  let width = 420, height = 700, padding = 120;
+  let width = 380, height = 700, padding = 120;
   let svg = d3.select("#timeline_svg")
               .append("svg")
               .attr("width", width)
@@ -163,7 +163,7 @@ function addTimelineSVG(){
   texts.append("text") // renders the description of each milestone
       .style("fill", "var(--text)")
       .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is even, else, the text will be placed on the right
-        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - width/5 - 40 : width/2 + distanceBetweenMilestoneAndTimeline;
+        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - width/5 - 30 : width/2 + distanceBetweenMilestoneAndTimeline;
       })
       .attr("y", (milestone) => {
         return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;

@@ -7,9 +7,9 @@ body {
     sans-serif, 'Atkinson Legible';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 460px;
+  min-width: 400px;
   width: auto !important;
-  width: 460px;
+  width: 400px;
   background-color: var(--background);
 }
 
