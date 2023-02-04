@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ca03b43f.css",
-    "main.js": "/portfolio/static/js/main.db62f570.js",
+    "main.css": "/portfolio/static/css/main.8fcc3f43.css",
+    "main.js": "/portfolio/static/js/main.b92d0dc5.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
@@ -11,11 +11,11 @@
     "static/media/hdb_logo.png": "/portfolio/static/media/hdb_logo.c8880cdd517a5525b99f.png",
     "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
-    "main.ca03b43f.css.map": "/portfolio/static/css/main.ca03b43f.css.map",
-    "main.db62f570.js.map": "/portfolio/static/js/main.db62f570.js.map"
+    "main.8fcc3f43.css.map": "/portfolio/static/css/main.8fcc3f43.css.map",
+    "main.b92d0dc5.js.map": "/portfolio/static/js/main.b92d0dc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca03b43f.css",
-    "static/js/main.db62f570.js"
+    "static/css/main.8fcc3f43.css",
+    "static/js/main.b92d0dc5.js"
   ]
 }
