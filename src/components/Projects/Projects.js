@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import pageLoad from "../utils/pageLoad";
 import './Projects.css';
 import wordle_logo from './wordle_logo.png';
 import feast_logo from './feast_logo.png';
@@ -7,8 +8,7 @@ import pokemon_battle_logo from './pokemon_battle_logo.png';
 
 export default function Projects() {
   useEffect(() => {
-    window.focus();
-    window.scrollTo(0, 0);
+    pageLoad();
     document.getElementById('nav_projects').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
 
     const projects = Array.prototype.slice.call(document.getElementsByClassName('project'));
@@ -38,12 +38,12 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies<br/>
-            - Look and Earn has an Android app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements<br/>
-            - The app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next<br/>
-            - Look and Earn also has an admin web app to manage the advertisements that will be displayed in the app<br/>
-            - I designed the entire system architecture of the app and web app, and developed them from scratch<br/>
-            - I integrated Google Firestore to the app and web as their common database
+            Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies.<br/><br/>
+            Look and Earn has an Android app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.<br/><br/>
+            The app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next.<br/><br/>
+            Look and Earn also has an admin web app to manage the advertisements that will be displayed in the app.<br/><br/>
+            I designed the entire system architecture of the app and web app, and developed them from scratch.<br/><br/>
+            I integrated Google Firestore to the app and web as their common database.
           </p>
           <div class="skills">
             <h5 class="skills_title text-center">Skills:</h5>
@@ -102,11 +102,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning<br/>
-            - LNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates<br/>
-            - I designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database<br/>
-            - I also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database<br/>
-            - I wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands
+            Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning.<br/><br/>
+            LNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates.<br/><br/>
+            I designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database.<br/><br/>
+            I also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database.<br/><br/>
+            I wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands.
           </p>
           <div class="skills">
             <h5 class="skills_title text-center">Skills:</h5>
@@ -157,11 +157,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For Singapore University of Technology and Design (SUTD)'s course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50007-machine-learning/" target="_blank">50.007 Machine Learning</a><br/>
-            - Trained a variety of machine learning models for online hate speech classification<br/>
-            - Extensively tuned the model hyper-parameters to improve model performance<br/>
-            - Used machine learning techniques not taught in class to improve model performance<br/>
-            - I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)
+            For Singapore University of Technology and Design (SUTD)'s course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50007-machine-learning/" target="_blank">50.007 Machine Learning</a>.<br/><br/>
+            Trained a variety of machine learning models for online hate speech classification.<br/><br/>
+            Extensively tuned the model hyper-parameters to improve model performance.<br/><br/>
+            Used machine learning techniques not taught in class to improve model performance.<br/><br/>
+            I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM).
           </p>
           <div class="project_extras d-flex row">
             <a href="https://www.kaggle.com/competitions/50007-2022" target="_blank" class="project_link">
@@ -217,11 +217,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50003-elements-of-software-construction" target="_blank">50.003 Elements of Software Construction</a><br/>
-            - TransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions<br/>
-            - This project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow<br/>
-            - I developed highly performant and functional APIs to meet project requirements<br/>
-            - I also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system
+            For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50003-elements-of-software-construction" target="_blank">50.003 Elements of Software Construction</a>.<br/><br/>
+            TransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.<br/><br/>
+            This project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.<br/><br/>
+            I developed highly performant and functional APIs to meet project requirements.<br/><br/>
+            I also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.
           </p>
           <div class="skills">
             <h5 class="skills_title text-center">Skills:</h5>
@@ -275,11 +275,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For SUTD's course: <a href="https://epd.sutd.edu.sg/undergraduate-courses/30111-entrepreneurship/" target="_blank">30.001 Entrepreneurship</a><br/>
-            - Giglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course<br/>
-            - Giglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to "test the waters" and see whetehr the students are suitable for an internship or full-time role in their company<br/>
-            - Giglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots<br/>
-            - I designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database
+            For SUTD's course: <a href="https://epd.sutd.edu.sg/undergraduate-courses/30111-entrepreneurship/" target="_blank">30.001 Entrepreneurship</a>.<br/><br/>
+            Giglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.<br/><br/>
+            Giglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to "test the waters" and see whetehr the students are suitable for an internship or full-time role in their company.<br/><br/>
+            Giglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.<br/><br/>
+            I designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.
           </p>
           <div class="skills">
             <h5 class="skills_title text-center">Skills:</h5>
@@ -331,10 +331,10 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50002-computation-structures/" target="_blank">50.002 Computation Structures</a><br/>
-            - This project is inspired by the popular online word-guessing game, <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a><br/>
-            - This project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine<br/>
-            - I programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic 
+            For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50002-computation-structures/" target="_blank">50.002 Computation Structures</a>.<br/><br/>
+            This project is inspired by the popular online word-guessing game, <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a>.<br/><br/>
+            This project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.<br/><br/>
+            I programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic .
           </p>
           <div class="project_extras d-flex row">
             <a href="https://istd.sutd.edu.sg/term4-design-exhibition/50002/wordle" target="_blank" class="project_link">
@@ -393,11 +393,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50001-information-systems-programming" target="_blank">50.001 Information Systems & Programming</a><br/>
-            - FEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD<br/>
-            - Accompanying the crowd tracking functionality are a suite of features that improve user experience in teh app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory<br/>
-            - Built using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations<br/>
-            - I led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend
+            For SUTD's course: <a href="https://istd.sutd.edu.sg/undergraduate/courses/50001-information-systems-programming" target="_blank">50.001 Information Systems & Programming</a>.<br/><br/>
+            FEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.<br/><br/>
+            Accompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.<br/><br/>
+            Built using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.<br/><br/>
+            I led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.
           </p>
           <div class="project_extras">
             <a href="https://istd.sutd.edu.sg/term4-design-exhibition/50001/food-establishment-autonomous-spatial-tracking-feast" target="_blank">
@@ -456,9 +456,9 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore<br/>
-            - The bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate<br/>
-            - I developed the bot from scratch and designed the user experience and mechanics behind the bot
+            Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore.<br/><br/>
+            The bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate.<br/><br/>
+            I developed the bot from scratch and designed the user experience and mechanics behind the bot.
           </p>
           <div class="project_extras">
             <a href="https://github.com/Fe-56/Will-I-Go-Broke" target="_blank" class="project_github">
@@ -510,11 +510,11 @@ export default function Projects() {
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            - For SUTD's course: <a href="https://smt.sutd.edu.sg/education/undergraduate/courses/10014-computational-thinking-for-design/" target="_blank">10.014 Computational Thinking for Design</a><br/>
-            - Pokemon Battle is inspired by the popular game series, <a href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games/" target="_blank">Pokémon</a><br/>
-            - It is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other<br/>
-            - It simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in<br/>
-            - I led the team for the game research and design of the game, and coded the mechanics and flow of the game
+            For SUTD's course: <a href="https://smt.sutd.edu.sg/education/undergraduate/courses/10014-computational-thinking-for-design/" target="_blank">10.014 Computational Thinking for Design</a>.<br/><br/>
+            Pokemon Battle is inspired by the popular game series, <a href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games/" target="_blank">Pokémon</a>.<br/><br/>
+            It is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other.<br/><br/>
+            It simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in.<br/><br/>
+            I led the team for the game research and design of the game, and coded the mechanics and flow of the game.
           </p>
           <div class="project_extras">
             <a href="https://github.com/Fe-56/Pokemon-Battle" target="_blank" class="project_github">

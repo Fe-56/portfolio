@@ -30,6 +30,16 @@
   margin-top: 5px;
 }
 
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
 :root {
   --background: #001011;
   --title: #6CCFF6;

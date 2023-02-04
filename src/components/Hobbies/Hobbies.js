@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
+import pageLoad from "../utils/pageLoad";
 import './Hobbies.css';
 import cycling_1 from './cycling_1.jpg';
 import cycling_2 from './cycling_2.jpg';
 
 export default function Hobbies() {
   useEffect(() => {
-    window.focus();
-    window.scrollTo(0, 0);
+    pageLoad();
     document.getElementById('nav_hobbies').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
   });
 

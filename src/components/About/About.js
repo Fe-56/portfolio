@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import pageLoad from "../utils/pageLoad";
 import './About.css';
 import * as d3 from 'd3';
 import profilePicture from './profile_picture_portfolio.jpg';
@@ -20,91 +21,11 @@ const milestones = [
 
 export default function About() {
   useEffect(() => {
-    window.focus();
-    window.scrollTo(0, 0); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
-    let width = 700, height = 700, padding = 120;
-    let svg = d3.select("#timeline_svg")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .attr("id", "timeline_svg_actual");
-    let scale = d3.scaleTime()
-                  .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
-                  .range([0, height - padding]);
-    let timeline = d3.axisLeft()
-                  .scale(scale)
-                  .tickFormat(d3.timeFormat("%Y")) // year-only values for the timeline
-                  .tickValues([]); // remove the labels for the timeline
-    svg.append("g")
-      .attr("transform", `translate(${width/2}, ${padding/4})`)
-      .attr("stroke-width", "5")
-      .call(timeline); // renders the vertical timeline
-    svg.selectAll("circle") // to represent a milestone
-        .data(milestones)
-        .enter()
-        .append("circle")
-        .attr("r", milestoneCircleRadius)
-        .attr("cx", width/2) // place the circle on the timeline itself
-        .attr("cy", (milestone) => {
-          return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-        }) // align the circle on the correct position on the timeline
-        .attr("fill", "var(--selected)");
-    svg.selectAll("line") // renders the lines from the timeline to the year of each milestone
-        .data(milestones)
-        .enter()
-        .append("line")
-        .style("stroke", "var(--selected)")
-        .style("stroke-width", 3)
-        .attr("y1", (milestone) => {
-          return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-        })
-        .attr("y2", (milestone) => {
-          return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-        })
-        .attr("x1", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
-          if (index % 2 === 0){
-            return width/2 - distanceBetweenMilestoneAndTimeline - 40;
-          }
-          else {
-            return width/2;
-          }
-        })
-        .attr("x2", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
-          if (index % 2 === 0){
-            return width/2;
-          }
-          else {
-            return width/2 + distanceBetweenMilestoneAndTimeline + 40;
-          }
-        })
-    let texts = svg.selectAll("text")
-                    .data(milestones)
-                    .enter();
-    texts.append("text") // renders the year of each milestone
-        .style("fill", "var(--selected )")
-        .style("font-size", "22px")
-        .style("text-decoration", "underline")
-        .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
-          return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - 40 - (width/5 + distanceBetweenMilestoneAndTimeline)/2 : width/2 + 40 + (width/5 + distanceBetweenMilestoneAndTimeline)/2
-        })
-        .attr("y", (milestone) => {
-          return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2;
-        })
-        .text((milestone) => {
-          return Object.keys(milestone)[0];
-        });
-    texts.append("text") // renders the description of each milestone
-        .style("fill", "var(--text)")
-        .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
-          return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline): width/2 + distanceBetweenMilestoneAndTimeline + 40;
-        })
-        .attr("y", (milestone) => {
-          return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;
-        })
-        .text((milestone) => {
-          return Object.values(milestone)[0];
-        })
-        .call(wrap, width/5 + distanceBetweenMilestoneAndTimeline);
+    pageLoad();
+
+    if (document.getElementById('timeline_svg_actual') === null){ // prevents 2 svg elements from being rendered, since the about component is loaded two times every time the about log (Fuo En Lim logo) is clicked into
+      addTimelineSVG();
+    }
   });
 
   return (
@@ -164,6 +85,92 @@ export default function About() {
       </div>
     </div>
   );
+}
+
+function addTimelineSVG(){
+  let width = 700, height = 700, padding = 120;
+  let svg = d3.select("#timeline_svg")
+              .append("svg")
+              .attr("width", width)
+              .attr("height", height)
+              .attr("id", "timeline_svg_actual");
+  let scale = d3.scaleTime()
+                .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
+                .range([0, height - padding]);
+  let timeline = d3.axisLeft()
+                .scale(scale)
+                .tickFormat(d3.timeFormat("%Y")) // year-only values for the timeline
+                .tickValues([]); // remove the labels for the timeline
+  svg.append("g")
+    .attr("transform", `translate(${width/2}, ${padding/4})`)
+    .attr("stroke-width", "5")
+    .call(timeline); // renders the vertical timeline
+  svg.selectAll("circle") // to represent a milestone
+      .data(milestones)
+      .enter()
+      .append("circle")
+      .attr("r", milestoneCircleRadius)
+      .attr("cx", width/2) // place the circle on the timeline itself
+      .attr("cy", (milestone) => {
+        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
+      }) // align the circle on the correct position on the timeline
+      .attr("fill", "var(--selected)");
+  svg.selectAll("line") // renders the lines from the timeline to the year of each milestone
+      .data(milestones)
+      .enter()
+      .append("line")
+      .style("stroke", "var(--selected)")
+      .style("stroke-width", 3)
+      .attr("y1", (milestone) => {
+        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
+      })
+      .attr("y2", (milestone) => {
+        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
+      })
+      .attr("x1", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
+        if (index % 2 === 0){
+          return width/2 - distanceBetweenMilestoneAndTimeline - 40;
+        }
+        else {
+          return width/2;
+        }
+      })
+      .attr("x2", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is odd, else, the line will be placed on the right
+        if (index % 2 === 0){
+          return width/2;
+        }
+        else {
+          return width/2 + distanceBetweenMilestoneAndTimeline + 40;
+        }
+      })
+  let texts = svg.selectAll("text")
+                  .data(milestones)
+                  .enter();
+  texts.append("text") // renders the year of each milestone
+      .style("fill", "var(--selected )")
+      .style("font-size", "22px")
+      .style("text-decoration", "underline")
+      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
+        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - 40 - (width/5 + distanceBetweenMilestoneAndTimeline)/2 : width/2 + 40 + (width/5 + distanceBetweenMilestoneAndTimeline)/2
+      })
+      .attr("y", (milestone) => {
+        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2;
+      })
+      .text((milestone) => {
+        return Object.keys(milestone)[0];
+      });
+  texts.append("text") // renders the description of each milestone
+      .style("fill", "var(--text)")
+      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is odd, else, the text will be placed on the right
+        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - (width/5 + distanceBetweenMilestoneAndTimeline): width/2 + distanceBetweenMilestoneAndTimeline + 40;
+      })
+      .attr("y", (milestone) => {
+        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;
+      })
+      .text((milestone) => {
+        return Object.values(milestone)[0];
+      })
+      .call(wrap, width/5 + distanceBetweenMilestoneAndTimeline);
 }
 
 // text-wrapping function from https://stackoverflow.com/questions/24784302/wrapping-text-in-d3

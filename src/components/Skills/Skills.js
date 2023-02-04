@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import pageLoad from "../utils/pageLoad";
 import './Skills.css';
 
 export default function Skills() {
   useEffect(() => {
-    window.focus();
-    window.scrollTo(0, 0);
+    pageLoad();
     document.getElementById('nav_skills').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
   });
 
