@@ -34,7 +34,6 @@ export default function Experiences() {
           </div>
         </div>
         <p class="text-start experience_description">
-          - My first ever development-related internship<br/>
           - Maintained the Android and iOS codebases of the Mobile@HDB application, in Java (Android Studio) and Swift (Xcode) respectively<br/>
           - Developed new features for the Mobile@HDB application<br/>
           - Researched and built two functional Augmented Reality (AR) prototypes using different open source AR libraries in Kotlin
@@ -125,7 +124,6 @@ export default function Experiences() {
           </div>
         </div>
         <p class="text-start experience_description">
-          - My first ever internship<br/>
           - Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems<br/>
           - Supported the project teams in developing presentation materials and in coordination of communications with the client<br/>
           - Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets
