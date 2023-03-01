@@ -232,7 +232,7 @@ export default function Projects() {
                 <i class="fa-brands fa-square-js fa-lg icon"></i>
                 JavaScript&nbsp;&nbsp;&nbsp;&nbsp;
                 <i class="fa-solid fa-e fa-lg icon"></i>
-                Express&nbsp;&nbsp;&nbsp;&nbsp;
+                Express.js&nbsp;&nbsp;&nbsp;&nbsp;
                 <i class="fa-solid fa-signs-post fa-lg icon"></i>
                 Postman&nbsp;&nbsp;&nbsp;&nbsp;
                 <i class="fa-solid fa-vials fa-lg icon"></i>
