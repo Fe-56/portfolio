@@ -262,7 +262,7 @@ export default function Projects() {
             <u>Giglet</u>
           </h3>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
-            <img src="https://media.licdn.com/dms/image/C5622AQHGmpxmKcPXGQ/feedshare-shrink_1280/0/1651318294045?e=1678320000&v=beta&t=HRCNtvvr1TzGyZa4ZVo2Q-p5C87EU4YB3xKlxktvVuY" loading="lazy" alt="Giglet team picture" id="hdb_logo" class="project_logo"></img>
+            <img src="https://media.licdn.com/dms/image/C5622AQHGmpxmKcPXGQ/feedshare-shrink_1280/0/1651318294045?e=1681344000&v=beta&t=2uORCYZviymL2vYAzgyqDNbDDwqNgoe17lFc1BvTXIk" loading="lazy" alt="Giglet team picture" id="hdb_logo" class="project_logo"></img>
           </div>
           <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
