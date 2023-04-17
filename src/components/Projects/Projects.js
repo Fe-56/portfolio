@@ -5,6 +5,7 @@ import wordle_logo from './wordle_logo.png';
 import feast_logo from './feast_logo.png';
 import will_i_go_broke_logo from './will_i_go_broke_logo.png';
 import pokemon_battle_logo from './pokemon_battle_logo.png';
+import giglet_picture from './giglet_picture.jpg';
 
 export default function Projects() {
   useEffect(() => {
@@ -262,7 +263,7 @@ export default function Projects() {
             <u>Giglet</u>
           </h3>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
-            <img src="https://media.licdn.com/dms/image/C5622AQHGmpxmKcPXGQ/feedshare-shrink_1280/0/1651318294045?e=1681344000&v=beta&t=2uORCYZviymL2vYAzgyqDNbDDwqNgoe17lFc1BvTXIk" loading="lazy" alt="Giglet team picture" id="hdb_logo" class="project_logo"></img>
+            <img src={giglet_picture} loading="lazy" alt="Giglet team picture" id="giglet_picture" class="project_logo"></img>
           </div>
           <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
@@ -328,7 +329,7 @@ export default function Projects() {
             </h6>
           </div>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
-            <img src={wordle_logo} loading="lazy" alt="Wordle logo" id="hdb_logo" class="project_logo"></img>
+            <img src={wordle_logo} loading="lazy" alt="Wordle logo" id="wordle_logo" class="project_logo"></img>
           </div>
         </div>
         <div class="project_content">
@@ -380,7 +381,7 @@ export default function Projects() {
             <u>Food Establishment Autonomous Spatial Tracking (FEAST)</u>
           </h3>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
-            <img src={feast_logo} loading="lazy" alt="FEAST logo" id="hdb_logo" class="project_logo"></img>
+            <img src={feast_logo} loading="lazy" alt="FEAST logo" id="feast_logo" class="project_logo"></img>
           </div>
           <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
@@ -453,7 +454,7 @@ export default function Projects() {
             </h6>
           </div>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
-            <img src={will_i_go_broke_logo} loading="lazy" alt="Wordle logo" id="hdb_logo" class="project_logo"></img>
+            <img src={will_i_go_broke_logo} loading="lazy" alt="Will I Go Broke logo" id="will_i_go_broke_logo" class="project_logo"></img>
           </div>
         </div>
         <div class="project_content">
@@ -497,7 +498,7 @@ export default function Projects() {
             <u>Pokemon Battle</u>
           </h3>
           <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
-            <img src={pokemon_battle_logo} loading="lazy" alt="Pokemon Battle logo" id="hdb_logo" class="project_logo"></img>
+            <img src={pokemon_battle_logo} loading="lazy" alt="Pokemon Battle logo" id="pokemon_battle_logo_logo" class="project_logo"></img>
           </div>
           <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
             <h6>
