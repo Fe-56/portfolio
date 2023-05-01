@@ -71,7 +71,7 @@ export default function Experiences() {
           <h3>
             <u>SmileTutor</u>
           </h3>
-          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-enter justify-content-sm-end justify-content-center">
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
             <h6>
               <i class="fa-solid fa-briefcase icon"></i>
               Private Tutor (part-time)<br/>
