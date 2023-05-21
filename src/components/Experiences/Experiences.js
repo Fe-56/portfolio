@@ -49,7 +49,7 @@ export default function Experiences() {
               Android Studio&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="fa-solid fa-d fa-lg icon"></i>
               Dart&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fa-solid fa-jira fa-lg icon"></i>
+              <i class="fa-brands fa-jira fa-lg icon"></i>
               Jira&nbsp;&nbsp;&nbsp;&nbsp;
               <i class="fa-brands fa-github fa-lg icon"></i>
               GitHub
