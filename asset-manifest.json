@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d90ebf67.css",
-    "main.js": "/portfolio/static/js/main.e7b63fec.js",
+    "main.js": "/portfolio/static/js/main.e4940f04.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
-    "static/media/coffeespace_logo.jpg": "/portfolio/static/media/coffeespace_logo.c62b6d88aa6ca21b236d.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
     "static/media/giglet_picture.jpg": "/portfolio/static/media/giglet_picture.624f7e836c893ff96595.jpg",
+    "static/media/coffeespace_logo.jpg": "/portfolio/static/media/coffeespace_logo.a84007434d988c926dd6.jpg",
     "static/media/profile_picture_portfolio.jpg": "/portfolio/static/media/profile_picture_portfolio.aa9b313a7cdc9ef01271.jpg",
     "static/media/wordle_logo.png": "/portfolio/static/media/wordle_logo.a39ba9873c82996fb59c.png",
     "static/media/will_i_go_broke_logo.png": "/portfolio/static/media/will_i_go_broke_logo.eba00f9391cc088582ef.png",
@@ -14,10 +14,10 @@
     "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
     "main.d90ebf67.css.map": "/portfolio/static/css/main.d90ebf67.css.map",
-    "main.e7b63fec.js.map": "/portfolio/static/js/main.e7b63fec.js.map"
+    "main.e4940f04.js.map": "/portfolio/static/js/main.e4940f04.js.map"
   },
   "entrypoints": [
     "static/css/main.d90ebf67.css",
-    "static/js/main.e7b63fec.js"
+    "static/js/main.e4940f04.js"
   ]
 }
