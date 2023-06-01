@@ -16,9 +16,9 @@ export default function Contact() {
       </h5>
       <div id="email" class="contact_section">
         <h3><u>Email</u></h3>
-        <a href="mailto:fuoen_lim@berkeley.edu" target="_blank" id="email_address" class="contact_link">
+        <a href="mailto:limfuoen1999@gmail.com" target="_blank" id="email_address" class="contact_link">
           <i class="fa-solid fa-envelope icon"></i>
-          fuoen_lim@berkeley.edu
+          limfuoen1999@gmail.com
         </a>
       </div>
       <div id="linkedin" class="contact_section">
