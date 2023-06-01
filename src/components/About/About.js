@@ -50,7 +50,7 @@ export default function About() {
       </div>
       <div id="resume" class="about_section">
         <h3><u>Resume</u></h3>
-        <a href="https://drive.google.com/file/d/1quGIXBQUK8jWXs2TnuDjhBD-_aqGvuzc/view" target="_blank">
+        <a href="https://drive.google.com/file/d/1qnzKANH9ScEKVq4qhR2YUdx_OKdlfsp7/view?usp=sharing" target="_blank">
           <button type="button" class="btn btn-light buttons">
             {"My Resume >"}
           </button>
