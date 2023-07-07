@@ -40,6 +40,10 @@
   transition: opacity 0.5s ease-out;
 }
 
+.btn {
+  border-radius: var(--border-radius);
+}
+
 /* constants */
 :root {
   --background: #001011;
