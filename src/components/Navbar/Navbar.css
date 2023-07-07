@@ -23,14 +23,14 @@
   text-decoration: underline;
   background-color: var(--selected);
   text-decoration-color: var(--background);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   outline: none;
   transition-duration: 0.2s;
 }
 
 .nav-link {
   transition-duration: 0.2s;
-  border-radius: 15px;
+  border-radius: var(--border-radius);
 }
 
 #logo:hover {

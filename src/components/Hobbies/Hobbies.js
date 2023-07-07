@@ -79,7 +79,7 @@ export default function Hobbies() {
           <u>Building Cool Stuff</u>
         </h3>
         <p class="text-start description">
-          Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using
+          Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using.
         </p>
         <div class="hobby_end">
           <a href="https://github.com/Fe-56" target="_blank">

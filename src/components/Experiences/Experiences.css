@@ -11,7 +11,7 @@
 .experience {
   margin-bottom: 20px;
   background-color: var(--quote);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
@@ -27,7 +27,7 @@
 }
 
 .company_logo {
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   height: auto;
   width: 100%;
   margin-bottom: 10px;

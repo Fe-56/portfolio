@@ -16,7 +16,7 @@
 .contact_section {
   margin-bottom: 20px;
   background-color: var(--quote);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;

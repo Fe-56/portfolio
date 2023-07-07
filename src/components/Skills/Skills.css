@@ -11,7 +11,7 @@
 .skill_section {
   margin-bottom: 20px;
   background-color: var(--quote);
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   padding-top: 15px;
   padding-bottom: 1px;
   width: fit-content;

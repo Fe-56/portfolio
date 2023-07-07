@@ -40,10 +40,12 @@
   transition: opacity 0.5s ease-out;
 }
 
+/* constants */
 :root {
   --background: #001011;
   --title: #6CCFF6;
   --text: #FFFFFC;
   --selected: #A5E000;
   --quote: #313235;
+  --border-radius: 15px;
 }

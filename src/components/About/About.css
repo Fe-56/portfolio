@@ -20,7 +20,7 @@ blockquote {
 blockquote p {
   padding: 15px;
   background: var(--quote);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   color: black;
   width: fit-content;
   margin-left: auto;
