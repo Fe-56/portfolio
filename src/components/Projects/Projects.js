@@ -42,7 +42,7 @@ export default function Projects() {
         <div class="project_content">
           <p class="text-start project_description">
             Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies.<br/><br/>
-            Look and Earn has an Android app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.<br/><br/>
+            Look and Earn has a Flutter app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.<br/><br/>
             The app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next.<br/><br/>
             Look and Earn also has an admin web app to manage the advertisements that will be displayed in the app.<br/><br/>
             I designed the entire system architecture of the app and web app, and developed them from scratch.<br/><br/>

@@ -5,6 +5,7 @@ import hdb_logo from './hdb_logo.png';
 import smiletutor_logo from './smiletutor_logo.png';
 import dbs_logo from './dbs_logo.jpg';
 import coffeespace_logo from './coffeespace_logo.jpg';
+import myexpoplace_logo from './myexpoplace_logo.png';
 
 export default function Experiences() {
   useEffect(() => {
@@ -15,6 +16,56 @@ export default function Experiences() {
   return (
     <div id="experiences" class="container-fluid">
       <h1 id="experiences_title">Experiences</h1>
+      <div id="myexpoplace" class="experience">
+        <div class="experience_title_and_info d-flex row">
+          <h3>
+            <u>MyExpoPlace</u>
+          </h3>
+          <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
+            <h6>
+              <i class="fa-solid fa-briefcase icon"></i>
+              Flutter Developer Intern<br/>
+              <i class="fa-solid fa-location-dot icon"></i>
+              San Francisco Bay Area, California, United States<br/>
+              <i class="fa-solid fa-timeline icon"></i>
+              June 2023 to August 2023
+            </h6>
+          </div>
+          <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-start">
+            <img src={myexpoplace_logo} loading="lazy" alt="HDB logo" id="hdb_logo" class="company_logo"></img>
+          </div>
+        </div>
+        <p class="text-start experience_description">
+          - Maintained and developed new features for MyExpoPlace mobile app using Flutter<br/>
+          - Designed and implemented new user interfaces and experiences to improve the app<br/>
+          - Conducted technical research for potential development of new features
+        </p>
+        <div class="skills">
+          <h5 class="skills_title text-center">Skills:</h5>
+          <p class="text-center">
+          <div class="hard_skills">
+              <i class="fa-solid fa-f fa-lg icon"></i>
+              Flutter&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-brands fa-android fa-lg icon"></i>
+              Android Studio&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-solid fa-d fa-lg icon"></i>
+              Dart&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-brands fa-github fa-lg icon"></i>
+              GitHub&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-brands fa-figma icon fa-lg icon"></i>
+              Figma
+            </div>
+            <div class="soft_skills">
+              <i class="fa-solid fa-comments fa-lg icon"></i>
+              Communication&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-brands fa-google fa-lg icon"></i>
+              Researching for solutions&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-solid fa-magnifying-glass fa-lg icon"></i>
+              Attention to detail
+            </div>
+          </p>
+        </div>
+      </div>
       <div id="coffeespace" class="experience">
         <div class="experience_title_and_info d-flex row">
           <h3>
@@ -30,14 +81,14 @@ export default function Experiences() {
               <i class="fa-solid fa-location-dot icon"></i>
               San Francisco, California, United States<br/>
               <i class="fa-solid fa-timeline icon"></i>
-              May 2023 to Present
+              March 2023 to June 2023
             </h6>
           </div>
         </div>
         <p class="text-start experience_description">
-          - Maintaining and developing new features for CoffeeSpace mobile app using Flutter<br/>
-          - Liaising with backend engineer to deliver proper CoffeSpace app functions<br/>
-          - Conducting technical research for potential development of new features
+          - Maintained and developed new features for CoffeeSpace mobile app using Flutter<br/>
+          - Liaised with backend engineer to deliver proper CoffeSpace app functions<br/>
+          - Conducted technical research for potential development of new features
         </p>
         <div class="skills">
           <h5 class="skills_title text-center">Skills:</h5>

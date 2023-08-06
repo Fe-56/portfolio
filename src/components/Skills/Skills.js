@@ -34,6 +34,10 @@ export default function Skills() {
         </h3>
         <p>
           <div class="skill">
+            <i class="fa-solid fa-d icon "></i>
+            Dart <span class="proficiency_level">(proficient)</span><br/>
+          </div>
+          <div class="skill">
             <i class="fa-brands fa-python icon fa-lg"></i>
             Python <span class="proficiency_level">(intermediate)</span><br/>
           </div>
@@ -44,10 +48,6 @@ export default function Skills() {
           <div class="skill">
             <i class="fa-brands fa-square-js icon fa-lg"></i>
             JavaScript <span class="proficiency_level">(intermediate)</span><br/>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-d icon "></i>
-            Dart <span class="proficiency_level">(intermediate)</span><br/>
           </div>
           <div class="skill">
             <i class="fa-solid fa-k icon fa-lg"></i>
@@ -125,7 +125,7 @@ export default function Skills() {
             <p>
               <div class="skill">
                 <i class="fa-solid fa-f icon fa-lg"></i>
-                Flutter <span class="proficiency_level">(intermediate)</span><br/>
+                Flutter <span class="proficiency_level">(proficient)</span><br/>
               </div>
               <div class="skill">
                 <i class="fa-brands fa-telegram icon fa-lg"></i>

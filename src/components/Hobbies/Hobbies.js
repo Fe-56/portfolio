@@ -19,7 +19,7 @@ export default function Hobbies() {
           <u>Road Cycling</u>
         </h3>
         <p class="text-start description">
-          I absolutely love road cycling! I have been cycling since 2018, when my friends introduced me to road cycling. My first road bike was a <a href="https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/1-series/1-2/p/15807/" target="_blank">2016 Trek 1.2</a>. Since then, I've bought, rode, and sold several bikes. I am now riding a <a href="https://www.giant-bicycles.com/us/propel-advanced-disc-1" target="_blank">2022 Giant Propel Advanced Disc 1</a>.
+          I absolutely love road cycling! I have been cycling since 2018, when my friends introduced me to road cycling. My first road bike was a <a href="https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/1-series/1-2/p/15807/" target="_blank">2016 Trek 1.2</a>. Since then, I've bought, rode, and sold several bikes. I am now riding a <a href="https://www.bianchi.com/bikes/bikes/road/racing-road/sprint/" target="_blank">Bianchi Sprint</a>.
           <br/><br/>
           I don't race, I just cycle for fitness, to explore the world around me and for the sheer joy of riding a bike.
         </p>
