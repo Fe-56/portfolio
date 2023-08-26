@@ -25,7 +25,7 @@ export default function Contact() {
         <h3><u>LinkedIn</u></h3>
         <a href="https://www.linkedin.com/in/limfuoen/" target="_blank" id="linkedin" class="contact_link">
           <i class="fa-brands fa-linkedin icon"></i>
-          Fuo En Lim's LinkedIn
+          Lim Fuo En's LinkedIn
         </a>
       </div>
       <div id="telegram" class="contact_section">

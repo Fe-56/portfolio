@@ -9,7 +9,7 @@ export default function Navbar() {
           <div id="navbar_logo">
             <a href="/portfolio/#/" class="navbar-brand mb-0 mx-auto" id="logo" onClick={clickedAbout}>
               <img src="http://fe-56.github.io/portfolio/favicon.ico?v=2" width="30" height="30" class="d-inline-block align-top" id="fe56_logo"/>
-              Fuo En Lim
+              Lim Fuo En
             </a>
           </div>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_buttons" aria-controls="navbar_buttons" aria-expanded="false" aria-label="Toggle navigation bar">

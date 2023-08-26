@@ -4,7 +4,7 @@ import './About.css';
 import * as d3 from 'd3';
 import profilePicture from './profile_picture_portfolio.jpg';
 
-const name = "Fuo En Lim";
+const name = "Lim Fuo En";
 const title = "Aspiring Full-Stack Developer";
 const quote = "I love to build cool apps that bring value to the lives of others!";
 const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a visiting student at UC Berkeley Extension until May 2023.";
@@ -23,7 +23,7 @@ export default function About() {
   useEffect(() => {
     pageLoad();
 
-    if (document.getElementById('timeline_svg_actual') === null){ // prevents 2 svg elements from being rendered, since the about component is loaded two times every time the about log (Fuo En Lim logo) is clicked into
+    if (document.getElementById('timeline_svg_actual') === null){ // prevents 2 svg elements from being rendered, since the about component is loaded two times every time the about log (Lim Fuo Enlogo) is clicked into
       addTimelineSVG();
     }
   });
