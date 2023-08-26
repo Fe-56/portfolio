@@ -26,7 +26,7 @@ export default function Experiences() {
               <i class="fa-solid fa-briefcase icon"></i>
               Flutter Developer Intern<br/>
               <i class="fa-solid fa-location-dot icon"></i>
-              San Francisco Bay Area, California, United States<br/>
+              Los Angeles, California, United States<br/>
               <i class="fa-solid fa-timeline icon"></i>
               June 2023 to August 2023
             </h6>
@@ -37,8 +37,8 @@ export default function Experiences() {
         </div>
         <p class="text-start experience_description">
           - Maintained and developed new features for MyExpoPlace mobile app using Flutter<br/>
-          - Designed and implemented new user interfaces and experiences to improve the app<br/>
-          - Conducted technical research for potential development of new features
+          - Designed and implemented brand new user interfaces and experiences to improve listing experience in the app<br/>
+          - Conducted technical research for potential development of new features to improve user experience when navigating the app
         </p>
         <div class="skills">
           <h5 class="skills_title text-center">Skills:</h5>
@@ -87,8 +87,8 @@ export default function Experiences() {
         </div>
         <p class="text-start experience_description">
           - Maintained and developed new features for CoffeeSpace mobile app using Flutter<br/>
-          - Liaised with backend engineer to deliver proper CoffeSpace app functions<br/>
-          - Conducted technical research for potential development of new features
+          - Liaised with backend engineer to deliver functioning and efficient CoffeSpace app functions<br/>
+          - Conducted technical research for potential development of new in-app payments to achieve additional revenue streams for CoffeeSpace
         </p>
         <div class="skills">
           <h5 class="skills_title text-center">Skills:</h5>
@@ -138,7 +138,7 @@ export default function Experiences() {
         <p class="text-start experience_description">
           - Maintained the Android and iOS codebases of the Mobile@HDB application, in Java (Android Studio) and Swift (Xcode) respectively<br/>
           - Developed new features for the Mobile@HDB application<br/>
-          - Researched and built two functional Augmented Reality (AR) prototypes using different open source AR libraries in Kotlin
+          - Conducted technical research and built two functional Augmented Reality (AR) prototypes using different open source AR libraries in Kotlin
         </p>
         <div class="skills">
           <h5 class="skills_title text-center">Skills:</h5>

@@ -37,16 +37,16 @@ export default function Contact() {
       </div>
       <div id="phone" class="contact_section">
         <h3><u>Phone Number</u></h3>
-        <a href="tel:+13414008340" target="_blank" id="phone_number" class="contact_link">
+        <a href="tel:+6597357695" target="_blank" id="phone_number" class="contact_link">
           <i class="fa-solid fa-phone icon"></i>
-          +1 (341) 400-8340
+          +65 9735 7695
         </a>
       </div>
       <div id="location" class="contact_section">
         <h3><u>(Current) Location</u></h3>
-        <a href="https://www.google.com/maps/place/Berkeley,+CA/@37.8711428,-122.3714773,12z/data=!3m1!4b1!4m6!3m5!1s0x808579363a8549d3:0x94ea1595a675e993!8m2!3d37.8715226!4d-122.273042!16zL20vMDFqcjY" target="_blank" id="phone_number" class="contact_link">
+        <a href="https://www.google.com/maps/place/Singapore/@1.3139946,103.6794481,11z/data=!4m6!3m5!1s0x31da11238a8b9375:0x887869cf52abf5c4!8m2!3d1.352083!4d103.819836!16zL20vMDZ0MnQ?entry=ttu" target="_blank" id="phone_number" class="contact_link">
           <i class="fa-solid fa-location-dot icon"></i>
-          Berkeley, California, United States
+          Singapore
         </a>
       </div>
     </div>
