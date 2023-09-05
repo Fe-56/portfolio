@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
+import textWrap from "../utils/textWrap";
 import './About.css';
 import * as d3 from 'd3';
 import profilePicture from './profile_picture_portfolio.jpg';
@@ -7,7 +8,7 @@ import profilePicture from './profile_picture_portfolio.jpg';
 const name = "Lim Fuo En";
 const title = "Aspiring Full-Stack Developer";
 const quote = "I love to build cool apps that bring value to the lives of others!";
-const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a visiting student at UC Berkeley Extension until May 2023.";
+const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a general visiting student (Master's) at Xi'an Jiaotong University (西安交通大学) until January 2024.";
 const milestoneCircleRadius = 10;
 const distanceBetweenMilestoneAndTimeline = 35;
 const milestones = [
@@ -16,7 +17,7 @@ const milestones = [
   {2020: "Matriculated at SUTD"},
   {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
   {2022: "Completed mobile application development internship at Housing & Development Board (HDB)"},
-  {2023: "Studying at UC Berkeley Extension"}
+  {2023: "Interned at CoffeeSpace and MyExpoPlace as a Flutter Developer"},
 ];
 
 export default function About() {
@@ -33,7 +34,7 @@ export default function About() {
       <div class="container-fluid" id="name_and_photo">
         <div class="row align-items-center">
           <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 text-sm-end text-center" id="name_and_title">
-            <h1 id="name">{name}</h1>
+            <h1 id="name">{name}</h1> 
             <h5 id="title">{title}</h5>
           </div>
           <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 text-sm-start text-center">
@@ -96,7 +97,7 @@ function addTimelineSVG(){
               .attr("id", "timeline_svg_actual")
               .classed("svg-content-responsive", true);
   let scale = d3.scaleTime()
-                .domain([new Date(2016, 0, 1, 0), new Date(2023, 0, 1, 0)])
+                .domain([new Date(2016, 0, 1, 0), new Date(2024, 0, 1, 0)])
                 .range([0, height - padding]);
   let timeline = d3.axisLeft()
                 .scale(scale)
@@ -171,39 +172,5 @@ function addTimelineSVG(){
       .text((milestone) => {
         return Object.values(milestone)[0];
       })
-      .call(wrap, width/5 + 40);
-}
-
-// text-wrapping function from https://stackoverflow.com/questions/24784302/wrapping-text-in-d3
-function wrap(text, width) {
-  text.each(function () {
-    var text = d3.select(this),
-    words = text.text().split(/\s+/).reverse(),
-    word,
-    line = [],
-    lineNumber = 0,
-    lineHeight = 1.1, // ems
-    x = text.attr("x"),
-    y = text.attr("y"),
-    dy = 0, //parseFloat(text.attr("dy")),
-    tspan = text.text(null)
-                .append("tspan")
-                .attr("x", x)
-                .attr("y", y)
-                .attr("dy", dy + "em");
-    while (word = words.pop()) {
-      line.push(word);
-      tspan.text(line.join(" "));
-      if (tspan.node().getComputedTextLength() > width) {
-          line.pop();
-          tspan.text(line.join(" "));
-          line = [word];
-          tspan = text.append("tspan")
-                      .attr("x", x)
-                      .attr("y", y)
-                      .attr("dy", ++lineNumber * lineHeight + dy + "em")
-                      .text(word);
-      }
-    }
-  });
+      .call(textWrap, width/5 + 40);
 }
