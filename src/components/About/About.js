@@ -9,24 +9,30 @@ const name = "Lim Fuo En";
 const title = "Aspiring Full-Stack Developer";
 const quote = "I love to build cool apps that bring value to the lives of others!";
 const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a general visiting student (Master's) at Xi'an Jiaotong University (西安交通大学) until January 2024.";
-const milestoneCircleRadius = 10;
-const distanceBetweenMilestoneAndTimeline = 35;
 const milestones = [
   {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
   {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
   {2020: "Matriculated at SUTD"},
   {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
   {2022: "Completed mobile application development internship at Housing & Development Board (HDB)"},
-  {2023: "Interned at CoffeeSpace and MyExpoPlace as a Flutter Developer"},
+  {2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States"},
 ];
 
 export default function About() {
   useEffect(() => {
     pageLoad();
 
-    if (document.getElementById('timeline_svg_actual') === null){ // prevents 2 svg elements from being rendered, since the about component is loaded two times every time the about log (Lim Fuo Enlogo) is clicked into
-      addTimelineSVG();
-    }
+    // const observer = new IntersectionObserver(entries => {
+    //   entries.forEach(entry => {
+    //     if (entry.isIntersecting) {
+    //       console.log("HELLO HELLO HELLO");
+    //       entry.target.classList.add('animate-milestone');
+    //     }
+    //   })
+    // });
+
+    // const trigger = document.querySelector('.timeline_milestone');
+    // observer.observe(trigger);
   });
 
   return (
@@ -59,7 +65,26 @@ export default function About() {
       </div>
       <div id="timeline" class="about_section">
         <h3><u>(Professional) Timeline</u></h3>
-        <div id="timeline_svg" class="container-fluid"></div>
+        {milestones.map((milestone, index) => {
+          if (index % 2 == 0) {
+            return <div class="timeline_milestone left_milestone">
+              <div class="timeline_milestone_text_box">
+                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
+                <p class="timeline_milestone_description">{Object.values(milestone)}</p>
+                <span class="left_milestone_arrow milestone_arrow"></span>
+              </div>
+            </div>
+          }
+          else {
+            return <div class="timeline_milestone right_milestone">
+              <div class="timeline_milestone_text_box">
+                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
+                <p class="timeline_milestone_description">{Object.values(milestone)}</p>
+                <span class="right_milestone_arrow milestone_arrow"></span>
+              </div>
+            </div>
+          }
+        })}
       </div>
       <div id="find_me" class="about_section">
         <h3><u>Find me on the Web</u></h3>
@@ -86,91 +111,4 @@ export default function About() {
       </div>
     </div>
   );
-}
-
-function addTimelineSVG(){
-  let width = 380, height = 700, padding = 120;
-  let svg = d3.select("#timeline_svg")
-              .append("svg")
-              .attr("width", width)
-              .attr("height", height)
-              .attr("id", "timeline_svg_actual")
-              .classed("svg-content-responsive", true);
-  let scale = d3.scaleTime()
-                .domain([new Date(2016, 0, 1, 0), new Date(2024, 0, 1, 0)])
-                .range([0, height - padding]);
-  let timeline = d3.axisLeft()
-                .scale(scale)
-                .tickFormat(d3.timeFormat("%Y")) // year-only values for the timeline
-                .tickValues([]); // remove the labels for the timeline
-  svg.append("g")
-    .attr("transform", `translate(${width/2}, ${padding/4})`)
-    .attr("stroke-width", "5")
-    .call(timeline); // renders the vertical timeline
-  svg.selectAll("circle") // to represent a milestone
-      .data(milestones)
-      .enter()
-      .append("circle")
-      .attr("r", milestoneCircleRadius)
-      .attr("cx", width/2) // place the circle on the timeline itself
-      .attr("cy", (milestone) => {
-        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-      }) // align the circle on the correct position on the timeline
-      .attr("fill", "var(--selected)");
-  svg.selectAll("line") // renders the lines from the timeline to the year of each milestone
-      .data(milestones)
-      .enter()
-      .append("line")
-      .style("stroke", "var(--selected)")
-      .style("stroke-width", 3)
-      .attr("y1", (milestone) => {
-        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-      })
-      .attr("y2", (milestone) => {
-        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 - milestoneCircleRadius/2;
-      })
-      .attr("x1", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is even, else, the line will be placed on the right
-        if (index % 2 === 0){
-          return width/2 - distanceBetweenMilestoneAndTimeline - 20;
-        }
-        else {
-          return width/2;
-        }
-      })
-      .attr("x2", (milestone, index) => { // places the line on the left of the timeline if the milestone has an index that is even, else, the line will be placed on the right
-        if (index % 2 === 0){
-          return width/2;
-        }
-        else {
-          return width/2 + distanceBetweenMilestoneAndTimeline + 20;
-        }
-      })
-  let texts = svg.selectAll("text")
-                  .data(milestones)
-                  .enter();
-  texts.append("text") // renders the year of each milestone
-      .style("fill", "var(--selected )")
-      .style("font-size", "22px")
-      .style("text-decoration", "underline")
-      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is even, else, the text will be placed on the right
-        return index % 2 === 0 ? width/2 - (distanceBetweenMilestoneAndTimeline + width/5 + 40)/2 - 50 : width/2 + (width/5 + 40)/2 + 15;
-      })
-      .attr("y", (milestone) => {
-        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2;
-      })
-      .text((milestone) => {
-        return Object.keys(milestone)[0];
-      });
-  texts.append("text") // renders the description of each milestone
-      .style("fill", "var(--text)")
-      .attr("x", (milestone, index) => { // places the text on the left of the timeline if the milestone has an index that is even, else, the text will be placed on the right
-        return index % 2 === 0 ? width/2 - distanceBetweenMilestoneAndTimeline - width/5 - 30 : width/2 + distanceBetweenMilestoneAndTimeline;
-      })
-      .attr("y", (milestone) => {
-        return scale(new Date(Object.keys(milestone)[0], 0, 1, 0)) + padding/4 + milestoneCircleRadius/2 + 25;
-      })
-      .text((milestone) => {
-        return Object.values(milestone)[0];
-      })
-      .call(textWrap, width/5 + 40);
 }

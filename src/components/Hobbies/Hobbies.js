@@ -69,7 +69,7 @@ export default function Hobbies() {
           I also love watching anime. I usually watch the longer-running and super popular ones. I especially love <a href="https://en.wikipedia.org/wiki/Dragon_Ball" target="_blank">Dragon Ball</a> and <a href="https://en.wikipedia.org/wiki/Naruto" target="_blank">Naruto</a>. My most favourite chracters from each of the anime are <a href="https://dragonball.fandom.com/wiki/Vegeta" target="_blank">Vegeta</a> and <a href="https://naruto.fandom.com/wiki/Itachi_Uchiha" target="_blank">Itachi Uchiha</a> respectively.
         </p>
         <div id="anime_images" class="hobby_end">
-          <img src="https://w0.peakpx.com/wallpaper/387/534/HD-wallpaper-majin-vegeta-ball-dragonball-dragonball-z-dragon-anime.jpg" loading="lazy" alt="Vegeta" id="vegeta_picture" class="image"></img>
+          <img src="https://i.redd.it/e6gr4jd1i5o81.jpg" loading="lazy" alt="Vegeta" id="vegeta_picture" class="image"></img>
           <img src="https://mfiles.alphacoders.com/900/900540.jpg" loading="lazy" alt="Itachi Uchiha" id="itachi_uchiha_picture" class="image"></img>
         </div>
       </div>
