@@ -37,6 +37,7 @@ export default function Experiences() {
         </div>
         <p class="text-start experience_description">
           - Maintained and developed new features for MyExpoPlace mobile app using Flutter<br/>
+          - Took ownership of design and development tasks for the app<br/>
           - Designed and implemented brand new user interfaces and experiences to improve listing experience in the app<br/>
           - Conducted technical research for potential development of new features to improve user experience when navigating the app
         </p>
@@ -189,7 +190,7 @@ export default function Experiences() {
         </div>
         <p class="text-start experience_description">
           - Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>
-          - Conducted weekly one-on-one lessons at the student's residence<br/>
+          - Conducted weekly one-on-one lessons at students' residences<br/>
           - Clarified the student's doubts, went through their homework and exam papers with them<br/>
           - Explained and taught them concepts thay they were otherwise unsure of<br/>
           - Liaised with the student's parents to ensure that their child's homework and assignments are done on time

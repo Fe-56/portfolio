@@ -1,38 +1,17 @@
 import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
-import textWrap from "../utils/textWrap";
 import './About.css';
-import * as d3 from 'd3';
 import profilePicture from './profile_picture_portfolio.jpg';
+import Timeline from './Timeline';
 
 const name = "Lim Fuo En";
 const title = "Aspiring Full-Stack Developer";
 const quote = "I love to build cool apps that bring value to the lives of others!";
 const about = "Fuo En was born in Singapore in 1999. Since young, he has an interest in computers and technology, and aspired to have a career that involved technology. He is currently a Computer Science and Design (CSD) Junior at Singapore University of Technology and Design (SUTD), and a general visiting student (Master's) at Xi'an Jiaotong University (西安交通大学) until January 2024.";
-const milestones = [
-  {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
-  {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
-  {2020: "Matriculated at SUTD"},
-  {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
-  {2022: "Completed mobile application development internship at Housing & Development Board (HDB)"},
-  {2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States"},
-];
 
 export default function About() {
   useEffect(() => {
     pageLoad();
-
-    // const observer = new IntersectionObserver(entries => {
-    //   entries.forEach(entry => {
-    //     if (entry.isIntersecting) {
-    //       console.log("HELLO HELLO HELLO");
-    //       entry.target.classList.add('animate-milestone');
-    //     }
-    //   })
-    // });
-
-    // const trigger = document.querySelector('.timeline_milestone');
-    // observer.observe(trigger);
   });
 
   return (
@@ -63,29 +42,7 @@ export default function About() {
           </button>
         </a>
       </div>
-      <div id="timeline" class="about_section">
-        <h3><u>(Professional) Timeline</u></h3>
-        {milestones.map((milestone, index) => {
-          if (index % 2 == 0) {
-            return <div class="timeline_milestone left_milestone">
-              <div class="timeline_milestone_text_box">
-                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
-                <p class="timeline_milestone_description">{Object.values(milestone)}</p>
-                <span class="left_milestone_arrow milestone_arrow"></span>
-              </div>
-            </div>
-          }
-          else {
-            return <div class="timeline_milestone right_milestone">
-              <div class="timeline_milestone_text_box">
-                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
-                <p class="timeline_milestone_description">{Object.values(milestone)}</p>
-                <span class="right_milestone_arrow milestone_arrow"></span>
-              </div>
-            </div>
-          }
-        })}
-      </div>
+      <Timeline />
       <div id="find_me" class="about_section">
         <h3><u>Find me on the Web</u></h3>
         <div class="container-fluid">
