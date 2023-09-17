@@ -1,0 +1,103 @@
+#timeline {
+    position: relative;
+    max-width: 1200px;
+    margin-bottom: 40px;
+  }
+  
+  #timeline::after { /* this is for the vertical line running through the center of the timeline element */
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: var(--about-milestone-line-height);
+    background: var(--selected);
+    top: 10%;
+    left: 50%;
+    border-radius: var(--border-radius);
+  }
+  
+  .timeline_milestone {
+    padding: 10px 30px;
+    position: relative;
+    width: 50%;
+  }
+
+  .timeline_milestone:hover {
+    color: var(--selected);
+  }
+  
+  .timeline_milestone_year {
+    font-weight: bolder;
+    font-size: 24px;
+  }
+  
+  .timeline_milestone_description {
+    font-size: 16px;
+  }
+  
+  .timeline_milestone_text_box {
+    padding: 20px 20px;
+    background: var(--quote);
+    position: relative;
+    border-radius: var(--border-radius);
+  }
+  
+  .left_milestone {
+    left: 0;
+  }
+  
+  .right_milestone {
+    left: 51%;
+  }
+  
+  .milestone_arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 40%;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    color: var(--selected);
+  }
+  
+  .left_milestone_arrow {
+    border-left: 30px solid;
+    right: -30px;
+  }
+  
+  .right_milestone_arrow {
+    border-right: 30px solid;
+    left: -31px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    #timeline::after {
+      left: 20px;
+    }
+    
+    .timeline_milestone {
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 25px;
+    }
+  
+    .right_milestone {
+      left: 0;
+    }
+  
+    .left_milestone_arrow, .right_milestone_arrow {
+      border-right: 15px solid;
+      border-left: 0;
+      left: -15px;
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+    transition:
+        opacity 3s,
+        color 0.1s;
+  }
+
+  .show{
+    opacity: 1;
+  }

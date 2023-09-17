@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import './Timeline.css';
 
 const milestones = [
   {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
@@ -10,29 +11,46 @@ const milestones = [
 ];
 
 export default function Timeline() {
+  useEffect(() => {
+    timelineMilestoneAnimationHandler();
+  });
+
   return (
     <div id="timeline" class="about_section">
       <h3><u>(Professional) Timeline</u></h3>
-        {milestones.map((milestone, index) => {
-          if (index % 2 == 0) {
-            return <div class="timeline_milestone left_milestone">
-              <div class="timeline_milestone_text_box">
-                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
-                  <p class="timeline_milestone_description">{Object.values(milestone)}</p>
-                  <span class="left_milestone_arrow milestone_arrow"></span>
-              </div>
-            </div>
-          }
-          else {
-            return <div class="timeline_milestone right_milestone">
-              <div class="timeline_milestone_text_box">
-                <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
+      {milestones.map((milestone, index) => {
+        if (index % 2 == 0) {
+          return <div class="timeline_milestone left_milestone hidden">
+            <div class="timeline_milestone_text_box">
+              <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
                 <p class="timeline_milestone_description">{Object.values(milestone)}</p>
-                <span class="right_milestone_arrow milestone_arrow"></span>
-              </div>
+                <span class="left_milestone_arrow milestone_arrow"></span>
             </div>
-          }
-        })}
+          </div>
+        }
+        else {
+          return <div class="timeline_milestone right_milestone hidden">
+            <div class="timeline_milestone_text_box">
+              <p class="timeline_milestone_year">{Object.keys(milestone)}</p>
+              <p class="timeline_milestone_description">{Object.values(milestone)}</p>
+              <span class="right_milestone_arrow milestone_arrow"></span>
+            </div>
+          </div>
+        }
+      })}
     </div>
   );
+}
+
+function timelineMilestoneAnimationHandler() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  const timelineMilestones = document.querySelectorAll(`.hidden`);
+  timelineMilestones.forEach((timelineMilestone) => observer.observe(timelineMilestone));
 }
