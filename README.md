@@ -8,5 +8,4 @@ This website was designed and developed from scratch using the following framewo
 - React Transition Group
 - Bootstrap
 - Font Awesome
-- D3.js
 - JavaScript
