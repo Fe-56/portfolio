@@ -14,6 +14,15 @@ export const ABOUT_FIND_ME_WEB = "Find me on the Web";
 export const ABOUT_GITHUB = "Github";
 export const ABOUT_LINKEDIN = "LinkedIn";
 export const ABOUT_PROFILE_PIC_ALT_TEXT = "Lim Fuo En profile picture";
+export const ABOUT_TIMELINE_TITLE = "(Professional) Timeline";
+export const ABOUT_TIMELINE_MILESTONES = [
+  {2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards"},
+  {2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt"},
+  {2020: "Matriculated at SUTD"},
+  {2021: "Completed my first ever internship at DBS Bank as a Business Analyst Intern"},
+  {2022: "Completed mobile application development internship at Housing & Development Board (HDB)"},
+  {2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States"},
+];
 
 // Projects page
 

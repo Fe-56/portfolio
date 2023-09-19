@@ -21,12 +21,12 @@ export default function App() {
       <TransitionGroup>
         <CSSTransition key={location.pathname} classNames="fade" timeout={0}>
           <Switch location={location}>
-            <Route exact path="/" component={About} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/experiences" component={Experiences} />
-            <Route path="/hobbies" component={Hobbies} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path={urlConst.ABOUT_PATH} component={About} />
+            <Route path={urlConst.PROJECTS_PATH}component={Projects} />
+            <Route path={urlConst.SKILLS_PATH} component={Skills} />
+            <Route path={urlConst.EXPERIENCES_PATH} component={Experiences} />
+            <Route path={urlConst.HOBBIES_PATH} component={Hobbies} />
+            <Route path={urlConst.CONTACT_PATH} component={Contact} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>
