@@ -88,7 +88,7 @@ export default function Experiences() {
         </div>
         <p class="text-start experience_description">
           - Maintained and developed new features for CoffeeSpace mobile app using Flutter<br/>
-          - Liaised with backend engineer to deliver functioning and efficient CoffeSpace app functions<br/>
+          - Liaised with backend engineer to deliver functional and efficient CoffeSpace app functions<br/>
           - Conducted technical research for potential development of new in-app payments to achieve additional revenue streams for CoffeeSpace
         </p>
         <div class="skills">

@@ -99,7 +99,7 @@ export default function Projects() {
               <i class="fa-solid fa-diagram-project icon"></i>
               Start-up Project<br/>
               <i class="fa-solid fa-timeline icon"></i>
-              May 2022 to Present
+              May 2022 to Sep 2022
             </h6>
           </div>
         </div>

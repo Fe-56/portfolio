@@ -1,5 +1,7 @@
 import React from "react";
 import './Navbar.css';
+import * as textConst from '../../const/text';
+import * as urlConst from '../../const/url';
 
 export default function Navbar() {
   return ( 
@@ -7,9 +9,9 @@ export default function Navbar() {
       <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar_nav">
         <div class="container-fluid justify-content-center">
           <div id="navbar_logo">
-            <a href="/portfolio/#/" class="navbar-brand mb-0 mx-auto" id="logo" onClick={clickedAbout}>
-              <img src="http://fe-56.github.io/portfolio/favicon.ico?v=2" width="30" height="30" class="d-inline-block align-top" id="fe56_logo"/>
-              Lim Fuo En
+            <a href={urlConst.WEBSITE_PATH} class="navbar-brand mb-0 mx-auto" id="logo" onClick={clickedAbout}>
+              <img src={urlConst.WEBSITE_PIC} width="30" height="30" class="d-inline-block align-top" id="fe56_logo"/>
+              {textConst.NAME}
             </a>
           </div>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_buttons" aria-controls="navbar_buttons" aria-expanded="false" aria-label="Toggle navigation bar">
