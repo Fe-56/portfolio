@@ -1,3 +1,6 @@
+import parse from 'html-react-parser';
+import * as urlConst from "./url";
+
 // general
 export const NAME = "Lim Fuo En";
 export const FOOTNOTE = `${NAME} All Rights Reserved.`;
@@ -34,6 +37,8 @@ export const ABOUT_TIMELINE_MILESTONES = [
 // Projects page
 export const PROJECTS_TITLE = "Projects";
 export const PROJECTS_SKILLS_LABEL = "Skills";
+export const PROJECTS_GITHUB = "Check out the project's Github!";
+export const PROJECTS_PROJECT_LINK = "Project Link >";
 export const PROJECT_VIEW_MORE = "View more";
 export const PROJECTS_LOOK_AND_EARN_TITLE = "Look and Earn";
 export const PROJECTS_LOOK_AND_EARN_ROLE = "Full-Stack Developer";
@@ -45,6 +50,53 @@ export const PROJECTS_LONELY_NO_LONGER_ROLE = "Developer";
 export const PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE = "Start-up Project";
 export const PROJECTS_LONELY_NO_LONGER_TIMELINE = "May 2022 to Sep 2022";
 export const PROJECTS_LONELY_NO_LONGER_DESCRIPTION = "Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning.\n\nLNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates.\n\nI designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database.\n\nI also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database.\n\nI wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands.";
+export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TITLE = "Online Hate Speech Detection";
+export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE = "Machine Learning Engineer";
+export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE = "School Project";
+export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE = "July 2022 to August 2022";
+export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION = parse(
+  `or Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.<br/><br/>Trained a variety of machine learning models for online hate speech classification.<br/><br/>Extensively tuned the model hyper-parameters to improve model performance.<br/><br/>Used machine learning techniques not taught in class to improve model performance.<br/><br/>I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`
+);
+export const PROJECTS_TRANSFERCONNECT_TITLE = "TransferConnect";
+export const PROJECTS_TRANSFERCONNECT_ROLE = "Backend Developer";
+export const PROJECTS_TRANSFERCONNECT_PROJECT_TYPE = "School Project";
+export const PROJECTS_TRANSFERCONNECT_TIMELINE = "May 2022 to August 2022";
+export const PROJECTS_TRANSFERCONNECT_PROJECT_DESCRIPTION = parse(
+  `For SUTD's course: <a href=${urlConst.PROJECTS_TRANSFERCONNECT_COURSE_URL} target='_blank'>50.003 Elements of Software Construction</a>.<br/><br/>TransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.<br/><br/>This project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.<br/><br/>I developed highly performant and functional APIs to meet project requirements.<br/><br/>I also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.`
+);
+export const PROJECTS_GIGLET_TITLE = "Giglet";
+export const PROJECTS_GIGLET_ROLE = "Developer";
+export const PROJECTS_GIGLET_PROJECT_TYPE = "School Project";
+export const PROJECTS_GIGLET_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_GIGLET_PROJECT_DESCRIPTION = parse(
+  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.<br/><br/>Giglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.<br/><br/>Giglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to \"test the waters\" and see whetehr the students are suitable for an internship or full-time role in their company.<br/><br/>Giglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.<br/><br/>I designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`
+);
+export const PROJECTS_WORDLE_TITLE = "Wordle";
+export const PROJECTS_WORDLE_ROLE = "Programmer";
+export const PROJECTS_WORDLE_PROJECT_TYPE = "School Project";
+export const PROJECTS_WORDLE_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_WORDLE_PROJECT_DESCRIPTION = parse(
+  `For SUTD's course: <a href=${urlConst.PROJECTS_WORDLE_COURSE_URL} target="_blank">50.002 Computation Structures</a>.<br/><br/>This project is inspired by the popular online word-guessing game, <a href=${urlConst.PROJECTS_WORDLE_URL} target="_blank">Wordle</a>.<br/><br/>This project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.<br/><br/>I programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic.`
+);
+export const PROJECTS_FEAST_TITLE = "Food Establishment Autonomous Spatial Tracking (FEAST)";
+export const PROJECTS_FEAST_ROLE = "Frontend Lead";
+export const PROJECTS_FEAST_PROJECT_TYPE = "School Project";
+export const PROJECTS_FEAST_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_FEAST_PROJECT_DESCRIPTION = parse(
+  `For SUTD's course: <a href=${urlConst.PROJECTS_FEAST_COURSE_URL} target="_blank">50.001 Information Systems & Programming</a>.<br/><br/>FEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.<br/><br/>Accompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.<br/><br/>Built using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.<br/><br/>I led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.`
+);
+export const PROJECTS_WILL_I_GO_BROKE_TITLE = "Will I Go Broke?";
+export const PROJECTS_WILL_I_GO_BROKE_ROLE = "Developer";
+export const PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE = "Personal Project";
+export const PROJECTS_WILL_I_GO_BROKE_TIMELINE = "December 2021 to January 2022";
+export const PROJECTS_WILL_I_GO_BROKE_PROJECT_DESCRIPTION = "Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore.\n\nThe bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate.\n\nI developed the bot from scratch and designed the user experience and mechanics behind the bot.";
+export const PROJECTS_POKEMON_BATTLE_TITLE = "Pokemon Battle";
+export const PROJECTS_POKEMON_BATTLE_ROLE = "Team Lead";
+export const PROJECTS_POKEMON_BATTLE_PROJECT_TYPE = "School Project";
+export const PROJECTS_POKEMON_BATTLE_TIMELINE = "September 2020 to December 2020";
+export const PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION = parse(
+  `For SUTD's course: <a href=${urlConst.PROJECTS_POKEMON_BATTLE_COURSE_URL} target="_blank">10.014 Computational Thinking for Design</a>.<br/><br/>Pokemon Battle is inspired by the popular game series, <a href=${urlConst.PROJECTS_POKEMON_BATTLE_URL} target="_blank">Pokémon</a>.<br/><br/>It is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other.<br/><br/>It simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in.<br/><br/>I led the team for the game research and design of the game, and coded the mechanics and flow of the game.`
+  )
 
 // Skills page
 

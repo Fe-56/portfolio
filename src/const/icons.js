@@ -73,7 +73,7 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-brands fa-android";
       break;
 
-    case "google firestore":
+    case "firestore":
       skill = "Google Firestore"; 
       iconClass += "fa-brands fa-google";
       break;
@@ -113,6 +113,46 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-brands fa-telegram";
       break;
 
+    case "ml":
+      skill = "Machine Learning";
+      iconClass += "fa-solid fa-robot";
+      break;
+
+    case "postman":
+      skill = "Postman";
+      iconClass += "fa-solid fa-signs-post";
+      break;
+
+    case "testing":
+      skill = "Software Testing";
+      iconClass += "fa-solid fa-vials";
+      break;
+
+    case "verilog":
+      skill = "Verilog";
+      iconClass += "fa-solid fa-v";
+      break;
+
+    case "computer engineering":
+      skill = "Computer Engineering";
+      iconClass += "fa-solid fa-computer";
+      break;
+
+    case "java":
+      skill = "Java";
+      iconClass += "fa-brands fa-java";
+      break;
+
+    case "figma":
+      skill = "Figma";
+      iconClass += "fa-brands fa-figma";
+      break;
+
+    case "game design":
+      skill = "Game Design";
+      iconClass += "fa-solid fa-gamepad";
+      break;
+
     default:
       skill = "Hard Skill";
   }
@@ -141,6 +181,11 @@ const SoftSkill = ({skillName}) => {
     case "detail":
       skill = "Attention to Detail"; 
       iconClass += "fa-solid fa-magnifying-glass";
+      break;
+
+    case "entrepreneurship":
+      skill = "Entrepreneurship";
+      iconClass = "fa-solid fa-user-tie";
       break;
 
     default:
