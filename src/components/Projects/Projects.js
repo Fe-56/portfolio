@@ -6,6 +6,8 @@ import feast_logo from './feast_logo.png';
 import will_i_go_broke_logo from './will_i_go_broke_logo.png';
 import pokemon_battle_logo from './pokemon_battle_logo.png';
 import giglet_picture from './giglet_picture.jpg';
+import * as textConst from "../../const/text";
+import icons from "../../const/icons";
 
 export default function Projects() {
   useEffect(() => {
@@ -22,117 +24,81 @@ export default function Projects() {
 
   return (
     <div id="projects">
-      <h1 id="projects_title">Projects</h1>
+      <h1 id="projects_title">{textConst.PROJECTS_TITLE}</h1>
       <div id="look_and_earn" class="project">
         <div class="project_title_and_info">
           <h3>
-            <u>Look and Earn</u>
+            <u>{textConst.PROJECTS_LOOK_AND_EARN_TITLE}</u>
           </h3>
           <div class="info text-center d-flex align-items-center justify-content-center">
             <h6>
-              <i class="fa-solid fa-briefcase icon"></i>
-              Full-Stack Developer<br/>
-              <i class="fa-solid fa-diagram-project icon"></i>
-              Start-up Project<br/>
-              <i class="fa-solid fa-timeline icon"></i>
-              October 2022 to Present
+              <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LOOK_AND_EARN_ROLE} /><br/>
+              <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LOOK_AND_EARN_PROJECT_TYPE} /><br/>
+              <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LOOK_AND_EARN_TIMELINE} /><br/>
             </h6>
           </div>
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies.<br/><br/>
-            Look and Earn has a Flutter app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.<br/><br/>
-            The app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next.<br/><br/>
-            Look and Earn also has an admin web app to manage the advertisements that will be displayed in the app.<br/><br/>
-            I designed the entire system architecture of the app and web app, and developed them from scratch.<br/><br/>
-            I integrated Google Firestore to the app and web as their common database.
+          {textConst.PROJECTS_LOOK_AND_EARN_PROJECT_DESCRIPTION}
           </p>
           <div class="skills">
-            <h5 class="skills_title text-center">Skills:</h5>
+            <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
             <p class="text-center">
               <div class="hard_skills">
-                <i class="fa-solid fa-f fa-lg icon"></i>
-                Flutter&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-solid fa-d fa-lg icon"></i>
-                Dart&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-android fa-lg icon"></i>
-                Android Studio&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-google fa-lg icon"></i>
-                Google Firestore&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-square-js fa-lg icon"></i>
-                JavaScript<br/>
-                <i class="fa-brands fa-react fa-lg icon"></i>
-                React&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-solid fa-e fa-lg icon"></i>
-                Express.js&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-node fa-lg icon"></i>
-                Node.js&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-github fa-lg icon"></i>
-                GitHub
+                <icons.HardSkill skillName="flutter"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="dart"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="android studio"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="google firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="javascript"/><br/>
+                <icons.HardSkill skillName="react"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="express"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="node"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="github"/>
               </div>
               <div class="soft_skills">
-                <i class="fa-solid fa-comments fa-lg icon"></i>
-                Communication&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-google fa-lg icon"></i>
-                Researching for solutions&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-solid fa-magnifying-glass fa-lg icon"></i>
-                Attention to detail
+                <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.SoftSkill skillName="detail"/>
               </div>
             </p>
           </div>
         </div>
         <div class="expand_collapse">
-          <i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>
-          View more
+          <icons.ExapndCollapseIcon type="expand"/>
         </div>
       </div>
       <div id="lonely_no_longer" class="project">
         <div class="project_title_and_info">
           <h3>
-            <u>Lonely No Longer</u>
+            <u>{textConst.PROJECTS_LONELY_NO_LONGER_TITLE}</u>
           </h3>
           <div class="info text-center d-flex align-items-center justify-content-center">
             <h6>
-              <i class="fa-solid fa-briefcase icon"></i>
-              Developer<br/>
-              <i class="fa-solid fa-diagram-project icon"></i>
-              Start-up Project<br/>
-              <i class="fa-solid fa-timeline icon"></i>
-              May 2022 to Sep 2022
+              <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LONELY_NO_LONGER_ROLE} /><br/>
+              <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE} /><br/>
+              <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LONELY_NO_LONGER_TIMELINE} /><br/>
             </h6>
           </div>
         </div>
         <div class="project_content">
           <p class="text-start project_description">
-            Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning.<br/><br/>
-            LNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates.<br/><br/>
-            I designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database.<br/><br/>
-            I also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database.<br/><br/>
-            I wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands.
+            {textConst.PROJECTS_LONELY_NO_LONGER_DESCRIPTION}
           </p>
           <div class="skills">
             <h5 class="skills_title text-center">Skills:</h5>
             <p class="text-center">
               <div class="hard_skills">
-                <i class="fa-brands fa-python fa-lg icon"></i>
-                Python&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-telegram fa-lg icon"></i>
-                pyTelegramBotAPI&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-google fa-lg icon"></i>
-                Google Firestore&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-square-js fa-lg icon"></i>
-                JavaScript&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-github fa-lg icon"></i>
-                GitHub
+                <icons.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="pytelegrambot"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="google firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="javascript"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.HardSkill skillName="github"/>&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div class="soft_skills">
-                <i class="fa-solid fa-comments fa-lg icon"></i>
-                Communication&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-brands fa-google fa-lg icon"></i>
-                Researching for solutions&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa-solid fa-magnifying-glass fa-lg icon"></i>
-                Attention to detail
+                <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <icons.SoftSkill skillName="detail"/>
               </div>
             </p>
           </div>
