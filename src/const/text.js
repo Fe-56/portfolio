@@ -3,6 +3,13 @@ export const NAME = "Lim Fuo En";
 export const FOOTNOTE = `${NAME} All Rights Reserved.`;
 export const SOURCE_CODE = "Github Source Code";
 
+// Navigation bar
+export const NAVBAR_PROJECTS = "Projects";
+export const NAVBAR_SKILLS = "Skills";
+export const NAVBAR_EXPERIENCES = "Experiences";
+export const NAVBAR_HOBBIES = "Hobbies";
+export const NAVBAR_CONTACT = "Contact";
+
 // About page
 export const ABOUT_TITLE = "About";
 export const ABOUT_RESUME_TITLE = "Resume";
