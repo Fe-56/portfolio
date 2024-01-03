@@ -58,7 +58,7 @@ const NavbarContact = () => {
   </li>
 }
 
-const NavbarButtons = {
+const NavbarButton = {
   NavbarAbout,
   NavbarButtonsCollapsed,
   NavbarProjects,
@@ -68,4 +68,4 @@ const NavbarButtons = {
   NavbarContact
 };
 
-export default NavbarButtons;
+export default NavbarButton;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
 import './Projects.css';
 import * as textConst from "../../const/text";
-import project from "./Project";
+import Project from "./Project";
 
 export default function Projects() {
   useEffect(() => {
@@ -13,15 +13,15 @@ export default function Projects() {
   return (
     <div id="projects">
       <h1 id="projects_title">{textConst.PROJECTS_TITLE}</h1>
-      <project.LookAndEarn />
-      <project.LonelyNoLonger />
-      <project.OnlineHateSpeechDetection />
-      <project.TransferConnect />
-      <project.Giglet />
-      <project.Wordle />
-      <project.FEAST />
-      <project.WillIGoBroke />
-      <project.PokemonBattle />
+      <Project.LookAndEarn />
+      <Project.LonelyNoLonger />
+      <Project.OnlineHateSpeechDetection />
+      <Project.TransferConnect />
+      <Project.Giglet />
+      <Project.Wordle />
+      <Project.FEAST />
+      <Project.WillIGoBroke />
+      <Project.PokemonBattle />
     </div>
   );
 }

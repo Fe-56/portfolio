@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
 import './Skills.css';
+import * as textConst from "../../const/text";
 
 export default function Skills() {
   useEffect(() => {
@@ -10,7 +11,7 @@ export default function Skills() {
 
   return (
     <div id="skills" class="container-fluid">
-      <h1 id="skills_title">Skills</h1>
+      <h1 id="skills_title">{textConst.SKILLS_TITLE}</h1>
       <div id="languages" class="skill_section">
         <h3>
           <i class="fa-solid fa-language icon"></i>
@@ -212,3 +213,5 @@ export default function Skills() {
     </div>
   );
 }
+
+

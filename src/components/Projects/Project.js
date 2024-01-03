@@ -425,7 +425,7 @@ const PokemonBattle = () => {
   </div>
 }
 
-const projects = {
+const Project = {
   LookAndEarn,
   LonelyNoLonger,
   OnlineHateSpeechDetection,
@@ -437,4 +437,4 @@ const projects = {
   PokemonBattle
 }
   
-export default projects;
+export default Project;

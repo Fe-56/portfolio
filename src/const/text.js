@@ -99,6 +99,12 @@ export const PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION = parse(
   )
 
 // Skills page
+export const SKILLS_TITLE = "Skills";
+export const SKILLS_LANGUAGES_TITLE = "Languages";
+export const SKILLS_PROGRAMMING_LANGUAGES_TITLE = "Programming Languages";
+export const SKILLS_FRAMEWORKS_TITLE = "Frameworks";
+export const SKILLS_TOOLS_TITLE = "Tools";
+export const SKILLS_CERTIFICATIONS_TITLE = "Certifications";
 
 // Experiences page
 
