@@ -32,6 +32,11 @@ export const PROJECTS_POKEMON_BATTLE_URL = "https://www.pokemon.com/us/pokemon-v
 export const PROJECTS_POKEMON_BATTLE_GITHUB_URL = "https://github.com/Fe-56/Pokemon-Battle";
 
 // Skills page
+export const SKILLS_CERTIFICATIONS_RESPONSIVE_URL = "https://www.freecodecamp.org/certification/Fe-56/responsive-web-design";
+export const SKILLS_CERTIFICATIONS_JAVASCRIPT_URL = "https://www.freecodecamp.org/certification/Fe-56/javascript-algorithms-and-data-structures";
+export const SKILLS_CERTIFICATIONS_FRONTEND_URL = "https://www.freecodecamp.org/certification/Fe-56/front-end-development-libraries";
+export const SKILLS_CERTIFICATIONS_VISUALISATION_URL = "https://www.freecodecamp.org/certification/Fe-56/data-visualization";
+export const SKILLS_CERTIFICATIONS_BACKEND_URL = "https://www.freecodecamp.org/certification/Fe-56/back-end-development-and-apis";
 
 // Experiences page
 

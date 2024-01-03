@@ -101,13 +101,66 @@ export const PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION = parse(
 // Skills page
 export const SKILLS_TITLE = "Skills";
 export const SKILLS_LANGUAGES_TITLE = "Languages";
+export const SKILLS_LANGUAGES_ENGLISH = "English";
+export const SKILLS_LANGUAGES_MANDARIN = "Mandarin";
+export const SKILLS_LANGUAGES_SPOKEN_WRITTEN = "(spoken & written)";
 export const SKILLS_PROGRAMMING_LANGUAGES_TITLE = "Programming Languages";
+export const SKILLS_PROFICIENCY_PROFICIENT = "(proficient)";
+export const SKILLS_PROFICIENCY_INTERMEDIATE = "(intermediate)";
+export const SKILLS_PROFICIENCY_BEGINNER = "(beginner)";
 export const SKILLS_FRAMEWORKS_TITLE = "Frameworks";
+export const SKILLS_FRAMEWORKS_FRONTEND = "Frontend";
+export const SKILLS_FRAMEWORKS_BACKEND = "Backend";
+export const SKILLS_FRAMEWORKS_MOBILE = "Mobile";
 export const SKILLS_TOOLS_TITLE = "Tools";
 export const SKILLS_CERTIFICATIONS_TITLE = "Certifications";
+export const SKILLS_CERTIFICATIONS_RESPONSIVE = "Responsive Web Design";
+export const SKILLS_CERTIFICATIONS_JAVASCRIPT = "JavaScript Algorithms and Data Structures";
+export const SKILLS_CERTIFICATIONS_FRONTEND = "Front End Development Libraries";
+export const SKILLS_CERTIFICATIONS_VISUALISATION = "Data Visualization";
+export const SKILLS_CERTIFICATIONS_BACKEND = "Back End Development and APIs";
 
 // Experiences page
+export const EXPERIENCES_TITLE = "Experiences";
 
 // Hobbies page
+export const HOBBIES_TITLE = "Hobbies";
 
 // Contact page
+export const CONTACT_TITLE = "Contact";
+
+// miscellaneous (used across pages)
+export const SKILL_FLUTTER = "Flutter";
+export const SKILL_DART = "Dart";
+export const SKILL_ANDROID_STUDIO = "Android Studio";
+export const SKILL_FIRESTORE = "Google Firestore";
+export const SKILL_JAVASCRIPT = "JavaScript";
+export const SKILL_REACT = "React";
+export const SKILL_EXPRESS = "Express.js";
+export const SKILL_NODE = "Node.js";
+export const SKILL_GITHUB = "GitHub";
+export const SKILL_PYTHON = "Python";
+export const SKILL_PYTELEGRAMBOT = "pyTelegramBotAPI";
+export const SKILL_ML = "Machine Learning";
+export const SKILL_POSTMAN = "Postman";
+export const SKILL_TESTING = "Software Testing";
+export const SKILL_VERILOG = "Verilog";
+export const SKILL_COMPUTER_ENGINEERING = "Computer Engineering";
+export const SKILL_JAVA = "Java";
+export const SKILL_FIGMA = "Figma";
+export const SKILL_GAME_DESIGN = "Game Design";
+export const SKILL_COMMUNICATION = "Communication";
+export const SKILL_RESEARCHING = "Researching for Information";
+export const SKILL_DETAIL = "Attention to Detail";
+export const SKILL_ENTREPRENEURSHIP = "Entrepreneurship";
+export const SKILL_KOTLIN = "Kotlin";
+export const SKILL_SWIFT = "Swift";
+export const SKILL_HTML = "HTML";
+export const SKILL_CSS = "CSS";
+export const SKILL_D3 = "D3.js";
+export const SKILL_BOOTSTRAP = "Bootstrap";
+export const SKILL_MONGO = "MongoDB";
+export const SKILL_FIREBASE = "Google Firebase";
+export const SKILL_VSCODE = "Visual Studio Code";
+export const SKILL_XCODE = "Xcode";
+export const SKILL_JIRA = "Jira";

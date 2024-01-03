@@ -21,7 +21,7 @@ const NavbarButtonsCollapsed = () => {
 const NavbarProjects = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/projects" class="nav-link active" id="nav_projects" onClick={navbarFunctions.clickedProjects}>
-    {textConst.NAVBAR_PROJECTS}
+    {textConst.PROJECTS_TITLE}
     </a>
   </li>
 }
@@ -29,7 +29,7 @@ const NavbarProjects = () => {
 const NavbarSkills = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/skills" class="nav-link active" id="nav_skills" onClick={navbarFunctions.clickedSkills}>
-    {textConst.NAVBAR_SKILLS}
+    {textConst.SKILLS_TITLE}
     </a>
   </li>
 }
@@ -37,7 +37,7 @@ const NavbarSkills = () => {
 const NavbarExperiences = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/experiences" class="nav-link active" id="nav_experiences" onClick={navbarFunctions.clickedExperiences}>
-    {textConst.NAVBAR_EXPERIENCES}
+    {textConst.EXPERIENCES_TITLE}
     </a>
   </li>
 }
@@ -45,7 +45,7 @@ const NavbarExperiences = () => {
 const NavbarHobbies = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/hobbies" class="nav-link active" id="nav_hobbies" onClick={navbarFunctions.clickedHobbies}>
-    {textConst.NAVBAR_HOBBIES}
+    {textConst.HOBBIES_TITLE}
     </a>
   </li>
 }
@@ -53,7 +53,7 @@ const NavbarHobbies = () => {
 const NavbarContact = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/contact" class="nav-link active" id="nav_contact" onClick={navbarFunctions.clickedContact}>
-    {textConst.NAVBAR_CONTACT}
+    {textConst.CONTACT_TITLE}
     </a>
   </li>
 }

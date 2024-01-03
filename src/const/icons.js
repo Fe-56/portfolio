@@ -1,5 +1,6 @@
 import React from "react";
 import * as textConst from "./text.js";
+import * as urlConst from "./url.js";
 
 const ProjectIcon = ({iconName, labelText=""}) => {
   let iconClass = "fa-solid icon ";
@@ -59,98 +60,153 @@ const HardSkill = ({skillName}) => {
   
   switch (skillName){
     case "flutter":
-      skill = "Flutter";
+      skill = textConst.SKILL_FLUTTER;
       iconClass += "fa-solid fa-f";
       break;
 
     case "dart":
-      skill = "Dart"; 
+      skill = textConst.SKILL_DART; 
       iconClass += "fa-solid fa-d";
       break;
 
-    case "android studio":
-      skill = "Android Studio"; 
+    case "android_studio":
+      skill = textConst.SKILL_ANDROID_STUDIO; 
       iconClass += "fa-brands fa-android";
       break;
 
     case "firestore":
-      skill = "Google Firestore"; 
+      skill = textConst.SKILL_FIRESTORE; 
       iconClass += "fa-brands fa-google";
       break;
 
     case "javascript":
-      skill = "JavaScript"; 
+      skill = textConst.SKILL_JAVASCRIPT; 
       iconClass += "fa-brands fa-square-js";
       break;
 
     case "react":
-      skill = "React"; 
+      skill = textConst.SKILL_REACT; 
       iconClass += "fa-brands fa-react";
       break;
 
     case "express":
-      skill = "Express.js"; 
+      skill = textConst.SKILL_EXPRESS; 
       iconClass += "fa-solid fa-e";
       break;
 
     case "node":
-      skill = "Node.js"; 
+      skill = textConst.SKILL_NODE; 
       iconClass += "fa-brands fa-node";
       break;
 
     case "github":
-      skill = "GitHub"; 
+      skill = textConst.SKILL_GITHUB; 
       iconClass += "fa-brands fa-github";
       break;
 
     case "python":
-      skill = "Python"; 
+      skill = textConst.SKILL_PYTHON; 
       iconClass += "fa-brands fa-python";
       break;
 
     case "pytelegrambot":
-      skill = "pyTelegramBotAPI"; 
+      skill = textConst.SKILL_PYTELEGRAMBOT; 
       iconClass += "fa-brands fa-telegram";
       break;
 
     case "ml":
-      skill = "Machine Learning";
+      skill = textConst.SKILL_ML;
       iconClass += "fa-solid fa-robot";
       break;
 
     case "postman":
-      skill = "Postman";
+      skill = textConst.SKILL_POSTMAN;
       iconClass += "fa-solid fa-signs-post";
       break;
 
     case "testing":
-      skill = "Software Testing";
+      skill = textConst.SKILL_TESTING;
       iconClass += "fa-solid fa-vials";
       break;
 
     case "verilog":
-      skill = "Verilog";
+      skill = textConst.SKILL_VERILOG;
       iconClass += "fa-solid fa-v";
       break;
 
     case "computer engineering":
-      skill = "Computer Engineering";
+      skill = textConst.SKILL_COMPUTER_ENGINEERING;
       iconClass += "fa-solid fa-computer";
       break;
 
     case "java":
-      skill = "Java";
+      skill = textConst.SKILL_JAVA;
       iconClass += "fa-brands fa-java";
       break;
 
     case "figma":
-      skill = "Figma";
+      skill = textConst.SKILL_FIGMA;
       iconClass += "fa-brands fa-figma";
       break;
 
-    case "game design":
-      skill = "Game Design";
+    case "game_design":
+      skill = textConst.SKILL_GAME_DESIGN;
       iconClass += "fa-solid fa-gamepad";
+      break;
+
+    case "kotlin":
+      skill = textConst.SKILL_KOTLIN;
+      iconClass += "fa-solid fa-k";
+      break;
+
+    case "swift":
+      skill = textConst.SKILL_SWIFT;
+      iconClass += "fa-brands fa-swift";
+      break;
+
+    case "html":
+      skill = textConst.SKILL_HTML;
+      iconClass += "fa-brands fa-html5";
+      break;
+
+    case "css":
+      skill = textConst.SKILL_CSS;
+      iconClass += "fa-brands fa-css3-alt";
+      break;
+
+    case "d3":
+      skill = textConst.SKILL_D3;
+      iconClass += "fa-solid fa-d";
+      break;
+
+    case "bootstrap":
+      skill = textConst.SKILL_BOOTSTRAP;
+      iconClass += "fa-brands fa-bootstrap";
+      break;
+
+    case "mongo":
+      skill = textConst.SKILL_MONGO;
+      iconClass += "fa-solid fa-m";
+      break;
+
+    case "firebase":
+      skill = textConst.SKILL_FIREBASE;
+      iconClass += "fa-brands fa-google";
+      break;
+
+    case "vscode":
+      skill = textConst.SKILL_VSCODE;
+      iconClass += "fa-solid fa-v";
+      break;
+
+    case "xcode":
+      skill = textConst.SKILL_XCODE;
+      iconClass += "fa-solid fa-hammer";
+      break;
+
+    case "jira":
+      skill = textConst.SKILL_JIRA;
+      iconClass += "fa-brands fa-jira";
       break;
 
     default:
@@ -169,22 +225,22 @@ const SoftSkill = ({skillName}) => {
   
   switch (skillName){
     case "communication":
-      skill = "Communication";
+      skill = textConst.SKILL_COMMUNICATION;
       iconClass += "fa-solid fa-comments";
       break;
 
     case "researching":
-      skill = "Researching for Information"; 
+      skill = textConst.SKILL_RESEARCHING; 
       iconClass += "fa-brands fa-google";
       break;
 
     case "detail":
-      skill = "Attention to Detail"; 
+      skill = textConst.SKILL_DETAIL; 
       iconClass += "fa-solid fa-magnifying-glass";
       break;
 
     case "entrepreneurship":
-      skill = "Entrepreneurship";
+      skill = textConst.SKILL_ENTREPRENEURSHIP;
       iconClass = "fa-solid fa-user-tie";
       break;
 
@@ -192,17 +248,146 @@ const SoftSkill = ({skillName}) => {
       skill = "Soft Skill";
   }
 
-  return <span class="hard_skill">
+  return <span class="soft_skill">
     <i class={iconClass}></i>
     {skill}
   </span>
 }
 
-const icons = {
+const SkillsHeading = ({skillType}) => {
+  var type;
+  let iconClass = "fa-solid icon ";
+
+  switch (skillType){
+    case "languages":
+      type = textConst.SKILLS_LANGUAGES_TITLE;
+      iconClass += "fa-language";
+      break;
+
+    case "programming_languages":
+      type = textConst.SKILLS_PROGRAMMING_LANGUAGES_TITLE;
+      iconClass += "fa-terminal";
+      break;
+
+    case "frameworks":
+      type = textConst.SKILLS_FRAMEWORKS_TITLE;
+      iconClass += "fa-toolbox";
+      break;
+
+    case "tools":
+      type = textConst.SKILLS_TOOLS_TITLE;
+      iconClass += "fa-screwdriver-wrench";
+      break;
+
+    case "certifications":
+      type = textConst.SKILLS_CERTIFICATIONS_TITLE;
+      iconClass += "fa-certificate";
+      break;
+  }
+
+  return <h3>
+    <i class={iconClass}></i>
+    <u>{type}</u>
+  </h3>
+}
+
+const SkillSubHeading = ({skillType}) => {
+  var type;
+  let iconClass = "fa-solid icon ";
+
+  switch (skillType){
+    case "frontend":
+      type = textConst.SKILLS_FRAMEWORKS_FRONTEND;
+      iconClass += "fa-desktop";
+      break;
+
+    case "backend":
+      type = textConst.SKILLS_FRAMEWORKS_BACKEND;
+      iconClass += "fa-databse";
+      break;
+
+    case "mobile":
+      type = textConst.SKILLS_FRAMEWORKS_MOBILE;
+      iconClass += "fa-mobile";
+      break;
+  }
+
+  return <h5>
+    <i class={iconClass}></i>
+    {type}
+  </h5>
+}
+
+const SkillLanguage = ({languageName}) => {
+  let iconClass = "fa-solid icon fa-lg ";
+  var language;
+
+  switch (languageName){
+    case "english":
+      iconClass += "fa-earth-europe";
+      language = textConst.SKILLS_LANGUAGES_ENGLISH;
+      break;
+
+    case "mandarin":
+      iconClass += "fa-earth-asia";
+      language = textConst.SKILLS_LANGUAGES_MANDARIN;
+      break;
+  }
+
+  return <span>
+    <i class={iconClass}></i>
+    {language}
+  </span>
+}
+
+const SkillCertification = ({certificationName}) => {
+  var certification;
+  var certificationURL;
+
+  switch (certificationName){
+    case "responsive":
+      certification = textConst.SKILLS_CERTIFICATIONS_RESPONSIVE;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_RESPONSIVE_URL;
+      break;
+
+    case "javascript":
+      certification = textConst.SKILLS_CERTIFICATIONS_JAVASCRIPT;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_JAVASCRIPT_URL;
+      break;
+
+    case "frontend":
+      certification = textConst.SKILLS_CERTIFICATIONS_FRONTEND;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_FRONTEND_URL;
+      break;
+
+    case "visualisation":
+      certification = textConst.SKILLS_CERTIFICATIONS_VISUALISATION;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_VISUALISATION_URL;
+      break;
+
+    case "backend":
+      certification = textConst.SKILLS_CERTIFICATIONS_BACKEND;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_BACKEND_URL;
+      break;
+  }
+
+  return <div class="skill">
+    <a href={certificationURL} target="_blank">
+      <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+      {certification}
+    </a>
+  </div>
+}
+
+const Icon = {
   ProjectIcon,
   ExapndCollapseIcon,
   HardSkill,
-  SoftSkill
+  SoftSkill,
+  SkillsHeading,
+  SkillSubHeading,
+  SkillLanguage,
+  SkillCertification
 }
 
-export default icons;
+export default Icon;

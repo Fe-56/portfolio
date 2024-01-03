@@ -1,5 +1,5 @@
 import React from "react";
-import icons from "../../const/icons";
+import Icon from "../../const/icons";
 import * as textConst from "../../const/text";
 import * as urlConst from "../../const/url";
 import giglet_picture from './giglet_picture.jpg';
@@ -16,9 +16,9 @@ const LookAndEarn = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LOOK_AND_EARN_ROLE} /><br/>
-          <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LOOK_AND_EARN_PROJECT_TYPE} /><br/>
-          <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LOOK_AND_EARN_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LOOK_AND_EARN_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LOOK_AND_EARN_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LOOK_AND_EARN_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -30,25 +30,25 @@ const LookAndEarn = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="flutter"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="dart"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="android studio"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="javascript"/><br/>
-            <icons.HardSkill skillName="react"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="express"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="node"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>
+            <Icon.HardSkill skillName="flutter"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="dart"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="android_studio"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="javascript"/><br/>
+            <Icon.HardSkill skillName="react"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="express"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="node"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -60,9 +60,9 @@ const LonelyNoLonger = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LONELY_NO_LONGER_ROLE} /><br/>
-          <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE} /><br/>
-          <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LONELY_NO_LONGER_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LONELY_NO_LONGER_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LONELY_NO_LONGER_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -74,21 +74,21 @@ const LonelyNoLonger = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="pytelegrambot"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="javascript"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="pytelegrambot"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="javascript"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -100,9 +100,9 @@ const OnlineHateSpeechDetection = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE} /><br/>
-          <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE} /><br/>
-          <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -125,18 +125,18 @@ const OnlineHateSpeechDetection = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="ml"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>
+            <Icon.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="ml"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -148,9 +148,9 @@ const TransferConnect = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_TRANSFERCONNECT_ROLE} /><br/>
-          <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_TRANSFERCONNECT_PROJECT_TYPE} /><br/>
-          <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_TRANSFERCONNECT_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_TRANSFERCONNECT_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_TRANSFERCONNECT_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_TRANSFERCONNECT_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -162,21 +162,21 @@ const TransferConnect = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="javascript"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="express"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="postman"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="testing"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>
+            <Icon.HardSkill skillName="javascript"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="express"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="postman"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="testing"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -191,9 +191,9 @@ const Giglet = () => {
       </div>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
         <h6>
-          <icons.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_GIGLET_ROLE} /><br/>
-          <icons.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_GIGLET_PROJECT_TYPE} /><br/>
-          <icons.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_GIGLET_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_GIGLET_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_GIGLET_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_GIGLET_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -205,20 +205,20 @@ const Giglet = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="pytelegrambot"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>
+            <Icon.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="pytelegrambot"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="firestore"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="entrepreneurship"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="entrepreneurship"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -261,18 +261,18 @@ const Wordle = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="verilog"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="computer engineering"/>
+            <Icon.HardSkill skillName="verilog"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="computer_engineering"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -311,20 +311,20 @@ const FEAST = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="java"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="android studio"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="github"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="figma"/>
+            <Icon.HardSkill skillName="java"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="android_studio"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="figma"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -362,17 +362,17 @@ const WillIGoBroke = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="python"/>n&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="pytelegrambot"/>
+            <Icon.HardSkill skillName="python"/>n&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="pytelegrambot"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
@@ -410,18 +410,18 @@ const PokemonBattle = () => {
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
         <p class="text-center">
           <div class="hard_skills">
-            <icons.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.HardSkill skillName="game design"/>
+            <Icon.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="game_design"/>
           </div>
           <div class="soft_skills">
-            <icons.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <icons.SoftSkill skillName="detail"/>
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
           </div>
         </p>
       </div>
     </div>
-    <icons.ExapndCollapseIcon type="expand"/>
+    <Icon.ExapndCollapseIcon type="expand"/>
   </div>
 }
 
