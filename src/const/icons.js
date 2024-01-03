@@ -6,19 +6,19 @@ const ProjectIcon = ({iconName, labelText=""}) => {
   let iconClass = "fa-solid icon ";
 
   switch (iconName){
-    case "project role":
+    case "project_role":
       iconClass += "fa-briefcase";
       break;
 
-    case "project type":
+    case "project_type":
       iconClass += "fa-diagram-project";
       break;
 
-    case "project timeline":
+    case "project_timeline":
       iconClass += "fa-timeline";
       break;
 
-    case "view more":
+    case "view_more":
       iconClass += "fa-chevron-down fa-xl expand_collapse_icon";
       labelText = textConst.PROJECT_VIEW_MORE;
       break;
@@ -31,6 +31,33 @@ const ProjectIcon = ({iconName, labelText=""}) => {
     <i class={iconClass}></i>
     {labelText}
   </span>
+}
+
+const ProjectGitHub = ({projectName}) => {
+  var githubURL;
+
+  switch (projectName){
+    case "online_hate_speech_detection":
+      githubURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL;
+      break;
+
+    case "wordle":
+      githubURL = urlConst.PROJECTS_WORDLE_GITHUB_URL;
+      break;
+
+    case "will_i_go_broke":
+      githubURL = urlConst.PROJECTS_WILL_I_GO_BROKE_GITHUB_URL;
+      break;
+
+    case "pokemon_battle":
+      githubURL = urlConst.PROJECTS_POKEMON_BATTLE_GITHUB_URL;
+      break;
+  }
+
+  return <a href={githubURL} target="_blank" class="project_github">
+    <i class="fa-brands fa-github icon"></i>
+    {textConst.PROJECTS_GITHUB}
+  </a>
 }
 
 const ExapndCollapseIcon = ({type}) => {
@@ -381,6 +408,7 @@ const SkillCertification = ({certificationName}) => {
 
 const Icon = {
   ProjectIcon,
+  ProjectGitHub,
   ExapndCollapseIcon,
   HardSkill,
   SoftSkill,

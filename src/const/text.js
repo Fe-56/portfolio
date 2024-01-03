@@ -55,7 +55,7 @@ export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE = "Machine Learning Engi
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE = "School Project";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE = "July 2022 to August 2022";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION = parse(
-  `or Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.<br/><br/>Trained a variety of machine learning models for online hate speech classification.<br/><br/>Extensively tuned the model hyper-parameters to improve model performance.<br/><br/>Used machine learning techniques not taught in class to improve model performance.<br/><br/>I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.<br/><br/>Trained a variety of machine learning models for online hate speech classification.<br/><br/>Extensively tuned the model hyper-parameters to improve model performance.<br/><br/>Used machine learning techniques not taught in class to improve model performance.<br/><br/>I focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`
 );
 export const PROJECTS_TRANSFERCONNECT_TITLE = "TransferConnect";
 export const PROJECTS_TRANSFERCONNECT_ROLE = "Backend Developer";

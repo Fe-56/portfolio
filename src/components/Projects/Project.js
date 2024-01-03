@@ -16,9 +16,9 @@ const LookAndEarn = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LOOK_AND_EARN_ROLE} /><br/>
-          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LOOK_AND_EARN_PROJECT_TYPE} /><br/>
-          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LOOK_AND_EARN_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_LOOK_AND_EARN_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_LOOK_AND_EARN_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_LOOK_AND_EARN_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -60,9 +60,9 @@ const LonelyNoLonger = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_LONELY_NO_LONGER_ROLE} /><br/>
-          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE} /><br/>
-          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_LONELY_NO_LONGER_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_LONELY_NO_LONGER_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_LONELY_NO_LONGER_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -100,9 +100,9 @@ const OnlineHateSpeechDetection = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE} /><br/>
-          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE} /><br/>
-          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -111,15 +111,8 @@ const OnlineHateSpeechDetection = () => {
         {textConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION}
       </p>
       <div class="project_extras d-flex row">
-        <a href={urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_URL} target="_blank" class="project_link">
-          <button type="button" class="btn btn-light buttons">
-            {textConst.PROJECTS_PROJECT_LINK}
-          </button>
-        </a>
-        <a href={urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL} target="_blank" class="project_github">
-          <i class="fa-brands fa-github icon"></i>
-          {textConst.PROJECTS_GITHUB}
-        </a>
+        <ProjectLink projectName="online_hate_speech_detection" />
+        <Icon.ProjectGitHub projectName="online_hate_speech_detection" />
       </div>
       <div class="skills">
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
@@ -148,9 +141,9 @@ const TransferConnect = () => {
       </h3>
       <div class="info text-center d-flex align-items-center justify-content-center">
         <h6>
-          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_TRANSFERCONNECT_ROLE} /><br/>
-          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_TRANSFERCONNECT_PROJECT_TYPE} /><br/>
-          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_TRANSFERCONNECT_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_TRANSFERCONNECT_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_TRANSFERCONNECT_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_TRANSFERCONNECT_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -191,9 +184,9 @@ const Giglet = () => {
       </div>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
         <h6>
-          <Icon.ProjectIcon iconName="project role" labelText={textConst.PROJECTS_GIGLET_ROLE} /><br/>
-          <Icon.ProjectIcon iconName="project type" labelText={textConst.PROJECTS_GIGLET_PROJECT_TYPE} /><br/>
-          <Icon.ProjectIcon iconName="project timeline" labelText={textConst.PROJECTS_GIGLET_TIMELINE} /><br/>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_GIGLET_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_GIGLET_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_GIGLET_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -230,12 +223,9 @@ const Wordle = () => {
       </h3>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
         <h6>
-          <i class="fa-solid fa-briefcase icon"></i>
-          {textConst.PROJECTS_WORDLE_ROLE}<br/>
-          <i class="fa-solid fa-diagram-project icon"></i>
-          {textConst.PROJECTS_WORDLE_PROJECT_TYPE}<br/>
-          <i class="fa-solid fa-timeline icon"></i>
-          {textConst.PROJECTS_WORDLE_TIMELINE}
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_WORDLE_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_WORDLE_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_WORDLE_TIMELINE} /><br/>
         </h6>
       </div>
       <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
@@ -247,15 +237,8 @@ const Wordle = () => {
         {textConst.PROJECTS_WORDLE_PROJECT_DESCRIPTION}
       </p>
       <div class="project_extras d-flex row">
-        <a href={urlConst.PROJECTS_WORDLE_PROJECT_URL} target="_blank" class="project_link">
-          <button type="button" class="btn btn-light buttons">
-            {textConst.PROJECTS_PROJECT_LINK}
-          </button>
-        </a>
-        <a href={urlConst.PROJECTS_WORDLE_GITHUB_URL} target="_blank" class="project_github">
-          <i class="fa-brands fa-github icon"></i>
-          {textConst.PROJECTS_GITHUB}
-        </a>
+        <ProjectLink projectName="wordle" />
+        <Icon.ProjectGitHub projectName="wordle" />
       </div>
       <div class="skills">
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
@@ -287,12 +270,9 @@ const FEAST = () => {
       </div>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
         <h6>
-          <i class="fa-solid fa-briefcase icon"></i>
-          {textConst.PROJECTS_FEAST_ROLE}<br/>
-          <i class="fa-solid fa-diagram-project icon"></i>
-          {textConst.PROJECTS_FEAST_PROJECT_TYPE}<br/>
-          <i class="fa-solid fa-timeline icon"></i>
-          {textConst.PROJECTS_FEAST_TIMELINE}
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_FEAST_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_FEAST_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_FEAST_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -301,11 +281,7 @@ const FEAST = () => {
         {textConst.PROJECTS_FEAST_PROJECT_DESCRIPTION}
       </p>
       <div class="project_extras">
-        <a href={urlConst.PROJECTS_FEAST_PROJECT_URL} target="_blank" class="project_link">
-          <button type="button" class="btn btn-light buttons">
-            {textConst.PROJECTS_PROJECT_LINK}
-          </button>
-        </a>
+        <ProjectLink projectName="feast" />
       </div>
       <div class="skills">
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
@@ -336,12 +312,9 @@ const WillIGoBroke = () => {
       </h3>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
         <h6>
-          <i class="fa-solid fa-briefcase icon"></i>
-          {textConst.PROJECTS_WILL_I_GO_BROKE_ROLE}<br/>
-          <i class="fa-solid fa-diagram-project icon"></i>
-          {textConst.PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE}<br/>
-          <i class="fa-solid fa-timeline icon"></i>
-          {textConst.PROJECTS_WILL_I_GO_BROKE_TIMELINE}
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_WILL_I_GO_BROKE_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_WILL_I_GO_BROKE_TIMELINE} /><br/>
         </h6>
       </div>
       <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-start justify-content-center">
@@ -353,10 +326,7 @@ const WillIGoBroke = () => {
         {textConst.PROJECTS_WILL_I_GO_BROKE_PROJECT_DESCRIPTION}
       </p>
       <div class="project_extras">
-        <a href={urlConst.PROJECTS_WILL_I_GO_BROKE_GITHUB_URL} target= "_blank" class="project_github">
-          <i class="fa-brands fa-github icon"></i>
-          {textConst.PROJECTS_GITHUB}
-        </a>
+        <Icon.ProjectGitHub projectName="will_i_go_broke" />
       </div>
       <div class="skills">
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
@@ -387,12 +357,9 @@ const PokemonBattle = () => {
       </div>
       <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start text-center d-flex align-items-center justify-content-sm-start justify-content-center">
         <h6>
-          <i class="fa-solid fa-briefcase icon"></i>
-          {textConst.PROJECTS_POKEMON_BATTLE_ROLE}<br/>
-          <i class="fa-solid fa-diagram-project icon"></i>
-          {textConst.PROJECTS_POKEMON_BATTLE_PROJECT_TYPE}<br/>
-          <i class="fa-solid fa-timeline icon"></i>
-          {textConst.PROJECTS_POKEMON_BATTLE_TIMELINE}
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_POKEMON_BATTLE_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_POKEMON_BATTLE_PROJECT_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_POKEMON_BATTLE_TIMELINE} /><br/>
         </h6>
       </div>
     </div>
@@ -401,10 +368,7 @@ const PokemonBattle = () => {
         {textConst.PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION}
       </p>
       <div class="project_extras">
-        <a href={urlConst.PROJECTS_POKEMON_BATTLE_GITHUB_URL} target="_blank" class="project_github">
-          <i class="fa-brands fa-github icon"></i>
-          {textConst.PROJECTS_GITHUB}
-        </a>
+        <Icon.ProjectGitHub projectName="pokemon_battle" />
       </div>
       <div class="skills">
         <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
@@ -423,6 +387,30 @@ const PokemonBattle = () => {
     </div>
     <Icon.ExapndCollapseIcon type="expand"/>
   </div>
+}
+
+const ProjectLink = ({projectName}) => {
+  var projectURL;
+
+  switch (projectName){
+    case "online_hate_speech_detection":
+      projectURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_URL;
+      break;
+
+    case "wordle":
+      projectURL = urlConst.PROJECTS_WORDLE_PROJECT_URL;
+      break;
+
+    case "feast":
+      projectURL = urlConst.PROJECTS_FEAST_PROJECT_URL;
+      break;
+  }
+
+  return <a href={projectURL} target="_blank" class="project_link">
+    <button type="button" class="btn btn-light buttons">
+      {textConst.PROJECTS_PROJECT_LINK}
+    </button>
+  </a>
 }
 
 const Project = {
