@@ -165,6 +165,17 @@ export const HOBBIES_CODING_GITHUB_TEXT = "Check out my GitHub!";
 
 // Contact page
 export const CONTACT_TITLE = "Contact";
+export const CONTACT_DESCRIPTION = "If you like what you see here and would like to collaborate with me, please contact me for a chat. Strictly for work-related purposes only, please!";
+export const CONTACT_EMAIL_TITLE = "Email";
+export const CONTACT_EMAIL = "limfuoen1999@gmail.com";
+export const CONTACT_LINKEDIN_TITLE = "LinkedIn";
+export const CONTACT_LINKEDIN = "Lim Fuo En's LinkedIn";
+export const CONTACT_TELEGRAM_TITLE = "Telegram";
+export const CONTACT_TELEGRAM = "@Fe-56";
+export const CONTACT_PHONE_TITLE = "Phone Number";
+export const CONTACT_PHONE = "+65 9735 7695";
+export const CONTACT_LOCATION_TITLE = "(Current) Location";
+export const CONTACT_LOCATION = "Singapore";
 
 // miscellaneous (used across pages)
 export const SKILL_FLUTTER = "Flutter";

@@ -61,4 +61,8 @@ export const HOBBIES_NETFLIX_VEGETA_PICTURE_URL = "https://i.redd.it/e6gr4jd1i5o
 export const HOBBIES_NETFLIX_ITACHI_PICTURE_URL = "https://mfiles.alphacoders.com/900/900540.jpg";
 
 // Contact page
-
+export const CONTACT_EMAIL_URL = "mailto:limfuoen1999@gmail.com";
+export const CONTACT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
+export const CONTACT_TELEGRAM_URL = "https://t.me/Fe_56";
+export const CONTACT_PHONE_URL = "tel:+6597357695";
+export const CONTACT_LOCATION_URL = "https://www.google.com/maps/place/Singapore/@1.3139946,103.6794481,11z/data=!4m6!3m5!1s0x31da11238a8b9375:0x887869cf52abf5c4!8m2!3d1.352083!4d103.819836!16zL20vMDZ0MnQ?entry=ttu";

@@ -525,6 +525,55 @@ const HobbyLinkIcon = ({hobbyName}) => {
   </a>
 }
 
+const ContactLinkIcon = ({contactType}) => {
+  let iconClass = "icon ";
+  var labelText;
+  var iconURL;
+  var htmlID;
+
+  switch (contactType){
+    case "email":
+      iconClass += "fa-solid fa-envelope";
+      labelText = textConst.CONTACT_EMAIL;
+      iconURL = urlConst.CONTACT_EMAIL_URL;
+      htmlID = "email_address";
+      break;
+
+    case "linkedin":
+      iconClass += "fa-brands fa-linkedin";
+      labelText = textConst.CONTACT_LINKEDIN;
+      iconURL = urlConst.ABOUT_LINKEDIN_URL;
+      htmlID = contactType;
+      break;
+
+    case "telegram":
+      iconClass += "fa-brands fa-telegram";
+      labelText = textConst.CONTACT_TELEGRAM;
+      iconURL = urlConst.CONTACT_TELEGRAM_URL;
+      htmlID = "telegram_username"
+      break;
+
+    case "phone":
+      iconClass += "fa-solid fa-phone";
+      labelText = textConst.CONTACT_PHONE;
+      iconURL = urlConst.CONTACT_PHONE_URL;
+      htmlID = "phone_number";
+      break;
+
+    case "location":
+      iconClass += "fa-solid fa-location-dot";
+      labelText = textConst.CONTACT_LOCATION;
+      iconURL = urlConst.CONTACT_LOCATION_URL;
+      htmlID = contactType
+      break;
+  }
+
+  return <a href={iconURL} target="_blank" id={htmlID} class="contact_link">
+    <i class={iconClass}></i>
+    {labelText}
+  </a>
+}
+
 const Icon = {
   ProjectIcon,
   ProjectGitHub,
@@ -537,7 +586,8 @@ const Icon = {
   SkillCertification,
   ExperienceIcon,
   HobbyHeading,
-  HobbyLinkIcon
+  HobbyLinkIcon,
+  ContactLinkIcon
 }
 
 export default Icon;
