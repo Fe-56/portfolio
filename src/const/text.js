@@ -148,9 +148,9 @@ export const EXPERIENCES_DBS_LOCATION = "Singapore";
 export const EXPERIENCES_DBS_TIMELINE = "May 2021 to September 2021";
 export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse("- Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems<br/>- Supported the project teams in developing presentation materials and in coordination of communications with the client<br/>- Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets");
 
-
 // Hobbies page
 export const HOBBIES_TITLE = "Hobbies";
+
 
 // Contact page
 export const CONTACT_TITLE = "Contact";

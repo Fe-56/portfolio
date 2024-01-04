@@ -161,7 +161,7 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-solid fa-v";
       break;
 
-    case "computer engineering":
+    case "computer_engineering":
       skill = textConst.SKILL_COMPUTER_ENGINEERING;
       iconClass += "fa-solid fa-computer";
       break;
@@ -288,7 +288,7 @@ const SoftSkill = ({skillName}) => {
 
     case "entrepreneurship":
       skill = textConst.SKILL_ENTREPRENEURSHIP;
-      iconClass = "fa-solid fa-user-tie";
+      iconClass += "fa-solid fa-user-tie";
       break;
 
     case "teaching":
