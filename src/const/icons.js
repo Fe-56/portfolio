@@ -236,6 +236,26 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-brands fa-jira";
       break;
 
+    case "powerpoint":
+      skill = textConst.SKILL_POWERPOINT;
+      iconClass += "fa-solid fa-file-powerpoint";
+      break;
+
+    case "word":
+      skill = textConst.SKILL_WORD;
+      iconClass += "fa-solid fa-file-word";
+      break;
+
+    case "excel":
+      skill = textConst.SKILL_EXCEL;
+      iconClass += "fa-solid fa-file-excel";
+      break;
+
+    case "systems_testing":
+      skill = textConst.SKILL_SYSTEMSTESTING;
+      iconClass += "fa-solid fa-vials";
+      break;
+
     default:
       skill = "Hard Skill";
   }
@@ -269,6 +289,16 @@ const SoftSkill = ({skillName}) => {
     case "entrepreneurship":
       skill = textConst.SKILL_ENTREPRENEURSHIP;
       iconClass = "fa-solid fa-user-tie";
+      break;
+
+    case "teaching":
+      skill = textConst.SKILL_TEACHING;
+      iconClass += "fa-solid fa-chalkboard";
+      break;
+
+    case "pm":
+      skill = textConst.SKILL_PM;
+      iconClass += "fa-solid fa-list-check";
       break;
 
     default:
@@ -406,6 +436,32 @@ const SkillCertification = ({certificationName}) => {
   </div>
 }
 
+const ExperienceIcon = ({iconName, labelText}) => {
+  let iconClass = "fa-solid icon ";
+
+  switch (iconName){
+    case "experience_role":
+      iconClass += "fa-briefcase";
+      break;
+
+    case "experience_location":
+      iconClass += "fa-location-dot";
+      break;
+
+    case "experience_timeline":
+      iconClass += "fa-timeline";
+      break;
+
+    default:
+      break;
+  }
+
+  return <span>
+    <i class={iconClass}></i>
+    {labelText}
+  </span>
+}
+
 const Icon = {
   ProjectIcon,
   ProjectGitHub,
@@ -415,7 +471,8 @@ const Icon = {
   SkillsHeading,
   SkillSubHeading,
   SkillLanguage,
-  SkillCertification
+  SkillCertification,
+  ExperienceIcon
 }
 
 export default Icon;

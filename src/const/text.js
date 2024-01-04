@@ -121,7 +121,33 @@ export const SKILLS_CERTIFICATIONS_VISUALISATION = "Data Visualization";
 export const SKILLS_CERTIFICATIONS_BACKEND = "Back End Development and APIs";
 
 // Experiences page
-export const EXPERIENCES_TITLE = "Experiences";
+export const EXPERIENCES_TITLE =  "Experiences";
+export const EXPERIENCES_MYEXPOPLACE_TITLE = "MyExpoPlace";
+export const EXPERIENCES_MYEXPOPLACE_ROLE = "Flutter Developer Intern";
+export const EXPERIENCES_MYEXPOPLACE_LOCATION = "Los Angeles, California, United States";
+export const EXPERIENCES_MYEXPOPLACE_TIMELINE = "June 2023 to August 2023";
+export const EXPERIENCES_MYEXPOPLACE_EXPERIENCE_DESCRIPTION = parse("- Maintained and developed new features for MyExpoPlace mobile app using Flutter<br/>- Took ownership of design and development tasks for the app<br/>- Designed and implemented brand new user interfaces and experiences to improve listing experience in the app<br/>- Conducted technical research for potential development of new features to improve user experience when navigating the app");
+export const EXPERIENCES_COFFEESPACE_TITLE = "CoffeeSpace";
+export const EXPERIENCES_COFFEESPACE_ROLE = "Software Engineering Intern";
+export const EXPERIENCES_COFFEESPACE_LOCATION = "San Francisco, California, United States";
+export const EXPERIENCES_COFFEESPACE_TIMELINE = "March 2023 to June 2023";
+export const EXPERIENCES_COFFEESPACE_EXPERIENCE_DESCRIPTION = parse("- Maintained and developed new features for CoffeeSpace mobile app using Flutter<br/>- Liaised with backend engineer to deliver functional and efficient CoffeSpace app functions<br/>-- Conducted technical research for potential development of new in-app payments to achieve additional revenue streams for CoffeeSpace");
+export const EXPERIENCES_HDB_TITLE = "Housing & Development Board";
+export const EXPERIENCES_HDB_ROLE = "Mobile Application Development Intern";
+export const EXPERIENCES_HDB_LOCATION = "Singapore";
+export const EXPERIENCES_HDB_TIMELINE = "August 2022 to December 2022";
+export const EXPERIENCES_HDB_EXPERIENCE_DESCRIPTION = parse("- Maintained the Android and iOS codebases of the Mobile@HDB application, in Java (Android Studio) and Swift (Xcode) respectively<br/>- Developed new features for the Mobile@HDB application<br/>- Conducted technical research and built two functional Augmented Reality (AR) prototypes using different open source AR libraries in Kotlin");
+export const EXPERIENCES_SMILETUTOR_TITLE = "SmileTutor";
+export const EXPERIENCES_SMILETUTOR_ROLE = "Private Tutor (part-time)";
+export const EXPERIENCES_SMILETUTOR_LOCATION = "Singapore";
+export const EXPERIENCES_SMILETUTOR_TIMELINE = "January 2022 to Present";
+export const EXPERIENCES_SMILETUTOR_EXPERIENCE_DESCRIPTION = parse("- Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>- Conducted weekly one-on-one lessons at students' residences<br/>- Clarified the student's doubts, went through their homework and exam papers with them<br/>- Explained and taught them concepts thay they were otherwise unsure of<br/>- Liaised with the student's parents to ensure that their child's homework and assignments are done on time");
+export const EXPERIENCES_DBS_TITLE = "DBS Bank";
+export const EXPERIENCES_DBS_ROLE = "Business Analyst Intern";
+export const EXPERIENCES_DBS_LOCATION = "Singapore";
+export const EXPERIENCES_DBS_TIMELINE = "May 2021 to September 2021";
+export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse("- Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems<br/>- Supported the project teams in developing presentation materials and in coordination of communications with the client<br/>- Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets");
+
 
 // Hobbies page
 export const HOBBIES_TITLE = "Hobbies";
@@ -150,7 +176,7 @@ export const SKILL_JAVA = "Java";
 export const SKILL_FIGMA = "Figma";
 export const SKILL_GAME_DESIGN = "Game Design";
 export const SKILL_COMMUNICATION = "Communication";
-export const SKILL_RESEARCHING = "Researching for Information";
+export const SKILL_RESEARCHING = "Researching for Solutions";
 export const SKILL_DETAIL = "Attention to Detail";
 export const SKILL_ENTREPRENEURSHIP = "Entrepreneurship";
 export const SKILL_KOTLIN = "Kotlin";
@@ -164,3 +190,9 @@ export const SKILL_FIREBASE = "Google Firebase";
 export const SKILL_VSCODE = "Visual Studio Code";
 export const SKILL_XCODE = "Xcode";
 export const SKILL_JIRA = "Jira";
+export const SKILL_TEACHING = "Teaching";
+export const SKILL_POWERPOINT = "Powerpoint";
+export const SKILL_WORD = "Word";
+export const SKILL_EXCEL = "Excel";
+export const SKILL_SYSTEMSTESTING = "Systems Testing";
+export const SKILL_PM = "Project Management";
