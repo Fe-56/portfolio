@@ -150,7 +150,18 @@ export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse("- Performed primary
 
 // Hobbies page
 export const HOBBIES_TITLE = "Hobbies";
-
+export const HOBBIES_CYCLING_TITLE = "Road Cycling";
+export const HOBBIES_CYCLING_DESCRIPTION = parse(`I absolutely love road cycling! I have been cycling since 2018, when my friends introduced me to road cycling. My first road bike was a <a href=${urlConst.HOBBIES_CYCLING_TREK_URL} target="_blank">2016 Trek 1.2</a>. Since then, I've bought, rode, and sold several bikes. I am now riding a <a href=${urlConst.HOBBIES_CYCLING_BIANCHI_URL} target="_blank">Bianchi Sprint</a>.
+<br/><br/>I don't race, I just cycle for fitness, to explore the world around me and for the sheer joy of riding a bike.`);
+export const HOBBIES_CYCLING_STRAVA_TEXT = "Check out my Strava!";
+export const HOBBIES_GUITAR_TITLE = "Electric Guitar";
+export const HOBBIES_GUITAR_DESCRIPTION = parse(`I love playing the electric guitar as well. I started playing it in 2019 simply because I just wanted to jam to my favourite music. I never hired an instructor to teach me how to play the guitar. I taught myself how to play by watching videos of other guitarists and learning songs by myself. I currently play an <a href=${urlConst.HOBBIES_GUITAR_GUITAR_URL} target="_blank">Ibanez GRGR131EX</a> superstrat, plugged into a <a href=${urlConst.HOBBIES_GUITAR_AMP_URL} target="_blank">Fender Champion 20</a> amplifier.<br/><br/>I usually play rock and metal songs by <a href=${urlConst.HOBBIES_GUITAR_LINKIN_PARK_URL} target="_blank">Linkin Park</a>, <a href=${urlConst.HOBBIES_GUITAR_METALLICA_URL} target="_blank">Metallica</a>, and <a href=${urlConst.HOBBIES_GUITAR_GREEN_DAY_URL} target="_blank">Green Day</a>. These three are some of my most favourite bands to play and listen to.<br/><br/>But recently, I've been playing the instrumental covers of more popular songs, where I literally make my guitar "sing" out the vocals/lyrics of the song.<br/><br/>I don't play for a band or perform. I just play for the sheer joy of playing my favourite riffs and songs on a guitar.`);
+export const HOBBIES_GUITAR_SPOTIFY_TEXT = "Check out my Spotify!";
+export const HOBBIES_NETFLIX_TITLE = "Netflix and Anime";
+export const HOBBIES_NETFLIX_DESCRIPTION = parse(`I love watching films, shows and movies in general, especially on Netflix. I love watching a variety of genres, including science-fiction, horror, zombie, supernatural, thriller, fantasy, etc.<br/><br/>I also love watching anime. I usually watch the longer-running and super popular ones. I especially love <a href=${urlConst.HOBBIES_NETFLIX_DRAGON_BALL_URL} target="_blank">Dragon Ball</a> and <a href=${urlConst.HOBBIES_NETFLIX_NARUTO_URL} target="_blank">Naruto</a>. My most favourite chracters from each of the anime are <a href=${urlConst.HOBBIES_NETFLIX_VEGETA_URL} target="_blank">Vegeta</a> and <a href=${urlConst.HOBBIES_NETFLIX_ITACHI_URL} target="_blank">Itachi Uchiha</a> respectively.`);
+export const HOBBIES_CODING_TITLE = "Building Cool Stuff";
+export const HOBBIES_CODING_DESCRIPTION = parse(`Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using.</p>`);
+export const HOBBIES_CODING_GITHUB_TEXT = "Check out my GitHub!";
 
 // Contact page
 export const CONTACT_TITLE = "Contact";

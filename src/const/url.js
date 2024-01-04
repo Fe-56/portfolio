@@ -41,5 +41,24 @@ export const SKILLS_CERTIFICATIONS_BACKEND_URL = "https://www.freecodecamp.org/c
 // Experiences page
 
 // Hobbies page
+export const HOBBIES_CYCLING_TREK_URL = "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/1-series/1-2/p/15807/";
+export const HOBBIES_CYCLING_BIANCHI_URL = "https://www.bianchi.com/bikes/bikes/road/racing-road/sprint/";
+export const HOBBIES_CYCLING_STRAVA_URL = "https://www.strava.com/athletes/33035635";
+export const HOBBIES_GUITAR_GUITAR_URL = "https://www.ibanez.com/na/products/detail/grgr131ex_2y_02.html";
+export const HOBBIES_GUITAR_AMP_URL = "https://www.fender.com/en-US/guitar-amplifiers/contemporary-digital/champion-20/2330200000.html";
+export const HOBBIES_GUITAR_LINKIN_PARK_URL = "https://en.wikipedia.org/wiki/Linkin_Park";
+export const HOBBIES_GUITAR_METALLICA_URL = "https://en.wikipedia.org/wiki/Metallica";
+export const HOBBIES_GUITAR_GREEN_DAY_URL = "https://en.wikipedia.org/wiki/Green_Day";
+export const HOBBIES_GUITAR_LINKIN_PARK_PICTURE_URL = "https://townsquare.media/site/366/files/2014/03/Brad-Delson.jpg?w=980&q=75";
+export const HOBBIES_GUITAR_METALLICA_PICTURE_URL = "https://cdn.mos.cms.futurecdn.net/rq8KkgPmJ3deSfWYPAUGrJ.jpg";
+export const HOBBIES_GUITAR_GREEN_DAY_PICTURE_URL = "https://www.nme.com/wp-content/uploads/2016/09/2013GREENDAY_AB240813-1.jpg";
+export const HOBBIES_GUITAR_SPOTIFY_URL = "https://open.spotify.com/user/j3bhg792iv70buez0dn81gbih";
+export const HOBBIES_NETFLIX_DRAGON_BALL_URL = "https://en.wikipedia.org/wiki/Dragon_Ball";
+export const HOBBIES_NETFLIX_NARUTO_URL = "https://en.wikipedia.org/wiki/Naruto";
+export const HOBBIES_NETFLIX_VEGETA_URL = "https://dragonball.fandom.com/wiki/Vegeta";
+export const HOBBIES_NETFLIX_ITACHI_URL = "https://naruto.fandom.com/wiki/Itachi_Uchiha";
+export const HOBBIES_NETFLIX_VEGETA_PICTURE_URL = "https://i.redd.it/e6gr4jd1i5o81.jpg";
+export const HOBBIES_NETFLIX_ITACHI_PICTURE_URL = "https://mfiles.alphacoders.com/900/900540.jpg";
 
 // Contact page
+

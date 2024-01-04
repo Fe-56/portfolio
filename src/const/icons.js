@@ -462,6 +462,69 @@ const ExperienceIcon = ({iconName, labelText}) => {
   </span>
 }
 
+const HobbyHeading = ({hobbyName}) => {
+  let iconClass = "fa-solid icon ";
+  var labelText;
+
+  switch (hobbyName){
+    case "cycling":
+      iconClass += "fa-person-biking";
+      labelText = textConst.HOBBIES_CYCLING_TITLE;
+      break;
+
+    case "guitar":
+      iconClass += "fa-guitar";
+      labelText = textConst.HOBBIES_GUITAR_TITLE;
+      break;
+
+    case "netflix":
+      iconClass += "fa-film";
+      labelText = textConst.HOBBIES_NETFLIX_TITLE;
+      break;
+
+    case "coding":
+      iconClass += "fa-code";
+      labelText = textConst.HOBBIES_CODING_TITLE;
+      break;
+  }
+
+  return <h3 class="hobby_title">
+    <i class={iconClass}></i>
+    <u>{labelText}</u>
+  </h3>
+}
+
+const HobbyLinkIcon = ({hobbyName}) => {
+  let iconClass = "fa-brands icon ";
+  var labelText;
+  var iconURL;
+
+  switch (hobbyName){
+    case "cycling":
+      iconClass += "fa-strava";
+      labelText = textConst.HOBBIES_CYCLING_STRAVA_TEXT;
+      iconURL = urlConst.HOBBIES_CYCLING_STRAVA_URL;
+      break;
+
+    case "guitar":
+      iconClass += "fa-spotify";
+      labelText = textConst.HOBBIES_GUITAR_SPOTIFY_TEXT;
+      iconURL = urlConst.HOBBIES_GUITAR_SPOTIFY_URL;
+      break;
+
+    case "coding":
+      iconClass += "fa-github";
+      labelText = textConst.HOBBIES_CODING_GITHUB_TEXT;
+      iconURL = urlConst.ABOUT_GITHUB_URL;
+      break;
+  }
+
+  return <a href={iconURL} target="_blank">
+    <i class={iconClass}></i>
+    {labelText}
+  </a>
+}
+
 const Icon = {
   ProjectIcon,
   ProjectGitHub,
@@ -472,7 +535,9 @@ const Icon = {
   SkillSubHeading,
   SkillLanguage,
   SkillCertification,
-  ExperienceIcon
+  ExperienceIcon,
+  HobbyHeading,
+  HobbyLinkIcon
 }
 
 export default Icon;
