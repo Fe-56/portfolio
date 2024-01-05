@@ -472,6 +472,11 @@ const HobbyHeading = ({hobbyName}) => {
       labelText = textConst.HOBBIES_CYCLING_TITLE;
       break;
 
+    case "running":
+      iconClass += "fa-person-running";
+      labelText = textConst.HOBBIES_RUNNING_TITLE;
+      break;
+
     case "guitar":
       iconClass += "fa-guitar";
       labelText = textConst.HOBBIES_GUITAR_TITLE;
@@ -500,10 +505,11 @@ const HobbyLinkIcon = ({hobbyName}) => {
   var iconURL;
 
   switch (hobbyName){
+    case "running":
     case "cycling":
       iconClass += "fa-strava";
-      labelText = textConst.HOBBIES_CYCLING_STRAVA_TEXT;
-      iconURL = urlConst.HOBBIES_CYCLING_STRAVA_URL;
+      labelText = textConst.HOBBIES_RUNNING_CYCLING_STRAVA_TEXT;
+      iconURL = urlConst.HOBBIES_RUNNING_CYCLING_STRAVA_URL;
       break;
 
     case "guitar":

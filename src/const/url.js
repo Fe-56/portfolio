@@ -43,7 +43,8 @@ export const SKILLS_CERTIFICATIONS_BACKEND_URL = "https://www.freecodecamp.org/c
 // Hobbies page
 export const HOBBIES_CYCLING_TREK_URL = "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/1-series/1-2/p/15807/";
 export const HOBBIES_CYCLING_BIANCHI_URL = "https://www.bianchi.com/bikes/bikes/road/racing-road/sprint/";
-export const HOBBIES_CYCLING_STRAVA_URL = "https://www.strava.com/athletes/33035635";
+export const HOBBIES_RUNNING_CYCLING_STRAVA_URL = "https://www.strava.com/athletes/33035635";
+export const HOBBIES_RUNNING_GARMIN_URL = "https://www.garmin.com.sg/news/press-release/news-2021-jun-forerunner55/";
 export const HOBBIES_GUITAR_GUITAR_URL = "https://www.ibanez.com/na/products/detail/grgr131ex_2y_02.html";
 export const HOBBIES_GUITAR_AMP_URL = "https://www.fender.com/en-US/guitar-amplifiers/contemporary-digital/champion-20/2330200000.html";
 export const HOBBIES_GUITAR_LINKIN_PARK_URL = "https://en.wikipedia.org/wiki/Linkin_Park";

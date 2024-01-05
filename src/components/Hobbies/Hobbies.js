@@ -14,6 +14,7 @@ export default function Hobbies() {
     <div id="hobbies" class="container-fluid">
       <h1 id="hobbies_title">{textConst.HOBBIES_TITLE}</h1>
       <Hobby.Cycling />
+      <Hobby.Running />
       <Hobby.Guitar />
       <Hobby.Netflix />
       <Hobby.Coding />
