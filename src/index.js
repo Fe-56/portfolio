@@ -21,11 +21,9 @@ function initialiseTheme () {
   
   if (savedTheme == 'dark-theme'){
     document.getElementById('root').className = 'App dark-theme';
-    document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-dark fixed-top"
-
+    
   }
   else{
     document.getElementById('root').className = 'App light-theme';
-    document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-light fixed-top";
   }
 }
