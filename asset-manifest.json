@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8cd92381.css",
-    "main.js": "/portfolio/static/js/main.57aee85d.js",
+    "main.css": "/portfolio/static/css/main.b0066802.css",
+    "main.js": "/portfolio/static/js/main.e227cc39.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
+    "static/media/running.jpg": "/portfolio/static/media/running.6bdaddd4c19474901c56.jpg",
     "static/media/giglet_picture.jpg": "/portfolio/static/media/giglet_picture.624f7e836c893ff96595.jpg",
     "static/media/coffeespace_logo.jpg": "/portfolio/static/media/coffeespace_logo.a84007434d988c926dd6.jpg",
     "static/media/profile_picture_portfolio.jpg": "/portfolio/static/media/profile_picture_portfolio.aa9b313a7cdc9ef01271.jpg",
@@ -13,11 +14,11 @@
     "static/media/hdb_logo.png": "/portfolio/static/media/hdb_logo.c8880cdd517a5525b99f.png",
     "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
-    "main.8cd92381.css.map": "/portfolio/static/css/main.8cd92381.css.map",
-    "main.57aee85d.js.map": "/portfolio/static/js/main.57aee85d.js.map"
+    "main.b0066802.css.map": "/portfolio/static/css/main.b0066802.css.map",
+    "main.e227cc39.js.map": "/portfolio/static/js/main.e227cc39.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cd92381.css",
-    "static/js/main.57aee85d.js"
+    "static/css/main.b0066802.css",
+    "static/js/main.e227cc39.js"
   ]
 }
