@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b0066802.css",
-    "main.js": "/portfolio/static/js/main.bbcfcb9b.js",
+    "main.js": "/portfolio/static/js/main.e227cc39.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
@@ -15,10 +15,10 @@
     "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
     "main.b0066802.css.map": "/portfolio/static/css/main.b0066802.css.map",
-    "main.bbcfcb9b.js.map": "/portfolio/static/js/main.bbcfcb9b.js.map"
+    "main.e227cc39.js.map": "/portfolio/static/js/main.e227cc39.js.map"
   },
   "entrypoints": [
     "static/css/main.b0066802.css",
-    "static/js/main.bbcfcb9b.js"
+    "static/js/main.e227cc39.js"
   ]
 }
