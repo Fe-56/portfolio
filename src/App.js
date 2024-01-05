@@ -1,4 +1,4 @@
-import { React} from "react";
+import { React, useContext } from "react";
 import { Route, useLocation, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './App.css';
@@ -11,12 +11,15 @@ import Contact from "./components/Contact/Contact";
 import Hobbies from "./components/Hobbies/Hobbies";
 import * as textConst from './const/text';
 import * as urlConst from './const/url';
+import Icon from './const/icons';
+import { ThemeContext } from "./Theme";
 
 export default function App() {
   let location = useLocation();
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="app" class="justify-content-center align-items-center container-lg">
+    <div id="app" class="justify-content-center align-items-center container-lg" className={`App ${theme} justify-content-center align-items-center container-lg`}>
       <Navbar />
       <TransitionGroup>
         <CSSTransition key={location.pathname} classNames="fade" timeout={0}>
@@ -31,10 +34,7 @@ export default function App() {
         </CSSTransition>
       </TransitionGroup>
       <div id="footer">
-        <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source">
-          <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
-          {textConst.SOURCE_CODE}
-        </a>
+        <Icon.GitHubSourceCodeIcon />
         <p id="footnote">© {getCurrentYear()} {textConst.FOOTNOTE}</p>
       </div>
     </div>

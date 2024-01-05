@@ -2,6 +2,13 @@ import React from "react";
 import * as textConst from "./text.js";
 import * as urlConst from "./url.js";
 
+const GitHubSourceCodeIcon = () => {
+  return <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source">
+    <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
+    {textConst.SOURCE_CODE}
+  </a>
+}
+
 const ProjectIcon = ({iconName, labelText=""}) => {
   let iconClass = "fa-solid icon ";
 
@@ -581,6 +588,7 @@ const ContactLinkIcon = ({contactType}) => {
 }
 
 const Icon = {
+  GitHubSourceCodeIcon,
   ProjectIcon,
   ProjectGitHub,
   ExapndCollapseIcon,

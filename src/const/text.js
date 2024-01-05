@@ -3,7 +3,7 @@ import * as urlConst from "./url";
 
 // general
 export const NAME = "Lim Fuo En";
-export const FOOTNOTE = `${NAME} All Rights Reserved.`;
+export const FOOTNOTE = `${NAME}. All Rights Reserved.`;
 export const SOURCE_CODE = "Github Source Code";
 
 // Navigation bar

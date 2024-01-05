@@ -8,6 +8,7 @@
 
 #navbar_buttons {
   max-width: 450px;
+  padding-top: 3px;
 }
 
 #navbar_nav {
@@ -31,11 +32,12 @@
 .nav-link {
   transition-duration: 0.2s;
   border-radius: var(--border-radius);
+  color: var(--text) !important
 }
 
 #logo:hover {
   color: var(--selected);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   transition-duration: 0.2s;
 }
 
@@ -43,8 +45,29 @@
   outline: none;
   transition-duration: 0.2s;
   align-items: center;
+  color: var(--text);
 }
 
 #navbar_logo {
   width: 145px;
+}
+
+#change_theme {
+  background-color: var(--theme_button_background);
+  border-radius: var(--border-radius);
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 8px;
+  transition: transform .2s;
+}
+
+#change_theme:hover {
+  background-color: var(--selected);
+  transition-duration: 0.2s;
+  transform: scale(1.2);
+}
+
+#change_theme_icon {
+  color: var(--theme_button);
 }

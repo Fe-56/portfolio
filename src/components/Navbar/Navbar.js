@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Navbar.css';
 import NavbarButton from "./NavbarButton";
 
-export default function Navbar() {
+export default function Navbar() {  
   return ( 
     <div id="navbar">
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar_nav">
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar_nav">
         <div class="container-fluid justify-content-center">
           <NavbarButton.NavbarAbout />
           <NavbarButton.NavbarButtonsCollapsed />
@@ -21,6 +21,8 @@ export default function Navbar() {
               <NavbarButton.NavbarHobbies />
               <div class="horizontal_gap"></div>
               <NavbarButton.NavbarContact />
+              <div class="horizontal_gap"></div>
+              <NavbarButton.NavbarTheme />
             </ul>
           </div>
         </div>

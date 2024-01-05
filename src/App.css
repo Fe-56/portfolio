@@ -42,15 +42,6 @@
 
 .btn {
   border-radius: var(--border-radius);
-}
-
-/* constants */
-:root {
-  --background: #001011;
-  --title: #6CCFF6;
-  --text: #FFFFFC;
-  --selected: #A5E000;
-  --quote: #313235;
-  --border-radius: 15px;
-  --about-milestone-line-height: 85%;
+  background-color: var(--button);
+  color: var(--background);
 }

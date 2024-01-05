@@ -7,13 +7,42 @@ body {
     sans-serif, 'Atkinson Legible';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 400px;
-  width: auto !important;
-  width: 400px;
-  background-color: var(--background);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+/* constants */
+:root {
+  --border-radius: 15px;
+  --about-milestone-line-height: 85%;
+}
+
+.light-theme  {
+  --background: #EDF6F9;
+  --title: #006D77;
+  --text: #42999B;
+  --selected: #354b46;
+  --quote: #FFDDD2;
+  --button: #E29578;
+  --theme_button_background: #262338;
+  --theme_button: #f6f1d5;
+}
+
+.dark-theme {
+  --background: #051C2C;
+  --title: #59CBE8;
+  --text: #00BCE1;
+  --selected: #E93CAC;
+  --quote: #1E22AA;
+  --button: #ED9B33;
+  --theme_button_background: #62C2CC;
+  --theme_button: #FDB813;
 }

@@ -92,6 +92,10 @@ h3 {
   color: var(--title);
 }
 
+.buttons {
+  border-width: 0px;
+}
+
 .buttons:hover {
   background-color: var(--selected);
   border-color: var(--selected);

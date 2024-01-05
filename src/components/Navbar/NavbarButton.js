@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import navbarFunctions from "./navbarFunctions";
 import * as urlConst from '../../const/url';
 import * as textConst from '../../const/text';
+import { ThemeContext } from "../../Theme";
 
 const NavbarAbout = () => {
   return <div id="navbar_logo">
@@ -21,7 +22,7 @@ const NavbarButtonsCollapsed = () => {
 const NavbarProjects = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/projects" class="nav-link active" id="nav_projects" onClick={navbarFunctions.clickedProjects}>
-    {textConst.PROJECTS_TITLE}
+      {textConst.PROJECTS_TITLE}
     </a>
   </li>
 }
@@ -29,7 +30,7 @@ const NavbarProjects = () => {
 const NavbarSkills = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/skills" class="nav-link active" id="nav_skills" onClick={navbarFunctions.clickedSkills}>
-    {textConst.SKILLS_TITLE}
+      {textConst.SKILLS_TITLE}
     </a>
   </li>
 }
@@ -37,7 +38,7 @@ const NavbarSkills = () => {
 const NavbarExperiences = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/experiences" class="nav-link active" id="nav_experiences" onClick={navbarFunctions.clickedExperiences}>
-    {textConst.EXPERIENCES_TITLE}
+      {textConst.EXPERIENCES_TITLE}
     </a>
   </li>
 }
@@ -45,7 +46,7 @@ const NavbarExperiences = () => {
 const NavbarHobbies = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/hobbies" class="nav-link active" id="nav_hobbies" onClick={navbarFunctions.clickedHobbies}>
-    {textConst.HOBBIES_TITLE}
+      {textConst.HOBBIES_TITLE}
     </a>
   </li>
 }
@@ -53,9 +54,35 @@ const NavbarHobbies = () => {
 const NavbarContact = () => {
   return <li class="nav-item active">
     <a href="/portfolio/#/contact" class="nav-link active" id="nav_contact" onClick={navbarFunctions.clickedContact}>
-    {textConst.CONTACT_TITLE}
+      {textConst.CONTACT_TITLE}
     </a>
   </li>
+}
+
+const NavbarTheme = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return <div id="change_theme">
+    <a
+      id="change_theme_icon"
+      onClick={() => toggleTheme()}
+      class = {themeButtonIconClass(theme)}
+    >
+    </a>
+  </div>
+}
+
+function themeButtonIconClass(theme) {
+  var iconClass;
+
+  if (theme == 'dark-theme'){
+    iconClass = "fa-solid fa-sun fa-lg";
+  }
+  else {
+    iconClass = "fa-solid fa-moon fa-lg";
+  }
+
+  return iconClass
 }
 
 const NavbarButton = {
@@ -65,7 +92,8 @@ const NavbarButton = {
   NavbarSkills,
   NavbarExperiences,
   NavbarHobbies,
-  NavbarContact
+  NavbarContact,
+  NavbarTheme
 };
 
 export default NavbarButton;
