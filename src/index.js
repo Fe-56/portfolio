@@ -21,9 +21,8 @@ function initialiseTheme () {
   
   if (savedTheme == 'dark-theme'){
     document.getElementById('root').className = 'App dark-theme';
-    
   }
-  else{
+  else {
     document.getElementById('root').className = 'App light-theme';
   }
 }

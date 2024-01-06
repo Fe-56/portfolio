@@ -23,12 +23,12 @@ const ThemeProvider = ({ children }) => {
     if (theme === "dark-theme") {
       setTheme("light-theme");
       document.getElementById('root').className = 'App light-theme';
-      document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-light fixed-top"
+      document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-light fixed-top";
     } 
     else {
       setTheme("dark-theme");
       document.getElementById('root').className = 'App dark-theme';
-      document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-dark fixed-top"
+      document.getElementById('navbar_nav').className = "navbar navbar-expand-sm navbar-dark fixed-top";
     }
   };
 
