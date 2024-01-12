@@ -37,6 +37,7 @@ export const SKILLS_CERTIFICATIONS_JAVASCRIPT_URL = "https://www.freecodecamp.or
 export const SKILLS_CERTIFICATIONS_FRONTEND_URL = "https://www.freecodecamp.org/certification/Fe-56/front-end-development-libraries";
 export const SKILLS_CERTIFICATIONS_VISUALISATION_URL = "https://www.freecodecamp.org/certification/Fe-56/data-visualization";
 export const SKILLS_CERTIFICATIONS_BACKEND_URL = "https://www.freecodecamp.org/certification/Fe-56/back-end-development-and-apis";
+export const SKILLS_CERTIFICATIONS_SCIENTIFIC_URL = "https://www.freecodecamp.org/certification/Fe-56/scientific-computing-with-python-v7"
 
 // Experiences page
 

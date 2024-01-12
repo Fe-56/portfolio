@@ -433,6 +433,11 @@ const SkillCertification = ({certificationName}) => {
       certification = textConst.SKILLS_CERTIFICATIONS_BACKEND;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_BACKEND_URL;
       break;
+
+    case "scientific":
+      certification = textConst.SKILLS_CERTIFICATIONS_SCIENTIFIC;
+      certificationURL = urlConst.SKILLS_CERTIFICATIONS_SCIENTIFIC_URL;
+      break;
   }
 
   return <div class="skill">
