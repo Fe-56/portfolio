@@ -85,6 +85,7 @@ const Certifications = () => {
       <Icon.SkillCertification certificationName="visualisation" />
       <Icon.SkillCertification certificationName="backend" />
       <Icon.SkillCertification certificationName="scientific" />
+      <Icon.SkillCertification certificationName="data" />
     </p>
   </div>
 }

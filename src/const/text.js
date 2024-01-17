@@ -120,6 +120,7 @@ export const SKILLS_CERTIFICATIONS_FRONTEND = "Front End Development Libraries";
 export const SKILLS_CERTIFICATIONS_VISUALISATION = "Data Visualization";
 export const SKILLS_CERTIFICATIONS_BACKEND = "Back End Development and APIs";
 export const SKILLS_CERTIFICATIONS_SCIENTIFIC = "Scientific Computing with Python";
+export const SKILLS_CERTIFICATIONS_DATA = "Data Analysis with Python";
 
 // Experiences page
 export const EXPERIENCES_TITLE =  "Experiences";
