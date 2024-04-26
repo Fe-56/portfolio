@@ -166,15 +166,15 @@ const DBS = () => {
       <h3>
         <u>{textConst.EXPERIENCES_DBS_TITLE}</u>
       </h3>
-      <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
+      <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-start">
+        <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="company_logo"></img>
+      </div>
+      <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-start d-flex align-items-center justify-content-sm-start justify-content-center">
         <h6>
           <Icon.ExperienceIcon iconName="experience_role" labelText={textConst.EXPERIENCES_DBS_ROLE} /><br/>
           <Icon.ExperienceIcon iconName="experience_location" labelText={textConst.EXPERIENCES_DBS_LOCATION} /><br/>
           <Icon.ExperienceIcon iconName="experience_timeline" labelText={textConst.EXPERIENCES_DBS_TIMELINE} />
         </h6>
-      </div>
-      <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-start">
-        <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="company_logo"></img>
       </div>
     </div>
     <p class="text-start experience_description">

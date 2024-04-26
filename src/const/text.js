@@ -40,6 +40,13 @@ export const PROJECTS_SKILLS_LABEL = "Skills";
 export const PROJECTS_GITHUB = "Check out the project's Github!";
 export const PROJECTS_PROJECT_LINK = "Project Link >";
 export const PROJECT_VIEW_MORE = "View more";
+export const PROJECTS_MUSIC_RECOMMENDATION_TITLE = "Music Recommendation Based on Emotion";
+export const PROJECTS_MUSIC_RECOMMENDATION_ROLE = "Data Scientist";
+export const PROJECTS_MUSIC_RECOMMENDATION_TYPE = "School Project";
+export const PROJECTS_MUSIC_RECOMMENDATION_TIMELINE = "January 2024 to April 2024";
+export const PROJECTS_MUSIC_RECOMMENDATION_PROJECT_DESCRIPTION = parse(
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL} target='_blank'>50.038 Computational Data Science</a>.<br/><br/>Conducted literature review on the current space of Music Emotion Recognition (MER) and applied data science, machine learning and deep learning techniques to build a pipeline that can predict emotions (valence and arousal) from musical features extracted from .mp3 files.<br></br>Developed a front-end UI using Streamlit to showcase the final product of a web app that users can upload .mp3 files to, have the emotions of that song predicted, and get recommended the most emotionally similar songs stored in the Vector Database backend.`
+);
 export const PROJECTS_LOOK_AND_EARN_TITLE = "Look and Earn";
 export const PROJECTS_LOOK_AND_EARN_ROLE = "Full-Stack Developer";
 export const PROJECTS_LOOK_AND_EARN_PROJECT_TYPE = "Start-up Project";
@@ -222,3 +229,4 @@ export const SKILL_WORD = "Word";
 export const SKILL_EXCEL = "Excel";
 export const SKILL_SYSTEMSTESTING = "Systems Testing";
 export const SKILL_PM = "Project Management";
+export const SKILL_DATASCIENCE = "Data Science"

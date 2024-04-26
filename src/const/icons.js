@@ -44,6 +44,10 @@ const ProjectGitHub = ({projectName}) => {
   var githubURL;
 
   switch (projectName){
+    case "music_recommendation":
+      githubURL = urlConst.PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL;
+      break;
+
     case "online_hate_speech_detection":
       githubURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL;
       break;
@@ -261,6 +265,11 @@ const HardSkill = ({skillName}) => {
     case "systems_testing":
       skill = textConst.SKILL_SYSTEMSTESTING;
       iconClass += "fa-solid fa-vials";
+      break;
+
+    case "data_science":
+      skill = textConst.SKILL_DATASCIENCE;
+      iconClass += "fa-solid fa-database";
       break;
 
     default:

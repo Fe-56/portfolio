@@ -8,6 +8,48 @@ import feast_logo from './feast_logo.png';
 import will_i_go_broke_logo from './will_i_go_broke_logo.png';
 import pokemon_battle_logo from './pokemon_battle_logo.png';
 
+const MusicRecommendationFromEmotion = () => {
+  return <div id="music_recommendation" class="project">
+    <div class="project_title_and_info">
+      <h3>
+        <u>{textConst.PROJECTS_MUSIC_RECOMMENDATION_TITLE}</u>
+      </h3>
+      <div class="info text-center d-flex align-items-center justify-content-center">
+        <h6>
+          <Icon.ProjectIcon iconName="project_role" labelText={textConst.PROJECTS_MUSIC_RECOMMENDATION_ROLE} /><br/>
+          <Icon.ProjectIcon iconName="project_type" labelText={textConst.PROJECTS_MUSIC_RECOMMENDATION_TYPE} /><br/>
+          <Icon.ProjectIcon iconName="project_timeline" labelText={textConst.PROJECTS_MUSIC_RECOMMENDATION_TIMELINE} /><br/>
+        </h6>
+      </div>
+    </div>
+    <div class="project_content">
+      <p class="text-start project_description">
+      {textConst.PROJECTS_MUSIC_RECOMMENDATION_PROJECT_DESCRIPTION}
+      </p>
+      <div class="project_extras d-flex row">
+        <Icon.ProjectGitHub projectName="music_recommendation" />
+      </div>
+      <div class="skills">
+        <h5 class="skills_title text-center">{textConst.PROJECTS_SKILLS_LABEL}</h5>
+        <p class="text-center">
+          <div class="hard_skills">
+            <Icon.HardSkill skillName="python"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="data_science"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="ml"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.HardSkill skillName="github"/>
+          </div>
+          <div class="soft_skills">
+            <Icon.SoftSkill skillName="communication"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="researching"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon.SoftSkill skillName="detail"/>
+          </div>
+        </p>
+      </div>
+    </div>
+    <Icon.ExapndCollapseIcon type="expand"/>
+  </div>
+}
+
 const LookAndEarn = () => {
   return <div id="look_and_earn" class="project">
     <div class="project_title_and_info">
@@ -414,6 +456,7 @@ const ProjectLink = ({projectName}) => {
 }
 
 const Project = {
+  MusicRecommendationFromEmotion,
   LookAndEarn,
   LonelyNoLonger,
   OnlineHateSpeechDetection,
