@@ -272,6 +272,16 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-solid fa-database";
       break;
 
+    case "typescript":
+      skill = textConst.SKILL_TYPESCRIPT;
+      iconClass += "fa-solid fa-t";
+      break;
+
+    case "next":
+      skill = textConst.SKILL_NEXT;
+      iconClass += "fa-solid fa-n";
+      break;
+
     default:
       skill = "Hard Skill";
   }

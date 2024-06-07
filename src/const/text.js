@@ -230,3 +230,5 @@ export const SKILL_EXCEL = "Excel";
 export const SKILL_SYSTEMSTESTING = "Systems Testing";
 export const SKILL_PM = "Project Management";
 export const SKILL_DATASCIENCE = "Data Science"
+export const SKILL_TYPESCRIPT = "TypeScript";
+export const SKILL_NEXT = "Next.js"
