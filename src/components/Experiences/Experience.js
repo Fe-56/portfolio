@@ -7,6 +7,47 @@ import dbs_logo from './dbs_logo.jpg';
 import coffeespace_logo from './coffeespace_logo.jpg';
 import myexpoplace_logo from './myexpoplace_logo.png';
 
+const DBS2 = () => {
+  return <div id="dbs_2" class="experience">
+    <div class="experience_title_and_info d-flex row">
+      <h3>
+        <u>{textConst.EXPERIENCES_DBS2_TITLE}</u>
+      </h3>
+      <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
+        <h6>
+          <Icon.ExperienceIcon iconName="experience_role" labelText={textConst.EXPERIENCES_DBS2_ROLE} /><br/>
+          <Icon.ExperienceIcon iconName="experience_location" labelText={textConst.EXPERIENCES_DBS2_LOCATION} /><br/>
+          <Icon.ExperienceIcon iconName="experience_timeline" labelText={textConst.EXPERIENCES_DBS2_TIMELINE} />
+        </h6>
+      </div>
+      <div class="company_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-start">
+        <img src={dbs_logo} loading="lazy" alt="DBS logo" id="dbs_logo" class="company_logo"></img>
+      </div>
+    </div>
+    <p class="text-start experience_description">
+     {textConst.EXPERIENCES_DBS2_EXPERIENCE_DESCRIPTION}
+    </p>
+    <div class="skills">
+      <h5 class="skills_title text-center">Skills:</h5>
+      <p class="text-center">
+      <div class="hard_skills">
+          <Icon.HardSkill skillName="next" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.HardSkill skillName="typescript" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.HardSkill skillName="mongo" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.HardSkill skillName="node" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.HardSkill skillName="github" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.HardSkill skillName="jira" />
+        </div>
+        <div class="soft_skills">
+          <Icon.SoftSkill skillName="communication" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.SoftSkill skillName="researching" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <Icon.SoftSkill skillName="detail" />
+        </div>
+      </p>
+    </div>
+  </div>
+}
+
 const MyExpoPlace = () => {
   return <div id="myexpoplace" class="experience">
     <div class="experience_title_and_info d-flex row">
@@ -201,6 +242,7 @@ const DBS = () => {
 }
 
 const Experience = {
+  DBS2,
   MyExpoPlace,
   CoffeeSpace,
   HDB,

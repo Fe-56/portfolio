@@ -17,9 +17,10 @@ const ProgrammingLanguages = () => {
     <Icon.SkillsHeading skillType="programming_languages" />
     <p>
       <SkillAndProficiency type="programming_languages" skill="dart" proficiency="proficient" />
+      <SkillAndProficiency type="programming_languages" skill="typescript" proficiency="intermediate" />
+      <SkillAndProficiency type="programming_languages" skill="javascript" proficiency="intermediate" />
       <SkillAndProficiency type="programming_languages" skill="python" proficiency="intermediate" />
       <SkillAndProficiency type="programming_languages" skill="java" proficiency="intermediate" />
-      <SkillAndProficiency type="programming_languages" skill="javascript" proficiency="intermediate" />
       <SkillAndProficiency type="programming_languages" skill="typescript" proficiency="beginner" />
       <SkillAndProficiency type="programming_languages" skill="kotlin" proficiency="beginner" />
       <SkillAndProficiency type="programming_languages" skill="swift" proficiency="beginner" />
@@ -34,10 +35,10 @@ const Frameworks = () => {
       <div id="frontend" class="sub_skill col-sm-4">
         <Icon.SkillSubHeading skillType="frontend" />
         <p>
+          <SkillAndProficiency type="frameworks" skill="next" proficiency="intermediate" />
+          <SkillAndProficiency type="frameworks" skill="react" proficiency="intermediate" />
           <SkillAndProficiency type="frameworks" skill="html" proficiency="intermediate" />
           <SkillAndProficiency type="frameworks" skill="css" proficiency="intermediate" />
-          <SkillAndProficiency type="frameworks" skill="react" proficiency="intermediate" />
-          <SkillAndProficiency type="frameworks" skill="next" proficiency="beginner" />
           <SkillAndProficiency type="frameworks" skill="d3" proficiency="beginner" />
           <SkillAndProficiency type="frameworks" skill="bootstrap" proficiency="beginner" />
         </p>

@@ -13,6 +13,7 @@ export default function Experiences() {
   return (
     <div id="experiences" class="container-fluid">
       <h1 id="experiences_title">{textConst.EXPERIENCES_TITLE}</h1>
+      <Experience.DBS2 />
       <Experience.SmileTutor />
       <Experience.MyExpoPlace />
       <Experience.CoffeeSpace />
