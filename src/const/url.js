@@ -10,7 +10,7 @@ export const CONTACT_PATH = "/contact";
 export const WEBSITE_PIC = "http://fe-56.github.io/portfolio/favicon.ico?v=2";
 
 // About page
-export const ABOUT_RESUME_URL = "https://drive.google.com/file/d/1rF6n-HPrshsn2hQ1mTG9oELGXdVq6gzV/view?usp=sharing";
+export const ABOUT_RESUME_URL = "https://drive.google.com/file/d/1ZjgvferujRqInevsND0rBAbGIHijU85T/view?usp=sharing";
 export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
 export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
 
