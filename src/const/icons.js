@@ -3,16 +3,18 @@ import * as textConst from "./text.js";
 import * as urlConst from "./url.js";
 
 const GitHubSourceCodeIcon = () => {
-  return <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source">
-    <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
-    {textConst.SOURCE_CODE}
-  </a>
-}
+  return (
+    <a href={urlConst.SOURCE_CODE_URL} target="_blank" id="github_source">
+      <i class="fa-brands fa-github fa-xl" id="github_icon"></i>
+      {textConst.SOURCE_CODE}
+    </a>
+  );
+};
 
-const ProjectIcon = ({iconName, labelText=""}) => {
+const ProjectIcon = ({ iconName, labelText = "" }) => {
   let iconClass = "fa-solid icon ";
 
-  switch (iconName){
+  switch (iconName) {
     case "project_role":
       iconClass += "fa-briefcase";
       break;
@@ -27,23 +29,29 @@ const ProjectIcon = ({iconName, labelText=""}) => {
 
     case "view_more":
       iconClass += "fa-chevron-down fa-xl expand_collapse_icon";
-      labelText = textConst.PROJECT_VIEW_MORE;
+      labelText = textConst.PROJECTS_VIEW_MORE;
       break;
 
     default:
       break;
   }
 
-  return <span>
-    <i class={iconClass}></i>
-    {labelText}
-  </span>
-}
+  return (
+    <span>
+      <i class={iconClass}></i>
+      {labelText}
+    </span>
+  );
+};
 
-const ProjectGitHub = ({projectName}) => {
+const ProjectGitHub = ({ projectName }) => {
   var githubURL;
 
-  switch (projectName){
+  switch (projectName) {
+    case "defund":
+      githubURL = urlConst.PROJECTS_DEFUND_GITHUB_URL;
+      break;
+
     case "music_recommendation":
       githubURL = urlConst.PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL;
       break;
@@ -65,90 +73,94 @@ const ProjectGitHub = ({projectName}) => {
       break;
   }
 
-  return <a href={githubURL} target="_blank" class="project_github">
-    <i class="fa-brands fa-github icon"></i>
-    {textConst.PROJECTS_GITHUB}
-  </a>
-}
+  return (
+    <a href={githubURL} target="_blank" class="project_github">
+      <i class="fa-brands fa-github icon"></i>
+      {textConst.PROJECTS_GITHUB}
+    </a>
+  );
+};
 
-const ExapndCollapseIcon = ({type}) => {
+const ExapndCollapseIcon = ({ type }) => {
   let iconClass = "fa solid fa-xl icon expand_collapse_icon ";
   var labelText;
 
-  switch (type){
+  switch (type) {
     case "expand":
       iconClass += "fa-chevron-down";
-      labelText = textConst.PROJECT_VIEW_MORE;
+      labelText = textConst.PROJECTS_VIEW_MORE;
       break;
 
     default:
       iconClass += "fa-chevron-down";
-      labelText = textConst.PROJECT_VIEW_MORE;
+      labelText = textConst.PROJECTS_VIEW_MORE;
   }
 
-  return <div class="expand_collapse">
-    <i class={iconClass}></i>
-    {labelText}
-  </div>
-}
+  return (
+    <div class="expand_collapse">
+      <i class={iconClass}></i>
+      {labelText}
+    </div>
+  );
+};
 
-const HardSkill = ({skillName}) => {
+const HardSkill = ({ skillName }) => {
   var skill;
   let iconClass = "fa-lg icon ";
-  
-  switch (skillName){
+
+  switch (skillName) {
     case "flutter":
       skill = textConst.SKILL_FLUTTER;
       iconClass += "fa-solid fa-f";
       break;
 
     case "dart":
-      skill = textConst.SKILL_DART; 
+      skill = textConst.SKILL_DART;
       iconClass += "fa-solid fa-d";
       break;
 
     case "android_studio":
-      skill = textConst.SKILL_ANDROID_STUDIO; 
+      skill = textConst.SKILL_ANDROID_STUDIO;
       iconClass += "fa-brands fa-android";
       break;
 
     case "firestore":
-      skill = textConst.SKILL_FIRESTORE; 
+      skill = textConst.SKILL_FIRESTORE;
       iconClass += "fa-brands fa-google";
       break;
 
     case "javascript":
-      skill = textConst.SKILL_JAVASCRIPT; 
+      skill = textConst.SKILL_JAVASCRIPT;
       iconClass += "fa-brands fa-square-js";
       break;
 
     case "react":
-      skill = textConst.SKILL_REACT; 
+      skill = textConst.SKILL_REACT;
       iconClass += "fa-brands fa-react";
       break;
 
     case "express":
-      skill = textConst.SKILL_EXPRESS; 
+      skill = textConst.SKILL_EXPRESS;
       iconClass += "fa-solid fa-e";
       break;
 
     case "node":
-      skill = textConst.SKILL_NODE; 
+      skill = textConst.SKILL_NODE;
       iconClass += "fa-brands fa-node";
       break;
 
     case "github":
-      skill = textConst.SKILL_GITHUB; 
+      skill = textConst.SKILL_GITHUB;
       iconClass += "fa-brands fa-github";
       break;
 
     case "python":
-      skill = textConst.SKILL_PYTHON; 
+      skill = textConst.SKILL_PYTHON;
       iconClass += "fa-brands fa-python";
       break;
 
     case "pytelegrambot":
-      skill = textConst.SKILL_PYTELEGRAMBOT; 
+      skill = textConst.SKILL_PYTELEGRAMBOT;
       iconClass += "fa-brands fa-telegram";
       break;
 
@@ -282,33 +294,45 @@ const HardSkill = ({skillName}) => {
       iconClass += "fa-solid fa-n";
       break;
 
+    case "solidity":
+      skill = textConst.SKILL_SOLIDITY;
+      iconClass += "fa-solid fa-s";
+      break;
+
+    case "ethereum":
+      skill = textConst.SKILL_ETHEREUM;
+      iconClass += "fa-brands fa-ethereum";
+      break;
+
     default:
       skill = "Hard Skill";
   }
 
-  return <span class="hard_skill">
-    <i class={iconClass}></i>
-    {skill}
-  </span>
-}
+  return (
+    <span class="hard_skill">
+      <i class={iconClass}></i>
+      {skill}
+    </span>
+  );
+};
 
-const SoftSkill = ({skillName}) => {
+const SoftSkill = ({ skillName }) => {
   var skill;
   let iconClass = "fa-lg icon ";
-  
-  switch (skillName){
+
+  switch (skillName) {
     case "communication":
       skill = textConst.SKILL_COMMUNICATION;
       iconClass += "fa-solid fa-comments";
       break;
 
     case "researching":
-      skill = textConst.SKILL_RESEARCHING; 
+      skill = textConst.SKILL_RESEARCHING;
       iconClass += "fa-brands fa-google";
       break;
 
     case "detail":
-      skill = textConst.SKILL_DETAIL; 
+      skill = textConst.SKILL_DETAIL;
       iconClass += "fa-solid fa-magnifying-glass";
       break;
 
@@ -331,17 +355,19 @@ const SoftSkill = ({skillName}) => {
       skill = "Soft Skill";
   }
 
-  return <span class="soft_skill">
-    <i class={iconClass}></i>
-    {skill}
-  </span>
-}
+  return (
+    <span class="soft_skill">
+      <i class={iconClass}></i>
+      {skill}
+    </span>
+  );
+};
 
-const SkillsHeading = ({skillType}) => {
+const SkillsHeading = ({ skillType }) => {
   var type;
   let iconClass = "fa-solid icon ";
 
-  switch (skillType){
+  switch (skillType) {
     case "languages":
       type = textConst.SKILLS_LANGUAGES_TITLE;
       iconClass += "fa-language";
@@ -368,17 +394,19 @@ const SkillsHeading = ({skillType}) => {
       break;
   }
 
-  return <h3>
-    <i class={iconClass}></i>
-    <u>{type}</u>
-  </h3>
-}
+  return (
+    <h3>
+      <i class={iconClass}></i>
+      <u>{type}</u>
+    </h3>
+  );
+};
 
-const SkillSubHeading = ({skillType}) => {
+const SkillSubHeading = ({ skillType }) => {
   var type;
   let iconClass = "fa-solid icon ";
 
-  switch (skillType){
+  switch (skillType) {
     case "frontend":
       type = textConst.SKILLS_FRAMEWORKS_FRONTEND;
       iconClass += "fa-desktop";
@@ -395,17 +423,19 @@ const SkillSubHeading = ({skillType}) => {
       break;
   }
 
-  return <h5>
-    <i class={iconClass}></i>
-    {type}
-  </h5>
-}
+  return (
+    <h5>
+      <i class={iconClass}></i>
+      {type}
+    </h5>
+  );
+};
 
-const SkillLanguage = ({languageName}) => {
+const SkillLanguage = ({ languageName }) => {
   let iconClass = "fa-solid icon fa-lg ";
   var language;
 
-  switch (languageName){
+  switch (languageName) {
     case "english":
       iconClass += "fa-earth-europe";
       language = textConst.SKILLS_LANGUAGES_ENGLISH;
@@ -417,17 +447,19 @@ const SkillLanguage = ({languageName}) => {
       break;
   }
 
-  return <span>
-    <i class={iconClass}></i>
-    {language}
-  </span>
-}
+  return (
+    <span>
+      <i class={iconClass}></i>
+      {language}
+    </span>
+  );
+};
 
-const SkillCertification = ({certificationName}) => {
+const SkillCertification = ({ certificationName }) => {
   var certification;
   var certificationURL;
 
-  switch (certificationName){
+  switch (certificationName) {
     case "responsive":
       certification = textConst.SKILLS_CERTIFICATIONS_RESPONSIVE;
       certificationURL = urlConst.SKILLS_CERTIFICATIONS_RESPONSIVE_URL;
@@ -464,18 +496,20 @@ const SkillCertification = ({certificationName}) => {
       break;
   }
 
-  return <div class="skill">
-    <a href={certificationURL} target="_blank">
-      <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
-      {certification}
-    </a>
-  </div>
-}
+  return (
+    <div class="skill">
+      <a href={certificationURL} target="_blank">
+        <i class="fa-brands fa-free-code-camp icon fa-lg"></i>
+        {certification}
+      </a>
+    </div>
+  );
+};
 
-const ExperienceIcon = ({iconName, labelText}) => {
+const ExperienceIcon = ({ iconName, labelText }) => {
   let iconClass = "fa-solid icon ";
 
-  switch (iconName){
+  switch (iconName) {
     case "experience_role":
       iconClass += "fa-briefcase";
       break;
@@ -492,17 +526,19 @@ const ExperienceIcon = ({iconName, labelText}) => {
       break;
   }
 
-  return <span>
-    <i class={iconClass}></i>
-    {labelText}
-  </span>
-}
+  return (
+    <span>
+      <i class={iconClass}></i>
+      {labelText}
+    </span>
+  );
+};
 
-const HobbyHeading = ({hobbyName}) => {
+const HobbyHeading = ({ hobbyName }) => {
   let iconClass = "fa-solid icon ";
   var labelText;
 
-  switch (hobbyName){
+  switch (hobbyName) {
     case "cycling":
       iconClass += "fa-person-biking";
       labelText = textConst.HOBBIES_CYCLING_TITLE;
@@ -529,18 +565,20 @@ const HobbyHeading = ({hobbyName}) => {
       break;
   }
 
-  return <h3 class="hobby_title">
-    <i class={iconClass}></i>
-    <u>{labelText}</u>
-  </h3>
-}
+  return (
+    <h3 class="hobby_title">
+      <i class={iconClass}></i>
+      <u>{labelText}</u>
+    </h3>
+  );
+};
 
-const HobbyLinkIcon = ({hobbyName}) => {
+const HobbyLinkIcon = ({ hobbyName }) => {
   let iconClass = "fa-brands icon ";
   var labelText;
   var iconURL;
 
-  switch (hobbyName){
+  switch (hobbyName) {
     case "running":
     case "cycling":
       iconClass += "fa-strava";
@@ -561,19 +599,21 @@ const HobbyLinkIcon = ({hobbyName}) => {
       break;
   }
 
-  return <a href={iconURL} target="_blank">
-    <i class={iconClass}></i>
-    {labelText}
-  </a>
-}
+  return (
+    <a href={iconURL} target="_blank">
+      <i class={iconClass}></i>
+      {labelText}
+    </a>
+  );
+};
 
-const ContactLinkIcon = ({contactType}) => {
+const ContactLinkIcon = ({ contactType }) => {
   let iconClass = "icon ";
   var labelText;
   var iconURL;
   var htmlID;
 
-  switch (contactType){
+  switch (contactType) {
     case "email":
       iconClass += "fa-solid fa-envelope";
       labelText = textConst.CONTACT_EMAIL;
@@ -592,7 +632,7 @@ const ContactLinkIcon = ({contactType}) => {
       iconClass += "fa-brands fa-telegram";
       labelText = textConst.CONTACT_TELEGRAM;
       iconURL = urlConst.CONTACT_TELEGRAM_URL;
-      htmlID = "telegram_username"
+      htmlID = "telegram_username";
       break;
 
     case "phone":
@@ -606,15 +646,17 @@ const ContactLinkIcon = ({contactType}) => {
       iconClass += "fa-solid fa-location-dot";
       labelText = textConst.CONTACT_LOCATION;
       iconURL = urlConst.CONTACT_LOCATION_URL;
-      htmlID = contactType
+      htmlID = contactType;
       break;
   }
 
-  return <a href={iconURL} target="_blank" id={htmlID} class="contact_link">
-    <i class={iconClass}></i>
-    {labelText}
-  </a>
-}
+  return (
+    <a href={iconURL} target="_blank" id={htmlID} class="contact_link">
+      <i class={iconClass}></i>
+      {labelText}
+    </a>
+  );
+};
 
 const Icon = {
   GitHubSourceCodeIcon,
@@ -630,7 +672,7 @@ const Icon = {
   ExperienceIcon,
   HobbyHeading,
   HobbyLinkIcon,
-  ContactLinkIcon
-}
+  ContactLinkIcon,
+};
 
 export default Icon;

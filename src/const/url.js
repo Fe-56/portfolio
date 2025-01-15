@@ -15,6 +15,9 @@ export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
 export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
 
 // Projects page
+export const PROJECTS_DEFUND_PROJECT_URL = "https://de-fund.vercel.app/";
+export const PROJECTS_DEFUND_COURSE_URL = "https://www.sutd.edu.sg/course/50-037-blockchain-technology";
+export const PROJECTS_DEFUND_GITHUB_URL = "https://github.com/abramtan/DeFund";
 export const PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL = "https://istd.sutd.edu.sg/undergraduate/courses/50038-computational-data-science/";
 export const PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL= "https://github.com/Fe-56/CDeeS";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL = "https://istd.sutd.edu.sg/undergraduate/courses/50007-machine-learning/";

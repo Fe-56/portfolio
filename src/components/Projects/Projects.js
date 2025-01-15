@@ -13,6 +13,7 @@ export default function Projects() {
   return (
     <div id="projects">
       <h1 id="projects_title">{textConst.PROJECTS_TITLE}</h1>
+      <Project.DeFund />
       <Project.MusicRecommendationFromEmotion />
       <Project.LookAndEarn />
       <Project.LonelyNoLonger />
