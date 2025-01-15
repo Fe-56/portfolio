@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import pageLoad from "../utils/pageLoad";
-import './Projects.css';
+import "./Projects.css";
 import * as textConst from "../../const/text";
 import Project from "./Project";
 
@@ -29,13 +29,15 @@ export default function Projects() {
 }
 
 function pageSetup() {
-  document.getElementById('nav_projects').classList.add('selected'); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
+  document.getElementById("nav_projects").classList.add("selected"); // ensures that the corresponding navbar item is selected even if the user refreshes the webpage
 
-  window.addEventListener('resize', projectSkillsResponsive);
+  window.addEventListener("resize", projectSkillsResponsive);
 
-  const projects = Array.prototype.slice.call(document.getElementsByClassName('project'));
+  const projects = Array.prototype.slice.call(
+    document.getElementsByClassName("project"),
+  );
   projects.map((project) => {
-    project.addEventListener('click', projectClick);
+    project.addEventListener("click", projectClick);
   });
 }
 
@@ -44,22 +46,32 @@ function projectClick(event) {
   const projectContent = project.children[1]; // gets the project_content div within the project div
   const expandCollapse = project.children[2];
 
-  if (event.target.classList.contains("expand_collapse") || event.target.classList.contains("expand_collapse_icon")){ // if the entire div that contains the up or down chevron is clicked, expand or collapse the project content accordingly
-    if (projectContent.style.maxHeight){ // if the project content is currently expanded, collapse it
-      expandCollapse.innerHTML = '<i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>\nView more';
+  if (
+    event.target.classList.contains("expand_collapse") ||
+    event.target.classList.contains("expand_collapse_icon")
+  ) {
+    // if the entire div that contains the up or down chevron is clicked, expand or collapse the project content accordingly
+    if (projectContent.style.maxHeight) {
+      // if the project content is currently expanded, collapse it
+      expandCollapse.innerHTML =
+        '<i class="fa solid fa-chevron-down fa-xl icon expand_collapse_icon"></i>\nView more';
       projectContent.classList.remove("expanded");
       projectContent.style.maxHeight = null;
-    }
-    else{ // if the project content is currently collapsed, expand it
-      expandCollapse.innerHTML = '<i class="fa solid fa-chevron-up fa-xl icon expand_collapse_icon"></i>\nView less';
+    } else {
+      // if the project content is currently collapsed, expand it
+      expandCollapse.innerHTML =
+        '<i class="fa solid fa-chevron-up fa-xl icon expand_collapse_icon"></i>\nView less';
       projectContent.classList.add("expanded");
       projectContent.style.maxHeight = projectContent.scrollHeight + "px";
     }
   }
 }
 
-function projectSkillsResponsive(){ // makes the skills section of each project responsive by adjusting the max height of the project content whenever the window is being resized
-  const expandedProjectContents = Array.prototype.slice.call(document.getElementsByClassName("expanded"));
+function projectSkillsResponsive() {
+  // makes the skills section of each project responsive by adjusting the max height of the project content whenever the window is being resized
+  const expandedProjectContents = Array.prototype.slice.call(
+    document.getElementsByClassName("expanded"),
+  );
   expandedProjectContents.map((projectContent) => {
     projectContent.style.maxHeight = projectContent.scrollHeight + "px";
   });

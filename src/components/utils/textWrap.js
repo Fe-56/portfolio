@@ -1,9 +1,9 @@
-import * as d3 from 'd3';
+import * as d3 from "d3";
 
 // text-wrapping function from https://stackoverflow.com/questions/24784302/wrapping-text-in-d3
 export default function textWrap(text, width) {
-    text.each(function () {
-      var text = d3.select(this),
+  text.each(function () {
+    var text = d3.select(this),
       words = text.text().split(/\s+/).reverse(),
       word,
       line = [],
@@ -12,24 +12,26 @@ export default function textWrap(text, width) {
       x = text.attr("x"),
       y = text.attr("y"),
       dy = 0, //parseFloat(text.attr("dy")),
-      tspan = text.text(null)
-                  .append("tspan")
-                  .attr("x", x)
-                  .attr("y", y)
-                  .attr("dy", dy + "em");
-      while (word = words.pop()) {
-        line.push(word);
+      tspan = text
+        .text(null)
+        .append("tspan")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("dy", dy + "em");
+    while ((word = words.pop())) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
         tspan.text(line.join(" "));
-        if (tspan.node().getComputedTextLength() > width) {
-            line.pop();
-            tspan.text(line.join(" "));
-            line = [word];
-            tspan = text.append("tspan")
-                        .attr("x", x)
-                        .attr("y", y)
-                        .attr("dy", ++lineNumber * lineHeight + dy + "em")
-                        .text(word);
-        }
+        line = [word];
+        tspan = text
+          .append("tspan")
+          .attr("x", x)
+          .attr("y", y)
+          .attr("dy", ++lineNumber * lineHeight + dy + "em")
+          .text(word);
       }
-    });
-  }
+    }
+  });
+}

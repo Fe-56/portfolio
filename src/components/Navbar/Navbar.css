@@ -19,7 +19,8 @@
   backdrop-filter: blur(35px);
 }
 
-.nav-link:hover, .selected {
+.nav-link:hover,
+.selected {
   color: var(--background) !important;
   text-decoration: underline;
   background-color: var(--selected);
@@ -32,7 +33,7 @@
 .nav-link {
   transition-duration: 0.2s;
   border-radius: var(--border-radius);
-  color: var(--text) !important
+  color: var(--text) !important;
 }
 
 #logo:hover {
@@ -59,7 +60,7 @@
   height: auto;
   margin: auto;
   padding: 8px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #change_theme:hover {

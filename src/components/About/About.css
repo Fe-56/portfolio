@@ -28,17 +28,17 @@ blockquote p {
 }
 
 blockquote p::before {
-  content: '\201C';
+  content: "\201C";
 }
 
 blockquote p::after {
-  content: '\201D';
+  content: "\201D";
 }
 
 #profile_picture {
   border-radius: 50%;
   height: 150px;
-  width: 150px*1.06;
+  width: 150px * 1.06;
 }
 
 #hobbies_text {

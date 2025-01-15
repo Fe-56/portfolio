@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible');
+@import url("https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif, 'Atkinson Legible';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif, "Atkinson Legible";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -25,24 +25,24 @@ code {
   --about-milestone-line-height: 85%;
 }
 
-.light-theme  {
-  --background: #EDF6F9;
-  --title: #006D77;
-  --text: #42999B;
+.light-theme {
+  --background: #edf6f9;
+  --title: #006d77;
+  --text: #42999b;
   --selected: #354b46;
-  --quote: #FFDDD2;
-  --button: #E29578;
+  --quote: #ffddd2;
+  --button: #e29578;
   --theme_button_background: #262338;
   --theme_button: #f6f1d5;
 }
 
 .dark-theme {
-  --background: #051C2C;
-  --title: #59CBE8;
-  --text: #00BCE1;
-  --selected: #E93CAC;
-  --quote: #1E22AA;
-  --button: #ED9B33;
-  --theme_button_background: #62C2CC;
-  --theme_button: #FDB813;
+  --background: #051c2c;
+  --title: #59cbe8;
+  --text: #00bce1;
+  --selected: #e93cac;
+  --quote: #1e22aa;
+  --button: #ed9b33;
+  --theme_button_background: #62c2cc;
+  --theme_button: #fdb813;
 }

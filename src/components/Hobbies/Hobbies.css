@@ -38,7 +38,9 @@ a:hover {
   margin: 10px;
 }
 
-#brad_delson_picture, #james_hetfield_and_kirk_hammet_picture, #bille_joe_armstrong_picture {
+#brad_delson_picture,
+#james_hetfield_and_kirk_hammet_picture,
+#bille_joe_armstrong_picture {
   height: auto;
   width: 70%;
 }
