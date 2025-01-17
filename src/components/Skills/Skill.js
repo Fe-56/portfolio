@@ -54,11 +54,6 @@ const ProgrammingLanguages = () => {
         />
         <SkillAndProficiency
           type="programming_languages"
-          skill="typescript"
-          proficiency="beginner"
-        />
-        <SkillAndProficiency
-          type="programming_languages"
           skill="kotlin"
           proficiency="beginner"
         />
