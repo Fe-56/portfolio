@@ -11,11 +11,12 @@ export const WEBSITE_PIC = "http://fe-56.github.io/portfolio/favicon.ico?v=2";
 
 // About page
 export const ABOUT_RESUME_URL =
-  "https://drive.google.com/file/d/1ZjgvferujRqInevsND0rBAbGIHijU85T/view?usp=sharing";
+  "https://drive.google.com/file/d/13TPg_uvUqMgiylWfIsGL6VzO1VS8KxPp/view?usp=sharing";
 export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
 export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
 
 // Projects page
+export const PROJECTS_PROSPERO_PROJECT_URL = "https://capstoneshowcase.sutd.edu.sg/project/proj-s16-htx_devt-of-contacess-lie-detectn/";
 export const PROJECTS_DEFUND_PROJECT_URL = "https://de-fund.vercel.app/";
 export const PROJECTS_DEFUND_COURSE_URL =
   "https://www.sutd.edu.sg/course/50-037-blockchain-technology";

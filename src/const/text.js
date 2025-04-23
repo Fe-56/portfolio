@@ -52,6 +52,13 @@ export const PROJECTS_SKILLS_LABEL = "Skills";
 export const PROJECTS_GITHUB = "Check out the project's Github!";
 export const PROJECTS_PROJECT_LINK = "Project Link >";
 export const PROJECTS_VIEW_MORE = "View more";
+export const PROJECTS_PROSPERO_TITLE = "Prospero";
+export const PROJECTS_PROSPERO_ROLE = "Frontend Lead";
+export const PROJECTS_PROSPERO_TYPE = "Capstone Project";
+export const PROJECTS_PROSPERO_TIMELINE = "September 2024 to April 2025";
+export const PROJECTS_PROSPERO_PROJECT_DESCRIPTION = parse(
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_PROSPERO_PROJECT_URL} target='_blank'>Capstone programme</a>, in collaboration with HTX (Home Team Science & Technology Agency).\n\nProspero is a specialized tool designed to assist investigators in assessing the credibility of subjects in investigative interviews, while being contactless, discreet, and accessible.\n\nIt consists of the micro-facial expression (MFE) microservice, which detects subtle facial expressions of the subject throughout the interview.\n\nLayered voice analysis (LVA0, which picks up vocal stress patterns of the subject.\n\nSpyFlask, a hardware solution taking the form of a water bottle that discreetly contains a camera to capture the video of the subject for MFE analysis, and directional microphones for LVA analysis.\n\nProspero Analyser, an intuitive, offline application that integrates MFE, LVA, and SpyFlask, enabling investigators to record live interviews, conduct MFE and LVA analysis post-interview, and manage the saved interview analyses.\n\nI was the frontend developer, where I designed the UI/UX of Prospero Analyser and built it from scratch using modern technologies, like Next.Js`,
+);
 export const PROJECTS_DEFUND_TITLE = "DeFund";
 export const PROJECTS_DEFUND_ROLE = "Software Engineer";
 export const PROJECTS_DEFUND_TYPE = "School Project";

@@ -8,6 +8,81 @@ import giglet_picture from "./giglet_picture.jpg";
 import pokemon_battle_logo from "./pokemon_battle_logo.png";
 import will_i_go_broke_logo from "./will_i_go_broke_logo.png";
 import wordle_logo from "./wordle_logo.png";
+import prospero_logo from "./prospero_logo.svg";
+
+const Prospero = () => {
+  return (
+    <div id="defund" class="project">
+      <div class="project_title_and_info d-flex row">
+        <h3>
+          <u>{textConst.PROJECTS_PROSPERO_TITLE}</u>
+        </h3>
+        <div class="info col-xl-6 col-lg-6 col-md-6 col-sm-6 text-sm-end text-center d-flex align-items-center justify-content-sm-end justify-content-center">
+          <h6>
+            <Icon.ProjectIcon
+              iconName="project_role"
+              labelText={textConst.PROJECTS_PROSPERO_ROLE}
+            />
+            <br />
+            <Icon.ProjectIcon
+              iconName="project_type"
+              labelText={textConst.PROJECTS_PROSPERO_TYPE}
+            />
+            <br />
+            <Icon.ProjectIcon
+              iconName="project_timeline"
+              labelText={textConst.PROJECTS_PROSPERO_TIMELINE}
+            />
+            <br />
+          </h6>
+        </div>
+        <div class="project_image col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-sm-end justify-content-center">
+          <img
+            src={prospero_logo}
+            loading="lazy"
+            alt="Prospero picture"
+            id="prospero_picture"
+            class="project_logo"
+          ></img>
+        </div>
+      </div>
+      <div class="project_content">
+        <p class="text-start project_description">
+          {textConst.PROJECTS_PROSPERO_PROJECT_DESCRIPTION}
+        </p>
+        <div class="project_extras d-flex row">
+          <ProjectLink projectName="prospero" />
+        </div>
+        <div class="skills">
+          <h5 class="skills_title text-center">
+            {textConst.PROJECTS_SKILLS_LABEL}
+          </h5>
+          <p class="text-center">
+            <div class="hard_skills">
+              <Icon.HardSkill skillName="next" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.HardSkill skillName="typescript" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.HardSkill skillName="figma" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.HardSkill skillName="css" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.HardSkill skillName="github" />
+            </div>
+            <div class="soft_skills">
+              <Icon.SoftSkill skillName="communication" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.SoftSkill skillName="researching" />
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <Icon.SoftSkill skillName="detail" />
+            </div>
+          </p>
+        </div>
+      </div>
+      <Icon.ExapndCollapseIcon type="expand" />
+    </div>
+  );
+};
 
 const DeFund = () => {
   return (
@@ -753,6 +828,10 @@ const ProjectLink = ({ projectName }) => {
   var projectURL;
 
   switch (projectName) {
+    case "prospero":
+      projectURL = urlConst.PROJECTS_PROSPERO_PROJECT_URL;
+      break;
+
     case "online_hate_speech_detection":
       projectURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_URL;
       break;
@@ -776,6 +855,7 @@ const ProjectLink = ({ projectName }) => {
 };
 
 const Project = {
+  Prospero,
   DeFund,
   MusicRecommendationFromEmotion,
   LookAndEarn,
