@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.405bb5b6.css",
-    "main.js": "/portfolio/static/js/main.1044ad83.js",
+    "main.js": "/portfolio/static/js/main.16bc14d0.js",
     "static/media/cycling_2.jpg": "/portfolio/static/media/cycling_2.074378547f344fee5b83.jpg",
     "static/media/cycling_1.jpg": "/portfolio/static/media/cycling_1.9e85bf354cc346f85460.jpg",
     "static/media/dbs_logo.jpg": "/portfolio/static/media/dbs_logo.42433d71d38e0025afab.jpg",
@@ -15,11 +15,12 @@
     "static/media/hdb_logo.png": "/portfolio/static/media/hdb_logo.c8880cdd517a5525b99f.png",
     "static/media/feast_logo.png": "/portfolio/static/media/feast_logo.da7731d292e8f31ffa6d.png",
     "index.html": "/portfolio/index.html",
+    "static/media/prospero_logo.svg": "/portfolio/static/media/prospero_logo.0922e31c5f4f2092b51855f627381bfa.svg",
     "main.405bb5b6.css.map": "/portfolio/static/css/main.405bb5b6.css.map",
-    "main.1044ad83.js.map": "/portfolio/static/js/main.1044ad83.js.map"
+    "main.16bc14d0.js.map": "/portfolio/static/js/main.16bc14d0.js.map"
   },
   "entrypoints": [
     "static/css/main.405bb5b6.css",
-    "static/js/main.1044ad83.js"
+    "static/js/main.16bc14d0.js"
   ]
 }
