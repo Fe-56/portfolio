@@ -113,30 +113,30 @@ export default function Project({
           </h5>
           <p class="text-center">
             <div class="hard_skills">
-              {hardSkills.map((hardSkill, index) => {
-                if (index == hardSkills.length - 1) {
+              {hardSkills.map((hardSkill, skillIndex) => {
+                if (skillIndex == hardSkills.length - 1) {
                   return <Icon.HardSkill skillName={hardSkill} />;
                 } else {
                   return (
                     <>
                       <Icon.HardSkill skillName={hardSkill} />
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      {index > 0 && index % 4 == 0 && <br />}
+                      {skillIndex > 0 && skillIndex % 4 == 0 && <br />}
                     </>
                   );
                 }
               })}
             </div>
             <div class="soft_skills">
-              {softSkills.map((softSkill, index) => {
-                if (index == softSkills.length - 1) {
+              {softSkills.map((softSkill, skillIndex) => {
+                if (skillIndex == softSkills.length - 1) {
                   return <Icon.SoftSkill skillName={softSkill} />;
                 } else {
                   return (
                     <>
                       <Icon.SoftSkill skillName={softSkill} />
                       &nbsp;&nbsp;&nbsp;&nbsp;
-                      {index > 0 && index % 4 == 0 && <br />}
+                      {skillIndex > 0 && skillIndex % 4 == 0 && <br />}
                     </>
                   );
                 }

@@ -185,6 +185,7 @@ export const EXPERIENCES_DBS2_TITLE = "DBS Bank";
 export const EXPERIENCES_DBS2_ROLE = "Full-stack Developer Intern";
 export const EXPERIENCES_DBS2_LOCATION = "Singapore";
 export const EXPERIENCES_DBS2_TIMELINE = "May 2024 to September 2024";
+export const EXPERIENCES_DBS2_LOGO_ALT = "DBS Bank logo";
 export const EXPERIENCES_DBS2_EXPERIENCE_DESCRIPTION = parse(
   "- Enhanced the MarTech Requirements Platform (MRP) web app using Next.js and TypeScript, driving feature developments and bug fixes.<br/>- Boosted CI/CD pipeline effectiveness by writing comprehensive unit tests with Vitest, improving test coverage from under 30% to over 80%.<br/>- Collaborated with cross-functional teams in an Agile environment to deliver high-quality software on tight deadlines."
 );
@@ -193,6 +194,7 @@ export const EXPERIENCES_MYEXPOPLACE_ROLE = "Flutter Developer Intern";
 export const EXPERIENCES_MYEXPOPLACE_LOCATION =
   "Los Angeles, California, United States";
 export const EXPERIENCES_MYEXPOPLACE_TIMELINE = "June 2023 to August 2023";
+export const EXPERIENCES_MYEXPOPLACE_LOGO_ALT = "MyExpoPlace logo";
 export const EXPERIENCES_MYEXPOPLACE_EXPERIENCE_DESCRIPTION = parse(
   "- Revamped the MyExpoPlace mobile app using Flutter and enhanced the user experience through new app navigation features.<br/>- Used Figma to design modern UI/UX improvements for viewing and interacting with app item listing and implemented them in production, which rejuvenated the user experience.<br/>- Collaborated with fellow Flutter developers to ensure timely delivery of high-quality code."
 );
@@ -201,6 +203,7 @@ export const EXPERIENCES_COFFEESPACE_ROLE = "Software Engineering Intern";
 export const EXPERIENCES_COFFEESPACE_LOCATION =
   "San Francisco, California, United States";
 export const EXPERIENCES_COFFEESPACE_TIMELINE = "March 2023 to June 2023";
+export const EXPERIENCES_COFFEESPACE_LOGO_ALT = "CoffeeSpace logo";
 export const EXPERIENCES_COFFEESPACE_EXPERIENCE_DESCRIPTION = parse(
   "- Utilized Flutter and Bloc state management to maintain and develop new features such as addressing notification bug, app networking performance enhancements, and adding new profile sections.<br/>- Liaised with backend engineers to ensure smooth integration and functionality of app features.<br/>- Conducted technical research for new payment features, exploring additional revenue opportunities."
 );
@@ -208,6 +211,7 @@ export const EXPERIENCES_HDB_TITLE = "Housing & Development Board";
 export const EXPERIENCES_HDB_ROLE = "Mobile Application Development Intern";
 export const EXPERIENCES_HDB_LOCATION = "Singapore";
 export const EXPERIENCES_HDB_TIMELINE = "August 2022 to December 2022";
+export const EXPERIENCES_HDB_LOGO_ALT = "HDB logo";
 export const EXPERIENCES_HDB_EXPERIENCE_DESCRIPTION = parse(
   "- Maintained and developed new features, such as adding call-to-actions, for the Android and iOS versions of Mobile@HDB mobile app in Java and Swift respectively.<br/>- Comprehensively refactored the entire Android codebase in Java for enhanced maintainability.<br/>- Built Augmented Reality (AR) app prototypes in Kotlin as a proof-of-concept for future AR features for app enhancement."
 );
@@ -215,6 +219,7 @@ export const EXPERIENCES_SMILETUTOR_TITLE = "SmileTutor";
 export const EXPERIENCES_SMILETUTOR_ROLE = "Private Tutor (part-time)";
 export const EXPERIENCES_SMILETUTOR_LOCATION = "Singapore";
 export const EXPERIENCES_SMILETUTOR_TIMELINE = "January 2022 to September 2024";
+export const EXPERIENCES_SMILETUTOR_LOGO_ALT = "SmileTutor logo";
 export const EXPERIENCES_SMILETUTOR_EXPERIENCE_DESCRIPTION = parse(
   "- Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>- Conducted weekly one-on-one lessons at students' residences<br/>- Clarified the student's doubts, went through their homework and exam papers with them<br/>- Explained and taught them concepts thay they were otherwise unsure of<br/>- Liaised with the student's parents to ensure that their child's homework and assignments are done on time"
 );
@@ -222,6 +227,7 @@ export const EXPERIENCES_DBS_TITLE = "DBS Bank";
 export const EXPERIENCES_DBS_ROLE = "Business Analyst Intern";
 export const EXPERIENCES_DBS_LOCATION = "Singapore";
 export const EXPERIENCES_DBS_TIMELINE = "May 2021 to September 2021";
+export const EXPERIENCES_DBS_LOGO_ALT = "DBS Bank logo";
 export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse(
   "- Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems.<br/>- Supported the project teams in developing presentation materials and in coordination of communications with the client.<br/>- Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets."
 );
