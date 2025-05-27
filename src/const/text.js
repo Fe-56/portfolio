@@ -55,14 +55,24 @@ export const PROJECTS_SKILLS_LABEL = "Skills";
 export const PROJECTS_GITHUB = "Check out the project's Github!";
 export const PROJECTS_PROJECT_LINK = "Project Link >";
 export const PROJECTS_VIEW_MORE = "View more";
+
 export const PROJECTS_PROSPERO_TITLE = "Prospero";
 export const PROJECTS_PROSPERO_ROLE = "Frontend Lead";
 export const PROJECTS_PROSPERO_TYPE = "Capstone Project";
 export const PROJECTS_PROSPERO_TIMELINE = "September 2024 to April 2025";
 export const PROJECTS_PROSPERO_LOGO_ALT = "Prospero picture";
 export const PROJECTS_PROSPERO_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_PROSPERO_PROJECT_URL} target='_blank'>Capstone programme</a>, in collaboration with HTX (Home Team Science & Technology Agency).\n\nProspero is a specialized tool designed to assist investigators in assessing the credibility of subjects in investigative interviews, while being contactless, discreet, and accessible.\n\nIt consists of the micro-facial expression (MFE) microservice, which detects subtle facial expressions of the subject throughout the interview.\n\nLayered voice analysis (LVA0, which picks up vocal stress patterns of the subject.\n\nSpyFlask, a hardware solution taking the form of a water bottle that discreetly contains a camera to capture the video of the subject for MFE analysis, and directional microphones for LVA analysis.\n\nProspero Analyser, an intuitive, offline application that integrates MFE, LVA, and SpyFlask, enabling investigators to record live interviews, conduct MFE and LVA analysis post-interview, and manage the saved interview analyses.\n\nI was the frontend developer, where I designed the UI/UX of Prospero Analyser and built it from scratch using modern technologies, like Next.Js, Tailwind CSS, and shadcn/ui.`
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_PROSPERO_PROJECT_URL} target='_blank'>Capstone programme</a>, in collaboration with HTX (Home Team Science & Technology Agency).\n\nProspero is a specialized tool designed to assist investigators in assessing the credibility of subjects in investigative interviews, while being contactless, discreet, and accessible.\n\nIt consists of the micro-facial expression (MFE) microservice, which detects subtle facial expressions of the subject throughout the interview.\n\nLayered voice analysis (LVA), which picks up vocal stress patterns of the subject.\n\nSpyFlask, a hardware solution taking the form of a water bottle that discreetly contains a camera to capture the video of the subject for MFE analysis, and directional microphones for LVA analysis.\n\nProspero Analyser, an intuitive, offline application that integrates MFE, LVA, and SpyFlask, enabling investigators to record live interviews, conduct MFE and LVA analysis post-interview, and manage the saved interview analyses.\n\nI was the frontend developer, where I designed the UI/UX of Prospero Analyser and built it from scratch using modern technologies, like Next.Js, Tailwind CSS, and shadcn/ui.`
 );
+
+export const PROJECTS_ANNAMALAI_TITLE = "Speech Emotion Recognition: Audio-based Neural Network for Affective Multiclass Analysis and Labelling using Artificial Intelligence [ANNAMALAI]";
+export const PROJECTS_ANNAMALAI_ROLE = "Artificial Intelligence Engineer";
+export const PROJECTS_ANNAMALAI_TYPE = "School Project";
+export const PROJECTS_ANNAMALAI_TIMELINE = "January 2025 to April 2025";
+export const PROJECTS_ANNAMALAI_PROJECT_DESCRIPTION = parse(
+  `🌟 This project was awarded the <a href=${urlConst.PROJECTS_ANNAMALAI_CLOUDSINE_AWARD_URL} target='_blank'>Cloudsine Artificial Intelligence Award</a>.\n\nFor Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ANNAMALAI_COURSE_URL} target='_blank'>50.021 Artificial Intelligence</a>.\n\nANNAMALAI is a Speech Emotion Recognition (SER) system capable of detecting emotions from raw audio speech signals and classify them into any of nine emotional classes.\n\nWe conducted comprehensive literature review on the various works in SER, to get us started and improve our existing models.\n\nI was responsible for training our own-built convolutional neural networks (CNNs) with extracted MFCCs features, as well as fine-tuning pre-trained CNNs with mel spectrogram images for image-based classification and better model performance.\n\nI applied data augmentation techniques commonly used in SER to enhance model robustness to real-world noise and conditions.`
+)
+
 export const PROJECTS_DEFUND_TITLE = "DeFund";
 export const PROJECTS_DEFUND_ROLE = "Software Engineer";
 export const PROJECTS_DEFUND_TYPE = "School Project";
@@ -71,6 +81,7 @@ export const PROJECTS_DEFUND_LOGO_ALT = "DeFund picture";
 export const PROJECTS_DEFUND_PROJECT_DESCRIPTION = parse(
   `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_DEFUND_COURSE_URL} target='_blank'>50.037 Blockchain Technology</a>.\n\nDeFund is a decentralized crowdfunding platform designed to address the limitations of traditional platforms like GoFundMe. It provides transparency, trust, and global accessibility in fundraising using blockchain technology.\n\nBuilt the platform's core smart contracts in Solidity and deployed on the Ethereum Sepolia testnet. Developed the web app frontend using Next.js and integrated it with MetaMask for wallet connectivity. Implemented key features like milestone-based fund disbursement, automatic refunds for unmet funding goals, and real-time notifications. Optimized gas usage through efficient data structures, state variable packing, and reduced event data.\n\nCollaborated with a team to ensure secure, scalable, and user-centric design, addressing potential vulnerabilities and scalability challenges.`
 );
+
 export const PROJECTS_MUSIC_RECOMMENDATION_TITLE =
   "Music Recommendation Based on Emotion";
 export const PROJECTS_MUSIC_RECOMMENDATION_ROLE = "Data Scientist";
@@ -80,18 +91,21 @@ export const PROJECTS_MUSIC_RECOMMENDATION_TIMELINE =
 export const PROJECTS_MUSIC_RECOMMENDATION_PROJECT_DESCRIPTION = parse(
   `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL} target='_blank'>50.038 Computational Data Science</a>.\n\nConducted literature review on the current space of Music Emotion Recognition (MER) and applied data science, machine learning and deep learning techniques to build a pipeline that can predict emotions (valence and arousal) from musical features extracted from .mp3 files.<br></br>Developed a front-end UI using Streamlit to showcase the final product of a web app that users can upload .mp3 files to, have the emotions of that song predicted, and get recommended the most emotionally similar songs stored in the Vector Database backend.`
 );
+
 export const PROJECTS_LOOK_AND_EARN_TITLE = "Look and Earn";
 export const PROJECTS_LOOK_AND_EARN_ROLE = "Full-Stack Developer";
 export const PROJECTS_LOOK_AND_EARN_PROJECT_TYPE = "Start-up Project";
 export const PROJECTS_LOOK_AND_EARN_TIMELINE = "October 2022 to Present";
 export const PROJECTS_LOOK_AND_EARN_PROJECT_DESCRIPTION =
   "Look and Earn is a start-up project that aims to incentivise users to view advertisements posted by partner companies.\n\nLook and Earn has a Flutter app that allows the user to view current advertisements (image, video, or GIF), bookmark advertisements, and check their account balance earned from watching advertisements.\n\nThe app has mechanisms in place to ensure that the user has to finish viewing the entire advertisement before they can move on to the next.\n\nLook and Earn also has an admin web app to manage the advertisements that will be displayed in the app.\n\nI designed the entire system architecture of the app and web app, and developed them from scratch.\n\nI integrated Google Firestore to the app and web as their common database.";
+
 export const PROJECTS_LONELY_NO_LONGER_TITLE = "Lonely No Longer";
 export const PROJECTS_LONELY_NO_LONGER_ROLE = "Developer";
 export const PROJECTS_LONELY_NO_LONGER_PROJECT_TYPE = "Start-up Project";
 export const PROJECTS_LONELY_NO_LONGER_TIMELINE = "May 2022 to Sep 2022";
 export const PROJECTS_LONELY_NO_LONGER_DESCRIPTION =
   "Lonely No Longer (LNL) is a start-up project that aims to connect singles in Singapore looking for a genuine relationship through a couple of (literally) blind dates in groups at the beginning.\n\nLNL has a Telegram bot to serve as an assistant bot to customers for viewing their application status, buying items from our store, and receiving important updates.\n\nI designed the entire system architecture of the Telegram bot, and developed it from scratch, which included integrating the bot to Google Firestore as its database.\n\nI also integrated Google Sheets into the workflow, where its contents are synchronised seamlessly with the database.\n\nI wrote the entire technical documentation of the mechanism of the Telegram bot from scratch, including the control flow diagrams of certain commands.";
+
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TITLE =
   "Online Hate Speech Detection";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_ROLE =
@@ -103,6 +117,7 @@ export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE =
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION = parse(
   `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.\n\nTrained a variety of machine learning models for online hate speech classification.\n\nExtensively tuned the model hyper-parameters to improve model performance.\n\nUsed machine learning techniques not taught in class to improve model performance.\n\nI focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`
 );
+
 export const PROJECTS_TRANSFERCONNECT_TITLE = "TransferConnect";
 export const PROJECTS_TRANSFERCONNECT_ROLE = "Backend Developer";
 export const PROJECTS_TRANSFERCONNECT_PROJECT_TYPE = "School Project";
@@ -110,6 +125,7 @@ export const PROJECTS_TRANSFERCONNECT_TIMELINE = "May 2022 to August 2022";
 export const PROJECTS_TRANSFERCONNECT_PROJECT_DESCRIPTION = parse(
   `For SUTD's course: <a href=${urlConst.PROJECTS_TRANSFERCONNECT_COURSE_URL} target='_blank'>50.003 Elements of Software Construction</a>.\n\nTransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.\n\nThis project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.\n\nI developed highly performant and functional APIs to meet project requirements.\n\nI also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.`
 );
+
 export const PROJECTS_GIGLET_TITLE = "Giglet";
 export const PROJECTS_GIGLET_ROLE = "Developer";
 export const PROJECTS_GIGLET_PROJECT_TYPE = "School Project";
@@ -118,6 +134,7 @@ export const PROJECTS_GIGLET_LOGO_ALT = "Giglet picture";
 export const PROJECTS_GIGLET_PROJECT_DESCRIPTION = parse(
   `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to \"test the waters\" and see whetehr the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`
 );
+
 export const PROJECTS_WORDLE_TITLE = "Wordle";
 export const PROJECTS_WORDLE_ROLE = "Programmer";
 export const PROJECTS_WORDLE_PROJECT_TYPE = "School Project";
@@ -126,6 +143,7 @@ export const PROJECTS_WORDLE_LOGO_ALT = "Wordle picture";
 export const PROJECTS_WORDLE_PROJECT_DESCRIPTION = parse(
   `For SUTD's course: <a href=${urlConst.PROJECTS_WORDLE_COURSE_URL} target="_blank">50.002 Computation Structures</a>.\n\nThis project is inspired by the popular online word-guessing game, <a href=${urlConst.PROJECTS_WORDLE_URL} target="_blank">Wordle</a>.\n\nThis project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.\n\nI programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic.`
 );
+
 export const PROJECTS_FEAST_TITLE =
   "Food Establishment Autonomous Spatial Tracking (FEAST)";
 export const PROJECTS_FEAST_ROLE = "Frontend Lead";
@@ -135,6 +153,7 @@ export const PROJECTS_FEAST_LOGO_ALT = "FEAST picture";
 export const PROJECTS_FEAST_PROJECT_DESCRIPTION = parse(
   `For SUTD's course: <a href=${urlConst.PROJECTS_FEAST_COURSE_URL} target="_blank">50.001 Information Systems & Programming</a>.\n\nFEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.\n\nAccompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.\n\nBuilt using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.\n\nI led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.`
 );
+
 export const PROJECTS_WILL_I_GO_BROKE_TITLE = "Will I Go Broke?";
 export const PROJECTS_WILL_I_GO_BROKE_ROLE = "Developer";
 export const PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE = "Personal Project";
@@ -143,6 +162,7 @@ export const PROJECTS_WILL_I_GO_BROKE_TIMELINE =
 export const PROJECTS_WILL_I_GO_BROKE_LOGO_ALT = "Will I Go Broke? picture";
 export const PROJECTS_WILL_I_GO_BROKE_PROJECT_DESCRIPTION =
   "Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore.\n\nThe bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate.\n\nI developed the bot from scratch and designed the user experience and mechanics behind the bot.";
+
 export const PROJECTS_POKEMON_BATTLE_TITLE = "Pokemon Battle";
 export const PROJECTS_POKEMON_BATTLE_ROLE = "Team Lead";
 export const PROJECTS_POKEMON_BATTLE_PROJECT_TYPE = "School Project";

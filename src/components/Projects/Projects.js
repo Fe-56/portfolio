@@ -33,6 +33,18 @@ export default function Projects() {
       softSkills: ["communication", "researching", "detail"],
     },
     {
+      id: "annamalai",
+      title: textConst.PROJECTS_ANNAMALAI_TITLE,
+      role: textConst.PROJECTS_ANNAMALAI_ROLE,
+      type: textConst.PROJECTS_ANNAMALAI_TYPE,
+      timeline: textConst.PROJECTS_ANNAMALAI_TIMELINE,
+      description: textConst.PROJECTS_ANNAMALAI_PROJECT_DESCRIPTION,
+      link: urlConst.PROJECTS_ANNAMALAI_POSTER_URL,
+      github: urlConst.PROJECTS_ANNAMALAI_GITHUB_URL,
+      hardSkills: ["python", "data_science", "ml", 'github"'],
+      softSkills: ["communication", "researching", "detail"],
+    },
+    {
       id: "defund",
       title: textConst.PROJECTS_DEFUND_TITLE,
       role: textConst.PROJECTS_DEFUND_ROLE,

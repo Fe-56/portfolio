@@ -16,7 +16,16 @@ export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
 export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
 
 // Projects page
-export const PROJECTS_PROSPERO_PROJECT_URL = "https://capstoneshowcase.sutd.edu.sg/project/proj-s16-htx_devt-of-contacess-lie-detectn/";
+export const PROJECTS_ANNAMALAI_COURSE_URL =
+  "https://www.sutd.edu.sg/course/50-021-artificial-intelligence/";
+export const PROJECTS_ANNAMALAI_GITHUB_URL =
+  "https://github.com/Fe-56/ai_project_ser";
+export const PROJECTS_ANNAMALAI_CLOUDSINE_AWARD_URL =
+  "https://www.sutd.edu.sg/campus-life/student-life/student-awards/student-academic-awards/cloudsine-artificial-intelligence-award/";
+export const PROJECTS_ANNAMALAI_POSTER_URL =
+  "https://drive.google.com/file/d/15AfxqxXqw4u6RK2q8oAQOLRwKHItIb7j/view?usp=sharing";
+export const PROJECTS_PROSPERO_PROJECT_URL =
+  "https://capstoneshowcase.sutd.edu.sg/project/proj-s16-htx_devt-of-contacess-lie-detectn/";
 export const PROJECTS_DEFUND_PROJECT_URL = "https://de-fund.vercel.app/";
 export const PROJECTS_DEFUND_COURSE_URL =
   "https://www.sutd.edu.sg/course/50-037-blockchain-technology";
