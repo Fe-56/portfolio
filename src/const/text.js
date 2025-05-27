@@ -29,9 +29,6 @@ export const ABOUT_PROFILE_PIC_ALT_TEXT = "Lim Fuo En profile picture";
 export const ABOUT_TIMELINE_TITLE = "(Professional) Timeline";
 export const ABOUT_TIMELINE_MILESTONES = [
   {
-    2016: "First venture into the world of coding. Attended a basic Android app development course using storyboards",
-  },
-  {
     2017: "Attended a coding course, where I learnt Ruby, the first programming language I've ever learnt",
   },
   { 2020: "Matriculated at SUTD" },
@@ -44,6 +41,12 @@ export const ABOUT_TIMELINE_MILESTONES = [
   {
     2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States",
   },
+  {
+    2024: "Completed second internship at DBS Bank as a Full-stack Developer Intern"
+  },
+  {
+    2025: "Graduated from SUTD with Bachlor Of Engineering (Computer Science and Design) and Master of Science in Technology Entrepreneurship"
+  }
 ];
 
 // Projects page
