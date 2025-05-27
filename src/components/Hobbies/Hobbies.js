@@ -1,8 +1,12 @@
-import React, { useEffect } from "react";
-import pageLoad from "../utils/pageLoad";
-import "./Hobbies.css";
+import { useEffect } from "react";
 import * as textConst from "../../const/text";
-import Hobby from "./Hobby";
+import pageLoad from "../utils/pageLoad";
+import Coding from "./Coding";
+import Cycling from "./Cycling";
+import Guitar from "./Guitar";
+import "./Hobbies.css";
+import Netflix from "./Netflix";
+import Running from "./Running";
 
 export default function Hobbies() {
   useEffect(() => {
@@ -13,11 +17,11 @@ export default function Hobbies() {
   return (
     <div id="hobbies" class="container-fluid">
       <h1 id="hobbies_title">{textConst.HOBBIES_TITLE}</h1>
-      <Hobby.Cycling />
-      <Hobby.Running />
-      <Hobby.Guitar />
-      <Hobby.Netflix />
-      <Hobby.Coding />
+      <Cycling />
+      <Running />
+      <Guitar />
+      <Netflix />
+      <Coding />
     </div>
   );
 }
