@@ -120,6 +120,18 @@ const NavbarContact = () => {
 const NavbarTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const themeButtonIconClass = (theme) => {
+    var iconClass;
+
+    if (theme == "dark-theme") {
+      iconClass = "fa-solid fa-sun fa-lg";
+    } else {
+      iconClass = "fa-solid fa-moon fa-lg";
+    }
+
+    return iconClass;
+  };
+
   return (
     <div id="change_theme">
       <a
@@ -130,18 +142,6 @@ const NavbarTheme = () => {
     </div>
   );
 };
-
-function themeButtonIconClass(theme) {
-  var iconClass;
-
-  if (theme == "dark-theme") {
-    iconClass = "fa-solid fa-sun fa-lg";
-  } else {
-    iconClass = "fa-solid fa-moon fa-lg";
-  }
-
-  return iconClass;
-}
 
 const NavbarButton = {
   NavbarAbout,
