@@ -1,8 +1,12 @@
-import React, { useEffect } from "react";
-import pageLoad from "../utils/pageLoad";
-import "./Skills.css";
+import { useEffect } from "react";
 import * as textConst from "../../const/text";
-import Skill from "./Skill";
+import pageLoad from "../utils/pageLoad";
+import Certifications from "./Certifications";
+import Frameworks from "./Frameworks";
+import Languages from "./Languages";
+import ProgrammingLanguages from "./ProgrammingLanguages";
+import "./Skills.css";
+import Tools from "./Tools";
 
 export default function Skills() {
   useEffect(() => {
@@ -13,11 +17,11 @@ export default function Skills() {
   return (
     <div id="skills" class="container-fluid">
       <h1 id="skills_title">{textConst.SKILLS_TITLE}</h1>
-      <Skill.Languages />
-      <Skill.ProgrammingLanguages />
-      <Skill.Frameworks />
-      <Skill.Tools />
-      <Skill.Certifications />
+      <Languages />
+      <ProgrammingLanguages />
+      <Frameworks />
+      <Tools />
+      <Certifications />
     </div>
   );
 }
