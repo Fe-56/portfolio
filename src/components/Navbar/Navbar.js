@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import { useEffect } from "react";
+import { getTheme } from "../../Theme";
 import "./Navbar.css";
 import NavbarButton from "./NavbarButton";
-import { getTheme } from "../../Theme";
 
 export default function Navbar() {
   // only execute the initialiseNavbarTheme() function once

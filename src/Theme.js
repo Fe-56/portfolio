@@ -1,6 +1,6 @@
 // code from https://nimishjn.medium.com/toggle-theme-in-reactjs-4095dd35c69d
 
-import React, { useEffect, createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
@@ -53,4 +53,5 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-export { ThemeContext, ThemeProvider, getTheme };
+export { getTheme, ThemeContext, ThemeProvider };
+
