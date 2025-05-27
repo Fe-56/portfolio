@@ -42,11 +42,11 @@ export const ABOUT_TIMELINE_MILESTONES = [
     2023: "Completed Flutter developer internships at CoffeeSpace and MyExpoPlace in the United States",
   },
   {
-    2024: "Completed second internship at DBS Bank as a Full-stack Developer Intern"
+    2024: "Completed second internship at DBS Bank as a Full-stack Developer Intern",
   },
   {
-    2025: "Graduated from SUTD with Bachlor Of Engineering (Computer Science and Design) and Master of Science in Technology Entrepreneurship"
-  }
+    2025: "Graduated from SUTD with Bachlor Of Engineering (Computer Science and Design) and Master of Science in Technology Entrepreneurship",
+  },
 ];
 
 // Projects page
@@ -59,15 +59,17 @@ export const PROJECTS_PROSPERO_TITLE = "Prospero";
 export const PROJECTS_PROSPERO_ROLE = "Frontend Lead";
 export const PROJECTS_PROSPERO_TYPE = "Capstone Project";
 export const PROJECTS_PROSPERO_TIMELINE = "September 2024 to April 2025";
+export const PROJECTS_PROSPERO_LOGO_ALT = "Prospero picture";
 export const PROJECTS_PROSPERO_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_PROSPERO_PROJECT_URL} target='_blank'>Capstone programme</a>, in collaboration with HTX (Home Team Science & Technology Agency).\n\nProspero is a specialized tool designed to assist investigators in assessing the credibility of subjects in investigative interviews, while being contactless, discreet, and accessible.\n\nIt consists of the micro-facial expression (MFE) microservice, which detects subtle facial expressions of the subject throughout the interview.\n\nLayered voice analysis (LVA0, which picks up vocal stress patterns of the subject.\n\nSpyFlask, a hardware solution taking the form of a water bottle that discreetly contains a camera to capture the video of the subject for MFE analysis, and directional microphones for LVA analysis.\n\nProspero Analyser, an intuitive, offline application that integrates MFE, LVA, and SpyFlask, enabling investigators to record live interviews, conduct MFE and LVA analysis post-interview, and manage the saved interview analyses.\n\nI was the frontend developer, where I designed the UI/UX of Prospero Analyser and built it from scratch using modern technologies, like Next.Js, Tailwind CSS, and shadcn/ui.`,
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_PROSPERO_PROJECT_URL} target='_blank'>Capstone programme</a>, in collaboration with HTX (Home Team Science & Technology Agency).\n\nProspero is a specialized tool designed to assist investigators in assessing the credibility of subjects in investigative interviews, while being contactless, discreet, and accessible.\n\nIt consists of the micro-facial expression (MFE) microservice, which detects subtle facial expressions of the subject throughout the interview.\n\nLayered voice analysis (LVA0, which picks up vocal stress patterns of the subject.\n\nSpyFlask, a hardware solution taking the form of a water bottle that discreetly contains a camera to capture the video of the subject for MFE analysis, and directional microphones for LVA analysis.\n\nProspero Analyser, an intuitive, offline application that integrates MFE, LVA, and SpyFlask, enabling investigators to record live interviews, conduct MFE and LVA analysis post-interview, and manage the saved interview analyses.\n\nI was the frontend developer, where I designed the UI/UX of Prospero Analyser and built it from scratch using modern technologies, like Next.Js, Tailwind CSS, and shadcn/ui.`
 );
 export const PROJECTS_DEFUND_TITLE = "DeFund";
 export const PROJECTS_DEFUND_ROLE = "Software Engineer";
 export const PROJECTS_DEFUND_TYPE = "School Project";
 export const PROJECTS_DEFUND_TIMELINE = "September 2024 to December 2024";
+export const PROJECTS_DEFUND_LOGO_ALT = "DeFund picture";
 export const PROJECTS_DEFUND_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_DEFUND_COURSE_URL} target='_blank'>50.037 Blockchain Technology</a>.\n\nDeFund is a decentralized crowdfunding platform designed to address the limitations of traditional platforms like GoFundMe. It provides transparency, trust, and global accessibility in fundraising using blockchain technology.\n\nBuilt the platform's core smart contracts in Solidity and deployed on the Ethereum Sepolia testnet. Developed the web app frontend using Next.js and integrated it with MetaMask for wallet connectivity. Implemented key features like milestone-based fund disbursement, automatic refunds for unmet funding goals, and real-time notifications. Optimized gas usage through efficient data structures, state variable packing, and reduced event data.\n\nCollaborated with a team to ensure secure, scalable, and user-centric design, addressing potential vulnerabilities and scalability challenges.`,
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_DEFUND_COURSE_URL} target='_blank'>50.037 Blockchain Technology</a>.\n\nDeFund is a decentralized crowdfunding platform designed to address the limitations of traditional platforms like GoFundMe. It provides transparency, trust, and global accessibility in fundraising using blockchain technology.\n\nBuilt the platform's core smart contracts in Solidity and deployed on the Ethereum Sepolia testnet. Developed the web app frontend using Next.js and integrated it with MetaMask for wallet connectivity. Implemented key features like milestone-based fund disbursement, automatic refunds for unmet funding goals, and real-time notifications. Optimized gas usage through efficient data structures, state variable packing, and reduced event data.\n\nCollaborated with a team to ensure secure, scalable, and user-centric design, addressing potential vulnerabilities and scalability challenges.`
 );
 export const PROJECTS_MUSIC_RECOMMENDATION_TITLE =
   "Music Recommendation Based on Emotion";
@@ -76,7 +78,7 @@ export const PROJECTS_MUSIC_RECOMMENDATION_TYPE = "School Project";
 export const PROJECTS_MUSIC_RECOMMENDATION_TIMELINE =
   "January 2024 to April 2024";
 export const PROJECTS_MUSIC_RECOMMENDATION_PROJECT_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL} target='_blank'>50.038 Computational Data Science</a>.\n\nConducted literature review on the current space of Music Emotion Recognition (MER) and applied data science, machine learning and deep learning techniques to build a pipeline that can predict emotions (valence and arousal) from musical features extracted from .mp3 files.<br></br>Developed a front-end UI using Streamlit to showcase the final product of a web app that users can upload .mp3 files to, have the emotions of that song predicted, and get recommended the most emotionally similar songs stored in the Vector Database backend.`,
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_MUSIC_RECOMMENDATION_COURSE_URL} target='_blank'>50.038 Computational Data Science</a>.\n\nConducted literature review on the current space of Music Emotion Recognition (MER) and applied data science, machine learning and deep learning techniques to build a pipeline that can predict emotions (valence and arousal) from musical features extracted from .mp3 files.<br></br>Developed a front-end UI using Streamlit to showcase the final product of a web app that users can upload .mp3 files to, have the emotions of that song predicted, and get recommended the most emotionally similar songs stored in the Vector Database backend.`
 );
 export const PROJECTS_LOOK_AND_EARN_TITLE = "Look and Earn";
 export const PROJECTS_LOOK_AND_EARN_ROLE = "Full-Stack Developer";
@@ -99,42 +101,46 @@ export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_PROJECT_TYPE =
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_TIMELINE =
   "July 2022 to August 2022";
 export const PROJECTS_ONLINE_HATE_SPEECH_DETECTION_DESCRIPTION = parse(
-  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.\n\nTrained a variety of machine learning models for online hate speech classification.\n\nExtensively tuned the model hyper-parameters to improve model performance.\n\nUsed machine learning techniques not taught in class to improve model performance.\n\nI focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`,
+  `For Singapore University of Technology and Design (SUTD)'s course: <a href=${urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_COURSE_URL} target='_blank'>50.007 Machine Learning</a>.\n\nTrained a variety of machine learning models for online hate speech classification.\n\nExtensively tuned the model hyper-parameters to improve model performance.\n\nUsed machine learning techniques not taught in class to improve model performance.\n\nI focused on tuning and optimising a machine learning model, called Support Vector Machines (SVM)`
 );
 export const PROJECTS_TRANSFERCONNECT_TITLE = "TransferConnect";
 export const PROJECTS_TRANSFERCONNECT_ROLE = "Backend Developer";
 export const PROJECTS_TRANSFERCONNECT_PROJECT_TYPE = "School Project";
 export const PROJECTS_TRANSFERCONNECT_TIMELINE = "May 2022 to August 2022";
 export const PROJECTS_TRANSFERCONNECT_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_TRANSFERCONNECT_COURSE_URL} target='_blank'>50.003 Elements of Software Construction</a>.\n\nTransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.\n\nThis project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.\n\nI developed highly performant and functional APIs to meet project requirements.\n\nI also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_TRANSFERCONNECT_COURSE_URL} target='_blank'>50.003 Elements of Software Construction</a>.\n\nTransferConnect acts as a middleman between loyalty programs and banks to facilitate the transfer and conversion of loyalty points from bank transactions.\n\nThis project focuses on the development of a bankend API server and database for TransferConnect, as well as a frontend bank app to demonstrate the end-to-end workflow.\n\nI developed highly performant and functional APIs to meet project requirements.\n\nI also implemented extensive testing and fuzzing to ensure the proper functioning of the entire system.`
 );
 export const PROJECTS_GIGLET_TITLE = "Giglet";
 export const PROJECTS_GIGLET_ROLE = "Developer";
 export const PROJECTS_GIGLET_PROJECT_TYPE = "School Project";
 export const PROJECTS_GIGLET_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_GIGLET_LOGO_ALT = "Giglet picture";
 export const PROJECTS_GIGLET_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to \"test the waters\" and see whetehr the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_GIGLET_COURSE_URL} target='_blank'>30.001 Entrepreneurship</a>.\n\nGiglet is our idea for a start-up to showcase our knowledge of entrepreneurship learned from the Entrepreneurship course.\n\nGiglet is a platform that matches STEM undergraduates in South East Asia to companies via gig work, for the companies to \"test the waters\" and see whetehr the students are suitable for an internship or full-time role in their company.\n\nGiglet currently has its first products ready in beta: Giglet Hirer and Giglet Freelancer Telegram Bots.\n\nI designed the entire system architecture of the Telegram bots, and developed the bots from scratch, which included integrating the bot to Google Firestore as its database.`
 );
 export const PROJECTS_WORDLE_TITLE = "Wordle";
 export const PROJECTS_WORDLE_ROLE = "Programmer";
 export const PROJECTS_WORDLE_PROJECT_TYPE = "School Project";
 export const PROJECTS_WORDLE_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_WORDLE_LOGO_ALT = "Wordle picture";
 export const PROJECTS_WORDLE_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_WORDLE_COURSE_URL} target="_blank">50.002 Computation Structures</a>.\n\nThis project is inspired by the popular online word-guessing game, <a href=${urlConst.PROJECTS_WORDLE_URL} target="_blank">Wordle</a>.\n\nThis project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.\n\nI programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_WORDLE_COURSE_URL} target="_blank">50.002 Computation Structures</a>.\n\nThis project is inspired by the popular online word-guessing game, <a href=${urlConst.PROJECTS_WORDLE_URL} target="_blank">Wordle</a>.\n\nThis project transforms the software nature of the original game into a piece of handcrafted hardware, in the form of an arcade-like machine.\n\nI programmed the 16-bit ALU (Arithmetic Logic Unit) of the machine and helped to program the finite state machine for the game logic.`
 );
 export const PROJECTS_FEAST_TITLE =
   "Food Establishment Autonomous Spatial Tracking (FEAST)";
 export const PROJECTS_FEAST_ROLE = "Frontend Lead";
 export const PROJECTS_FEAST_PROJECT_TYPE = "School Project";
 export const PROJECTS_FEAST_TIMELINE = "January 2022 to April 2022";
+export const PROJECTS_FEAST_LOGO_ALT = "FEAST picture";
 export const PROJECTS_FEAST_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_FEAST_COURSE_URL} target="_blank">50.001 Information Systems & Programming</a>.\n\nFEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.\n\nAccompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.\n\nBuilt using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.\n\nI led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_FEAST_COURSE_URL} target="_blank">50.001 Information Systems & Programming</a>.\n\nFEAST is a real-time crowd tracking app that allows users to conveniently check the current crowd levels at various food and beverage (F&B) establishments in SUTD.\n\nAccompanying the crowd tracking functionality are a suite of features that improve user experience in the app, such as predictive estimated waiting time, customisability by prioritising user preferred locations, and real-time business advisory.\n\nBuilt using modular design principles, the app has a plug-and-play model that allows easy implementation at any location, and even contains the infrastructure to expand beyond F&B to track crowd levels of other kinds of locations.\n\nI led the frontend team and helped to design the user interface of the app, and ensured that the data from the backend is displayed properly on the frontend.`
 );
 export const PROJECTS_WILL_I_GO_BROKE_TITLE = "Will I Go Broke?";
 export const PROJECTS_WILL_I_GO_BROKE_ROLE = "Developer";
 export const PROJECTS_WILL_I_GO_BROKE_PROJECT_TYPE = "Personal Project";
 export const PROJECTS_WILL_I_GO_BROKE_TIMELINE =
   "December 2021 to January 2022";
+export const PROJECTS_WILL_I_GO_BROKE_LOGO_ALT = "Will I Go Broke? picture";
 export const PROJECTS_WILL_I_GO_BROKE_PROJECT_DESCRIPTION =
   "Will I Go Broke? is a Telegram bot that is targetted at university students in Singapore.\n\nThe bot maps out your finances over your university/school life and determines how your financial situation might turn out once you graduate.\n\nI developed the bot from scratch and designed the user experience and mechanics behind the bot.";
 export const PROJECTS_POKEMON_BATTLE_TITLE = "Pokemon Battle";
@@ -142,8 +148,9 @@ export const PROJECTS_POKEMON_BATTLE_ROLE = "Team Lead";
 export const PROJECTS_POKEMON_BATTLE_PROJECT_TYPE = "School Project";
 export const PROJECTS_POKEMON_BATTLE_TIMELINE =
   "September 2020 to December 2020";
+export const PROJECTS_POKEMON_BATTLE_LOGO_ALT = "Pokemon Battle picture";
 export const PROJECTS_POKEMON_BATTLE_PROJECT_DESCRIPTION = parse(
-  `For SUTD's course: <a href=${urlConst.PROJECTS_POKEMON_BATTLE_COURSE_URL} target="_blank">10.014 Computational Thinking for Design</a>.\n\nPokemon Battle is inspired by the popular game series, <a href=${urlConst.PROJECTS_POKEMON_BATTLE_URL} target="_blank">Pokémon</a>.\n\nIt is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other.\n\nIt simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in.\n\nI led the team for the game research and design of the game, and coded the mechanics and flow of the game.`,
+  `For SUTD's course: <a href=${urlConst.PROJECTS_POKEMON_BATTLE_COURSE_URL} target="_blank">10.014 Computational Thinking for Design</a>.\n\nPokemon Battle is inspired by the popular game series, <a href=${urlConst.PROJECTS_POKEMON_BATTLE_URL} target="_blank">Pokémon</a>.\n\nIt is a Python text-based game for 2 players, where each player select a Pokemon from a list of 18 Pokemons of all types with a wide selection of moves, and battle each other.\n\nIt simulates the actual battle mechanics of modern Pokemon games, albeit providing a textual interface to play in.\n\nI led the team for the game research and design of the game, and coded the mechanics and flow of the game.`
 );
 
 // Skills page
@@ -179,7 +186,7 @@ export const EXPERIENCES_DBS2_ROLE = "Full-stack Developer Intern";
 export const EXPERIENCES_DBS2_LOCATION = "Singapore";
 export const EXPERIENCES_DBS2_TIMELINE = "May 2024 to September 2024";
 export const EXPERIENCES_DBS2_EXPERIENCE_DESCRIPTION = parse(
-  "- Enhanced the MarTech Requirements Platform (MRP) web app using Next.js and TypeScript, driving feature developments and bug fixes.<br/>- Boosted CI/CD pipeline effectiveness by writing comprehensive unit tests with Vitest, improving test coverage from under 30% to over 80%.<br/>- Collaborated with cross-functional teams in an Agile environment to deliver high-quality software on tight deadlines.",
+  "- Enhanced the MarTech Requirements Platform (MRP) web app using Next.js and TypeScript, driving feature developments and bug fixes.<br/>- Boosted CI/CD pipeline effectiveness by writing comprehensive unit tests with Vitest, improving test coverage from under 30% to over 80%.<br/>- Collaborated with cross-functional teams in an Agile environment to deliver high-quality software on tight deadlines."
 );
 export const EXPERIENCES_MYEXPOPLACE_TITLE = "MyExpoPlace";
 export const EXPERIENCES_MYEXPOPLACE_ROLE = "Flutter Developer Intern";
@@ -187,7 +194,7 @@ export const EXPERIENCES_MYEXPOPLACE_LOCATION =
   "Los Angeles, California, United States";
 export const EXPERIENCES_MYEXPOPLACE_TIMELINE = "June 2023 to August 2023";
 export const EXPERIENCES_MYEXPOPLACE_EXPERIENCE_DESCRIPTION = parse(
-  "- Revamped the MyExpoPlace mobile app using Flutter and enhanced the user experience through new app navigation features.<br/>- Used Figma to design modern UI/UX improvements for viewing and interacting with app item listing and implemented them in production, which rejuvenated the user experience.<br/>- Collaborated with fellow Flutter developers to ensure timely delivery of high-quality code.",
+  "- Revamped the MyExpoPlace mobile app using Flutter and enhanced the user experience through new app navigation features.<br/>- Used Figma to design modern UI/UX improvements for viewing and interacting with app item listing and implemented them in production, which rejuvenated the user experience.<br/>- Collaborated with fellow Flutter developers to ensure timely delivery of high-quality code."
 );
 export const EXPERIENCES_COFFEESPACE_TITLE = "CoffeeSpace";
 export const EXPERIENCES_COFFEESPACE_ROLE = "Software Engineering Intern";
@@ -195,28 +202,28 @@ export const EXPERIENCES_COFFEESPACE_LOCATION =
   "San Francisco, California, United States";
 export const EXPERIENCES_COFFEESPACE_TIMELINE = "March 2023 to June 2023";
 export const EXPERIENCES_COFFEESPACE_EXPERIENCE_DESCRIPTION = parse(
-  "- Utilized Flutter and Bloc state management to maintain and develop new features such as addressing notification bug, app networking performance enhancements, and adding new profile sections.<br/>- Liaised with backend engineers to ensure smooth integration and functionality of app features.<br/>- Conducted technical research for new payment features, exploring additional revenue opportunities.",
+  "- Utilized Flutter and Bloc state management to maintain and develop new features such as addressing notification bug, app networking performance enhancements, and adding new profile sections.<br/>- Liaised with backend engineers to ensure smooth integration and functionality of app features.<br/>- Conducted technical research for new payment features, exploring additional revenue opportunities."
 );
 export const EXPERIENCES_HDB_TITLE = "Housing & Development Board";
 export const EXPERIENCES_HDB_ROLE = "Mobile Application Development Intern";
 export const EXPERIENCES_HDB_LOCATION = "Singapore";
 export const EXPERIENCES_HDB_TIMELINE = "August 2022 to December 2022";
 export const EXPERIENCES_HDB_EXPERIENCE_DESCRIPTION = parse(
-  "- Maintained and developed new features, such as adding call-to-actions, for the Android and iOS versions of Mobile@HDB mobile app in Java and Swift respectively.<br/>- Comprehensively refactored the entire Android codebase in Java for enhanced maintainability.<br/>- Built Augmented Reality (AR) app prototypes in Kotlin as a proof-of-concept for future AR features for app enhancement.",
+  "- Maintained and developed new features, such as adding call-to-actions, for the Android and iOS versions of Mobile@HDB mobile app in Java and Swift respectively.<br/>- Comprehensively refactored the entire Android codebase in Java for enhanced maintainability.<br/>- Built Augmented Reality (AR) app prototypes in Kotlin as a proof-of-concept for future AR features for app enhancement."
 );
 export const EXPERIENCES_SMILETUTOR_TITLE = "SmileTutor";
 export const EXPERIENCES_SMILETUTOR_ROLE = "Private Tutor (part-time)";
 export const EXPERIENCES_SMILETUTOR_LOCATION = "Singapore";
 export const EXPERIENCES_SMILETUTOR_TIMELINE = "January 2022 to September 2024";
 export const EXPERIENCES_SMILETUTOR_EXPERIENCE_DESCRIPTION = parse(
-  "- Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>- Conducted weekly one-on-one lessons at students' residences<br/>- Clarified the student's doubts, went through their homework and exam papers with them<br/>- Explained and taught them concepts thay they were otherwise unsure of<br/>- Liaised with the student's parents to ensure that their child's homework and assignments are done on time",
+  "- Subjects taught: Primary 6 Mathematics and Science for Primary School Leaving Examinations (PSLE)<br/>- Conducted weekly one-on-one lessons at students' residences<br/>- Clarified the student's doubts, went through their homework and exam papers with them<br/>- Explained and taught them concepts thay they were otherwise unsure of<br/>- Liaised with the student's parents to ensure that their child's homework and assignments are done on time"
 );
 export const EXPERIENCES_DBS_TITLE = "DBS Bank";
 export const EXPERIENCES_DBS_ROLE = "Business Analyst Intern";
 export const EXPERIENCES_DBS_LOCATION = "Singapore";
 export const EXPERIENCES_DBS_TIMELINE = "May 2021 to September 2021";
 export const EXPERIENCES_DBS_EXPERIENCE_DESCRIPTION = parse(
-  "- Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems.<br/>- Supported the project teams in developing presentation materials and in coordination of communications with the client.<br/>- Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets.",
+  "- Performed primary and secondary research, conduct analyses and appropriate modelling tasks that feeds directly into the development of technology-enabled solutions to tackle clients’ complex business problems.<br/>- Supported the project teams in developing presentation materials and in coordination of communications with the client.<br/>- Assisted the project teams in delivery of business-driven, technology-enabled solutions to help the clients meet pressing challenges and seize opportunities in their respective markets."
 );
 
 // Hobbies page
@@ -227,21 +234,21 @@ export const HOBBIES_CYCLING_DESCRIPTION =
 \n\nI don't race, I just cycle for fitness, to explore the world around me and for the sheer joy of riding a bike.`);
 export const HOBBIES_RUNNING_TITLE = "Running";
 export const HOBBIES_RUNNING_DESCRIPTION = parse(
-  `I used to dislike running when I was younger, due to my bad-to-mediocre 2.4km timings in secondary school and junior college.\n\nHowever, my perception changed when I started running more often in late-2022 as an alterantive way get fitter and increase my aerobic endurance other than cycling. When I realised that running was much more enjoyable when done at manageable paces and for longer distances, I decided to pick up runnning more seriously. Additionally, it takes up less time and costs less than cycling.\n\nI intend to particiate in half-marathons and marathons in the future, and hence, I am running rather regularly nowadays. It is also because my purchase of a <a href=${urlConst.HOBBIES_RUNNING_GARMIN_URL} target="_blank">Garmin Forerunner 55</a> has provided me a strong extrinsic motivation to run! Or maybe I just want to justify the cost of spending so much on a watch.`,
+  `I used to dislike running when I was younger, due to my bad-to-mediocre 2.4km timings in secondary school and junior college.\n\nHowever, my perception changed when I started running more often in late-2022 as an alterantive way get fitter and increase my aerobic endurance other than cycling. When I realised that running was much more enjoyable when done at manageable paces and for longer distances, I decided to pick up runnning more seriously. Additionally, it takes up less time and costs less than cycling.\n\nI intend to particiate in half-marathons and marathons in the future, and hence, I am running rather regularly nowadays. It is also because my purchase of a <a href=${urlConst.HOBBIES_RUNNING_GARMIN_URL} target="_blank">Garmin Forerunner 55</a> has provided me a strong extrinsic motivation to run! Or maybe I just want to justify the cost of spending so much on a watch.`
 );
 export const HOBBIES_RUNNING_CYCLING_STRAVA_TEXT = "Check out my Strava!";
 export const HOBBIES_GUITAR_TITLE = "Electric Guitar";
 export const HOBBIES_GUITAR_DESCRIPTION = parse(
-  `I love playing the electric guitar as well. I started playing it in 2019 simply because I just wanted to jam to my favourite music. I never hired an instructor to teach me how to play the guitar. I taught myself how to play by watching videos of other guitarists and learning songs by myself. I currently play an <a href=${urlConst.HOBBIES_GUITAR_GUITAR_URL} target="_blank">Ibanez GRGR131EX</a> superstrat, plugged into a <a href=${urlConst.HOBBIES_GUITAR_AMP_URL} target="_blank">Fender Champion 20</a> amplifier.\n\nI usually play rock and metal songs by <a href=${urlConst.HOBBIES_GUITAR_LINKIN_PARK_URL} target="_blank">Linkin Park</a>, <a href=${urlConst.HOBBIES_GUITAR_METALLICA_URL} target="_blank">Metallica</a>, and <a href=${urlConst.HOBBIES_GUITAR_GREEN_DAY_URL} target="_blank">Green Day</a>. These three are some of my most favourite bands to play and listen to.\n\nBut recently, I've been playing the instrumental covers of more popular songs, where I literally make my guitar "sing" out the vocals/lyrics of the song.\n\nI don't play for a band or perform. I just play for the sheer joy of playing my favourite riffs and songs on a guitar.`,
+  `I love playing the electric guitar as well. I started playing it in 2019 simply because I just wanted to jam to my favourite music. I never hired an instructor to teach me how to play the guitar. I taught myself how to play by watching videos of other guitarists and learning songs by myself. I currently play an <a href=${urlConst.HOBBIES_GUITAR_GUITAR_URL} target="_blank">Ibanez GRGR131EX</a> superstrat, plugged into a <a href=${urlConst.HOBBIES_GUITAR_AMP_URL} target="_blank">Fender Champion 20</a> amplifier.\n\nI usually play rock and metal songs by <a href=${urlConst.HOBBIES_GUITAR_LINKIN_PARK_URL} target="_blank">Linkin Park</a>, <a href=${urlConst.HOBBIES_GUITAR_METALLICA_URL} target="_blank">Metallica</a>, and <a href=${urlConst.HOBBIES_GUITAR_GREEN_DAY_URL} target="_blank">Green Day</a>. These three are some of my most favourite bands to play and listen to.\n\nBut recently, I've been playing the instrumental covers of more popular songs, where I literally make my guitar "sing" out the vocals/lyrics of the song.\n\nI don't play for a band or perform. I just play for the sheer joy of playing my favourite riffs and songs on a guitar.`
 );
 export const HOBBIES_GUITAR_SPOTIFY_TEXT = "Check out my Spotify!";
 export const HOBBIES_NETFLIX_TITLE = "Netflix and Anime";
 export const HOBBIES_NETFLIX_DESCRIPTION = parse(
-  `I love watching films, shows and movies in general, especially on Netflix. I love watching a variety of genres, including science-fiction, horror, zombie, supernatural, thriller, fantasy, etc.\n\nI also love watching anime. I usually watch the longer-running and super popular ones. I especially love <a href=${urlConst.HOBBIES_NETFLIX_DRAGON_BALL_URL} target="_blank">Dragon Ball</a> and <a href=${urlConst.HOBBIES_NETFLIX_NARUTO_URL} target="_blank">Naruto</a>. My most favourite chracters from each of the anime are <a href=${urlConst.HOBBIES_NETFLIX_VEGETA_URL} target="_blank">Vegeta</a> and <a href=${urlConst.HOBBIES_NETFLIX_ITACHI_URL} target="_blank">Itachi Uchiha</a> respectively.`,
+  `I love watching films, shows and movies in general, especially on Netflix. I love watching a variety of genres, including science-fiction, horror, zombie, supernatural, thriller, fantasy, etc.\n\nI also love watching anime. I usually watch the longer-running and super popular ones. I especially love <a href=${urlConst.HOBBIES_NETFLIX_DRAGON_BALL_URL} target="_blank">Dragon Ball</a> and <a href=${urlConst.HOBBIES_NETFLIX_NARUTO_URL} target="_blank">Naruto</a>. My most favourite chracters from each of the anime are <a href=${urlConst.HOBBIES_NETFLIX_VEGETA_URL} target="_blank">Vegeta</a> and <a href=${urlConst.HOBBIES_NETFLIX_ITACHI_URL} target="_blank">Itachi Uchiha</a> respectively.`
 );
 export const HOBBIES_CODING_TITLE = "Building Cool Stuff";
 export const HOBBIES_CODING_DESCRIPTION = parse(
-  `Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using.</p>`,
+  `Last but not least, I love to build cool stuff by writing code. I started coding back in 2017, and have built things like text-based games, Telegram bots, mobile apps, Android apps and web apps. I enjoy learning new languages and frameworks to keep myself updated and strive to build something that others will find value in using.</p>`
 );
 export const HOBBIES_CODING_GITHUB_TEXT = "Check out my GitHub!";
 

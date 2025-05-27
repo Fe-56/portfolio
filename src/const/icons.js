@@ -1,4 +1,3 @@
-import React from "react";
 import * as textConst from "./text.js";
 import * as urlConst from "./url.js";
 
@@ -41,43 +40,6 @@ const ProjectIcon = ({ iconName, labelText = "" }) => {
       <i class={iconClass}></i>
       {labelText}
     </span>
-  );
-};
-
-const ProjectGitHub = ({ projectName }) => {
-  var githubURL;
-
-  switch (projectName) {
-    case "defund":
-      githubURL = urlConst.PROJECTS_DEFUND_GITHUB_URL;
-      break;
-
-    case "music_recommendation":
-      githubURL = urlConst.PROJECTS_MUSIC_RECOMMENDATION_GITHUB_URL;
-      break;
-
-    case "online_hate_speech_detection":
-      githubURL = urlConst.PROJECTS_ONLINE_HATE_SPEECH_DETECTION_GITHUB_URL;
-      break;
-
-    case "wordle":
-      githubURL = urlConst.PROJECTS_WORDLE_GITHUB_URL;
-      break;
-
-    case "will_i_go_broke":
-      githubURL = urlConst.PROJECTS_WILL_I_GO_BROKE_GITHUB_URL;
-      break;
-
-    case "pokemon_battle":
-      githubURL = urlConst.PROJECTS_POKEMON_BATTLE_GITHUB_URL;
-      break;
-  }
-
-  return (
-    <a href={githubURL} target="_blank" class="project_github">
-      <i class="fa-brands fa-github icon"></i>
-      {textConst.PROJECTS_GITHUB}
-    </a>
   );
 };
 
@@ -661,7 +623,6 @@ const ContactLinkIcon = ({ contactType }) => {
 const Icon = {
   GitHubSourceCodeIcon,
   ProjectIcon,
-  ProjectGitHub,
   ExapndCollapseIcon,
   HardSkill,
   SoftSkill,
