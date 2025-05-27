@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import "./Timeline.css";
+import { useEffect } from "react";
 import * as textConst from "../../const/text";
+import "./Timeline.css";
 
 export default function Timeline() {
   useEffect(() => {
@@ -54,6 +54,6 @@ function timelineMilestoneAnimationHandler() {
 
   const timelineMilestones = document.querySelectorAll(`.hidden`);
   timelineMilestones.forEach((timelineMilestone) =>
-    observer.observe(timelineMilestone),
+    observer.observe(timelineMilestone)
   );
 }
