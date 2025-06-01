@@ -11,7 +11,7 @@ export const WEBSITE_PIC = "http://fe-56.github.io/portfolio/favicon.ico?v=2";
 
 // About page
 export const ABOUT_RESUME_URL =
-  "https://drive.google.com/file/d/13TPg_uvUqMgiylWfIsGL6VzO1VS8KxPp/view?usp=sharing";
+  "https://drive.google.com/file/d/1mGziGHzYYVCoDxOAJUGq5TEobrj_SiP2/view?usp=sharing";
 export const ABOUT_GITHUB_URL = "https://github.com/Fe-56";
 export const ABOUT_LINKEDIN_URL = "https://www.linkedin.com/in/limfuoen/";
 
