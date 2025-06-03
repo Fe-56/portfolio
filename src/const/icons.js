@@ -1,3 +1,4 @@
+import { text } from "d3";
 import * as textConst from "./text.js";
 import * as urlConst from "./url.js";
 
@@ -264,6 +265,11 @@ const HardSkill = ({ skillName }) => {
     case "ethereum":
       skill = textConst.SKILL_ETHEREUM;
       iconClass += "fa-brands fa-ethereum";
+      break;
+    
+    case "sql":
+      skill = textConst.SKILL_SQL;
+      iconClass += "fa fa-database";
       break;
 
     default:

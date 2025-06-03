@@ -72,7 +72,7 @@ export default function Frameworks() {
             <SkillAndProficiency
               type="frameworks"
               skill="flutter"
-              proficiency="proficient"
+              proficiency="intermediate"
             />
             <SkillAndProficiency
               type="frameworks"

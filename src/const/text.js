@@ -339,3 +339,4 @@ export const SKILL_TYPESCRIPT = "TypeScript";
 export const SKILL_NEXT = "Next.js";
 export const SKILL_SOLIDITY = "Solidity";
 export const SKILL_ETHEREUM = "Ethereum";
+export const SKILL_SQL = "SQL";

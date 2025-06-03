@@ -8,11 +8,6 @@ export default function ProgrammingLanguages() {
       <p>
         <SkillAndProficiency
           type="programming_languages"
-          skill="dart"
-          proficiency="proficient"
-        />
-        <SkillAndProficiency
-          type="programming_languages"
           skill="typescript"
           proficiency="intermediate"
         />
@@ -28,8 +23,18 @@ export default function ProgrammingLanguages() {
         />
         <SkillAndProficiency
           type="programming_languages"
-          skill="java"
+          skill="dart"
           proficiency="intermediate"
+        />
+        <SkillAndProficiency
+          type="programming_languages"
+          skill="sql"
+          proficiency="beginner"
+        />
+        <SkillAndProficiency
+          type="programming_languages"
+          skill="java"
+          proficiency="beginner"
         />
         <SkillAndProficiency
           type="programming_languages"
